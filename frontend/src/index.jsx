@@ -6,7 +6,7 @@ import App from './App';
 ReactDOM.render(
   <React.StrictMode>
       <Router>
-        <div>ntm</div>
+          <App />
       </Router>
   </React.StrictMode>,
 document.getElementById('root')

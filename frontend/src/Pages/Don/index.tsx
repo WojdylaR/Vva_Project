@@ -1,11 +1,11 @@
 import React from "react";
 
-function Home(){
+function Don(){
     return (
         <div>
-            Home page
+            Donation page
         </div>
     )
 }
 
-export default Home
+export default Don
