@@ -9,8 +9,8 @@ const FooterStyle = styled.nav`
     bottom: 0;
 
 .reseau{
-    color: white;
-    left: 10px;
+    text-align: center;
+    word-spacing: 15px;
 }
 `
 

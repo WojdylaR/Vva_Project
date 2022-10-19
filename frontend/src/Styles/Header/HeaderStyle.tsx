@@ -13,7 +13,7 @@ div{
 }
 
 .img{
-position: aboslute;
+position: absolute;
 height:100%;
 }
 
