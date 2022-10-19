@@ -1,6 +1,17 @@
-import { createGlobalStyle } from "styled-components";
+import styled from "styled-components"
 
-const FooterStyle = createGlobalStyle`
+
+const FooterStyle = styled.nav`
+    position: absolute;
+    width: 100%;
+    left : 0;
+    background: black;
+    bottom: 0;
+
+.reseau{
+    color: white;
+    left: 10px;
+}
 `
 
 export default FooterStyle

@@ -1,5 +1,6 @@
 import React from "react"
 import {Route, Routes} from 'react-router-dom'
+import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Contact from "./Pages/Contact"
 import Don from "./Pages/Don"
@@ -25,6 +26,7 @@ function App(){
                 <Route path="/service" element={<Service />} />
             </Routes>
             </PageStyle>
+            <Footer />
         </div>
     )
 }

@@ -4,10 +4,10 @@ const PageStyle = styled.nav`
     position: absolute;
     color: black;
     top: 10%;
-    background: grey;
+    background: #FFF5EE;
     width:100%;
     left: 0;
-    height: 100%;
+    height: 90%;
 `
 
 export default PageStyle

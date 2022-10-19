@@ -8,19 +8,37 @@ div{
     top: 0;
     height: 10%;
     width: 100%;
-    text-align: center;
     left: 0;
+    font-size:120%;
+}
+
+.img{
+position: aboslute;
+height:100%;
+}
+
+.links{
+    position: absolute;
+    top: 40%;
+    width: 100%;
+    text-align: center;
+    word-spacing: 100px;
+}
+
+.link{
     
+    text-decoration:none;
+    color: white;
 }
 
-ul#cemenu li {
-    display:inline;
+.link:hover{
+    text-decoration: underline;
+}
+.link:active{
+    color: grey;
 }
 
-.toto {
-    textDecoration: 'none';
 
-}
 
 `
 
