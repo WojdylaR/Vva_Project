@@ -10,13 +10,13 @@ function Header(){
             <img className="img" src={require('../../assets/white_logo.jpg')} alt="logo_picture" />
                 <nav className="links">
                     <Link className="link" to="/">Home</Link><span> </span>
-                    <Link className="link" to="/don">Don</Link><span> </span>
+                    <Link className="link" to="/don">Dons</Link><span> </span>
                     <Link className="link" to="/prestations">Prestations</Link><span> </span>
                     <Link className="link" to="/evenements">Evenements</Link><span> </span>
                     <Link className="link" to="/service">Service</Link><span> </span>
                     <Link className="link" to="/contact">Contact</Link>
                 </nav>
-                </div>
+            </div>
         </HeaderStyle>
         
     )

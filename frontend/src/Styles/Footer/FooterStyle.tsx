@@ -8,10 +8,15 @@ const FooterStyle = styled.nav`
     background: black;
     bottom: 0;
 
-.reseau{
+.reseaux{
     text-align: center;
     word-spacing: 15px;
 }
+
+.logo{
+    text-decoration:none;
+}
+
 `
 
 export default FooterStyle
