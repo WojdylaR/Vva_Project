@@ -7,7 +7,6 @@ const PageStyle = styled.nav`
     background: #FFF5EE;
     width:100%;
     left: 0;
-    height: 90%;
 `
 
 export default PageStyle

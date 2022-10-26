@@ -2,11 +2,9 @@ import styled from "styled-components"
 
 
 const FooterStyle = styled.nav`
-    position: absolute;
-    width: 100%;
-    left : 0;
+    position: relative;
     background: black;
-    bottom: 0;
+    height: 80px;
 
 .reseaux{
     text-align: center;

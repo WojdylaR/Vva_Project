@@ -26,7 +26,6 @@ function App(){
                 <Route path="/service" element={<Service />} />
             </Routes>
             </PageStyle>
-            <Footer />
         </div>
     )
 }

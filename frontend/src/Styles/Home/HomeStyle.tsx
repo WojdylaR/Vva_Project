@@ -1,19 +1,95 @@
 import styled from "styled-components";
 
 const HomeStyle = styled.nav`
+
+  
+  
+
 p.first {
-    background: green;
     position : relative;
-    color: red;
     height: 480px;
-    width: 100%;
-    vertical-align: middle;
+    font-family: Optima;
+}
+
+
+
+.first_para {
+    position: relative;
+    top: 35%;
+    left: 10%;
+    width: 10%;
+    font-size: 300%;
+    line-height: 1.5;
+
+    animation-duration: 2s;
+    animation-name: slidein;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
 
 .first_img {
-    position: relative;
+    position: absolute;
     height: 100%;
+    right: 5%;
+    top: -3%;
+
+
+    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-name: slidein;
+    opacity: 0;
+    animation-fill-mode: forwards;
 }
+
+p.second {
+    position: relative;
+    height: 480px;
+}
+
+.second_para {
+    font-family: Optima;
+    position: relative;
+    top: 30%;
+    left: 60%;
+    width: 10%;
+    font-size: 300%;
+    line-height: 1.5;
+
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-name: slidein;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+.second_phrase {
+    font-size: 50%;
+}
+
+.second_img {
+    position: absolute;
+    height: 100%;
+    left: 5%;
+    top: -3%;
+
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-name: slidein;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes slidein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+
 `
 
 export default HomeStyle
