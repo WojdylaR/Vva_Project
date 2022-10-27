@@ -21,8 +21,9 @@ p.first {
     font-size: 300%;
     line-height: 1.5;
 
-    animation-duration: 2s;
-    animation-name: slidein;
+    animation-delay: 0.5s;
+    animation-duration: 1s;
+    animation-name: opa;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -35,8 +36,8 @@ p.first {
 
 
     animation-delay: 1s;
-    animation-duration: 1s;
-    animation-name: slidein;
+    animation-duration: 0.5s;
+    animation-name: opa;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -55,9 +56,9 @@ p.second {
     font-size: 300%;
     line-height: 1.5;
 
-    animation-delay: 2s;
-    animation-duration: 2s;
-    animation-name: slidein;
+    animation-delay: 2.5s;
+    animation-duration: 1s;
+    animation-name: opa;
     opacity: 0;
     animation-fill-mode: forwards;
 }
@@ -73,14 +74,14 @@ p.second {
     top: -3%;
 
     animation-delay: 3s;
-    animation-duration: 1s;
-    animation-name: slidein;
+    animation-duration: 0.5s;
+    animation-name: opa;
     opacity: 0;
     animation-fill-mode: forwards;
 }
 
 
-@keyframes slidein {
+@keyframes opa {
     from {
       opacity: 0;
     }
@@ -89,6 +90,17 @@ p.second {
         opacity: 1;
     }
   }
+
+
+@keyframes slide {
+    from {
+
+    }
+
+    to {
+
+    }
+}
 
 `
 
