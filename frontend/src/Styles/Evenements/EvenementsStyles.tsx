@@ -1,13 +1,7 @@
 import styled from "styled-components";
 
-const PageStyle = styled.nav`
-    position: absolute;
-    color: black;
-    top: 10%;
-    width:100%;
-    left: 0;
-
-    animation-duration: 0.5s;
+const EvenementsStyle = styled.nav`
+    animation-duration: 0.75s;
     animation-name: opa;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -21,6 +15,6 @@ const PageStyle = styled.nav`
             opacity: 1;
         }
       }
-`
+      `
 
-export default PageStyle
+export default EvenementsStyle

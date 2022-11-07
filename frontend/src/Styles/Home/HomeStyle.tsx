@@ -91,17 +91,6 @@ p.second {
     }
   }
 
-
-@keyframes slide {
-    from {
-
-    }
-
-    to {
-
-    }
-}
-
 `
 
 export default HomeStyle

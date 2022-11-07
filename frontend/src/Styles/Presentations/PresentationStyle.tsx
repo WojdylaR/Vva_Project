@@ -1,14 +1,21 @@
 import styled from "styled-components";
 
 const PresentationStyle = styled.nav`
-div{
-    color: red;
-}
+animation-duration: 0.75s;
+animation-name: opa;
+opacity: 0;
+animation-fill-mode: forwards;
 
-.img1{
-    position: aboslute;
-    height:10%;
-}
+@keyframes opa {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
+  
 `
 
 export default PresentationStyle
