@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "../../Components/Footer";
 import DonsSyle from "../../Styles/Dons/DonsStyle";
 
 function Don(){

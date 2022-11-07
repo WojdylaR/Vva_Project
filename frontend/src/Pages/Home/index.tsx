@@ -8,15 +8,14 @@ function Home(){
             <div>
                 <p className="first">
                     <span className="first_para">Créateurs d'images,<br /> développeurs d'idées.</span>
-                    <img className="first_img" src={require('../../assets/cine.jpg')} alt="camp_img"/>
+                    <img className="first_img" src={require('../../assets/cam.jpg')} alt="camp_img"/>
                 </p>
                 <p className="second">
                     <span className="second_para">Vous avez un <br />projet de film ?<br /><span className="second_phrase">Rejoingnez-nous.</span></span>
-                    <img className="second_img" src={require('../../assets/cine.jpg')} alt="camp_img"/>
+                    <img className="second_img" src={require('../../assets/cam.jpg')} alt="camp_img"/>
                 </p>
             </div>
 
-            <Footer />
         </HomeStyle>
         
     )

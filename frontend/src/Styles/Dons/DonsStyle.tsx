@@ -2,14 +2,15 @@ import styled from "styled-components";
 
 const DonsSyle = styled.nav`
 div {
-    color: #515151;
-    font-family: Courier New;
+    color: black;
+    font-family: optima;
     position: relative;
-    top: 75px;
+    top: 125px;
     width: 64%;
     left: 18%;
     font-size: 150%;
-    line-height: 1.5;
+    line-height: 2;
+    height: 800px;
 }
 `
 

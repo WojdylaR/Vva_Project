@@ -25,6 +25,8 @@ function App(){
                 <Route path="/evenements" element={<Evenements />} />
                 <Route path="/service" element={<Service />} />
             </Routes>
+
+            <Footer />
             </PageStyle>
         </div>
     )
