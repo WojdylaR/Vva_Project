@@ -1,8 +1,10 @@
 import styled from "styled-components";
 
 const PageStyle = styled.nav`
+
+
     position: absolute;
-    color: black;
+    color: white;
     top: 10%;
     width:100%;
     left: 0;
@@ -21,6 +23,19 @@ const PageStyle = styled.nav`
             opacity: 1;
         }
       }
+
+#bordertoppa{
+  position: relative;
+        border-top: 4px solid white ;
+        width: 80%;
+        left: 10%;
+        border-radius: 30px;
+    }
+
+.red {
+  color: #B22222;
+}
+
 `
 
 export default PageStyle

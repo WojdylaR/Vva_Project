@@ -7,11 +7,12 @@ function Contact(){
     return (
         <ContactStyle>
             <div>
-                <p id="tittle" className="tittle">N'hesitez pas a nous contacter pour plus de questions !</p>
-                <p className="input"><p id="nom" className="info"><span className="inputTittle">Nom :</span><br/><input className="champ"/></p>
-                <p id="prenom" className="info"><span className="inputTittle">Prénom :</span><br/><input className="champ"/></p>
-                <p id="mail" className="info"><span className="inputTittle">Mail : </span><br/><input className="champ"/></p>
-                <p id="send"><TextToSend /></p></p>
+                <p id="tittle" className="tittle"><span className="red">NOUS</span> CONTACTER</p>
+                <p className="input"><p id="nom" className="info"><span className="inputTittle">Nom<span className="red">*</span> :</span><br/><input className="champ"/></p>
+                <p id="prenom" className="info"><span className="inputTittle">Prénom<span className="red">*</span> :</span><br/><input className="champ"/></p>
+                <p id="mail" className="info"><span className="inputTittle">Mail<span className="red">*</span> : </span><br/><input className="champ"/></p>
+                <p id="send"><TextToSend /></p>
+                <p id="obli"><span className="red">* champs obligatoire</span></p></p>
             </div>
         </ContactStyle>
     )

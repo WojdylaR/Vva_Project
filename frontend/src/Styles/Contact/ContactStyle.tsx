@@ -5,15 +5,21 @@ div {
     position: relative;
     font-family: optima;
     width: 100%;
-    height: 725px;
 }
 
 .tittle {
     position :relative;
     width: 100%;
     font-size: 200%;
-    font-family: medium;
+    font-weight: 400;
     text-align: center;
+    
+}
+
+#obli{
+    font-size: 75%;
+    position: relative;
+    top: -10px;
 }
 
 .input {
@@ -23,6 +29,8 @@ div {
     margin-left: auto;
     margin-right: auto;
     line-height: 2;
+    
+    
 }
 
 .info {
@@ -33,6 +41,7 @@ div {
 .champ {
     height: 25px;
     width: 300px;
+    
 }
 
 .champTxt {
@@ -40,6 +49,10 @@ div {
     top: 50px;
     height: 250px;
     width: 500px;
+}
+
+.txttosend{
+    
 }
 
 .inputTittle {

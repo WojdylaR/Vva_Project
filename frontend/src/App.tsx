@@ -17,6 +17,7 @@ function App(){
             <Header />
             <GlobalStyle />
             <PageStyle>
+            <div id="bordertoppa"></div>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/don" element={<Don />} />

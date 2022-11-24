@@ -2,7 +2,6 @@ import styled from "styled-components";
 
 const DonsSyle = styled.nav`
 div {
-    color: black;
     font-family: optima;
     position: relative;
     top: 125px;
