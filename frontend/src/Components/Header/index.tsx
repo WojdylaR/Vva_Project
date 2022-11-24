@@ -12,7 +12,7 @@ const location = useLocation();
                     <Link className="link" id="Home"to="/">Home</Link><span> </span>
                     <Link className="link" id="Presentation" to="/prestations">Prestations</Link><span> </span>
                     <Link className="link" id="Evenements" to="/evenements">Evenements</Link><span> </span>
-                    <Link className="link" id="Service" to="/service">Service</Link><span> </span>
+                    <Link className="link" id="Service" to="/service">Services</Link><span> </span>
                     <Link className="link" id="Dons" to="/don">Dons</Link><span> </span>
                    
                 </nav>

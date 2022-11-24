@@ -2,6 +2,7 @@ import React from "react"
 import {Route, Routes} from 'react-router-dom'
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
+import Mariage from "./Components/Service/Mariage"
 import Contact from "./Pages/Contact"
 import Don from "./Pages/Don"
 import Evenements from "./Pages/Evenements"
@@ -25,6 +26,7 @@ function App(){
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/evenements" element={<Evenements />} />
                 <Route path="/service" element={<Service />} />
+                <Route path="/service/mariage" element={<Mariage />} />
             </Routes>
 
             <Footer />

@@ -8,6 +8,7 @@ div{
     position: relative;
     font-family: optima;
     width: 100%;
+    top:10px;
 }
 
 #bordertop{

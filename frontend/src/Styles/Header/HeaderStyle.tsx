@@ -54,7 +54,7 @@ height:100%;
 }
 
 #Service{
-    color: ${(props) => props.loca === "/service" ? "#B22222" : "white"};
+    color: ${(props) => props.loca[6] === "c" ? "#B22222" : "white"};
 }
 
 #Dons{
