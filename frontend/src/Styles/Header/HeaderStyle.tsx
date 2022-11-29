@@ -46,7 +46,7 @@ height:100%;
 }
 
 #Presentation{
-    color: ${(props) => props.loca === "/prestations" ? "#B22222" : "white"};
+    color: ${(props) => props.loca === "/presentation" ? "#B22222" : "white"};
 }
 
 #Evenements{

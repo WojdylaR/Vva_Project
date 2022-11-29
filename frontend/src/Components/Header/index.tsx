@@ -10,7 +10,7 @@ const location = useLocation();
             <img className="img" src={require('../../assets/white_logo.jpg')} alt="logo_picture" />
                 <nav className="links">
                     <Link className="link" id="Home"to="/">Home</Link><span> </span>
-                    <Link className="link" id="Presentation" to="/prestations">Prestations</Link><span> </span>
+                    <Link className="link" id="Presentation" to="/presentation">L'équipe</Link><span> </span>
                     <Link className="link" id="Evenements" to="/evenements">Evenements</Link><span> </span>
                     <Link className="link" id="Service" to="/service">Services</Link><span> </span>
                     <Link className="link" id="Dons" to="/don">Dons</Link><span> </span>

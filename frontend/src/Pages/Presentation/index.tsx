@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../../Components/Footer";
 import PresentationStyle from "../../Styles/Presentations/PresentationStyle";
 
-function Prestations(){
+function Presentation(){
     return (
         <PresentationStyle>
             <div>
@@ -12,4 +12,4 @@ function Prestations(){
     )
 }
 
-export default Prestations
+export default Presentation

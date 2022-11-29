@@ -37,12 +37,12 @@ text-decoration:none;
 .img{
   position: relative;
   width: 13.166%;
-  filter: blur(2px);
+  filter: blur(0px);
   border-radius: 10px;
 }
 
 .img:hover{
-  filter: blur(0px);
+  filter: blur(4px);
   width: 13.20%;
 }
 
