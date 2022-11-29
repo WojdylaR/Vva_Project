@@ -7,13 +7,12 @@ div {
     width: 100%;
 }
 
-.tittle {
+.tittle_contact {
     position :relative;
     width: 100%;
     font-size: 200%;
     font-weight: 400;
     text-align: center;
-    
 }
 
 #obli{

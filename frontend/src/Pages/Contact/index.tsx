@@ -7,7 +7,7 @@ function Contact(){
     return (
         <ContactStyle>
             <div>
-                <p id="tittle" className="tittle"><span className="red">NOUS</span> CONTACTER</p>
+                <p className="tittle_contact"><span className="red">NOUS</span> CONTACTER</p>
                 <p className="input"><p id="nom" className="info"><span className="inputTittle">Nom<span className="red">*</span> :</span><br/><input className="champ"/></p>
                 <p id="prenom" className="info"><span className="inputTittle">Prénom<span className="red">*</span> :</span><br/><input className="champ"/></p>
                 <p id="mail" className="info"><span className="inputTittle">Mail<span className="red">*</span> : </span><br/><input className="champ"/></p>

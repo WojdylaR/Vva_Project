@@ -19,11 +19,7 @@ animation-duration: 0.75s;
 #all{
 }
 
-#tittle{
-  position: relative;
-  font-size: 200%;
-  left: 3%;
-}
+
 
 #menu{
   word-spacing: 50px;
@@ -44,14 +40,23 @@ text-decoration:none;
 .img:hover{
   filter: blur(4px);
   width: 13.20%;
+  backgroud: green;
+  
+}
+
+.img:hover ~ .tittle_link{
+  background-color:rgba(0, 0, 0, 0.5);
+  opacity: 1;
 }
 
 .tittle_link{
   position:absolute;
   color: white;
-  left: 5%;
-  
-
+  left: -2%;
+  width: 90%;
+  font-size: 200%;
+  opacity: 0;
+  top: -1750%;
 }
 
 `

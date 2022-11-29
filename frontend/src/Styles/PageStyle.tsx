@@ -24,6 +24,12 @@ const PageStyle = styled.nav`
         }
       }
 
+      #tittle{
+        position: relative;
+        font-size: 200%;
+        left: 3%;
+      }
+
 #bordertoppa{
   position: relative;
         border-top: 4px solid white ;

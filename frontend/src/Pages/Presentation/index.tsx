@@ -6,7 +6,7 @@ function Presentation(){
     return (
         <PresentationStyle>
             <div>
-                <h2 id="tittle" className="tittle">Qui sommes-nous ?</h2>
+                <h2 id="tittle"><span className="red">Qui</span> sommes-nous ?</h2>
             </div>
         </PresentationStyle>
     )
