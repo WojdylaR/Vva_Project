@@ -5,14 +5,19 @@ import HomeStyle from "../../Styles/Home/HomeStyle";
 function Home(){
     return (
         <HomeStyle>
-            <div>
+            <div id="all">
+            <p>
+            <h1 id="txt_video"><span className="">Va</span> Voir<br/>Ailleurs</h1>    
+                    <video autoPlay muted loop id="video" src={require('../../assets/background_video.mp4')} />
+                    
+            </p>
                 <p className="first">
                     <span className="first_para"><span className="red">Créateurs</span> d'images,<br /> développeurs d'idées.</span>
-                    <img className="first_img" src={require('../../assets/cam.jpg')} alt="camp_img"/>
+
                 </p>
                 <p className="second">
                     <span className="second_para">Vous avez un <br />projet de film ?<br /><span className="second_phrase"><span className="red">Rejoingnez</span>-nous.</span></span>
-                    <img className="second_img" src={require('../../assets/cam.jpg')} alt="camp_img"/>
+
                 </p>
             </div>
 

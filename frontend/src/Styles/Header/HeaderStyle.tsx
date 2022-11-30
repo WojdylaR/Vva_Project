@@ -6,19 +6,14 @@ interface locat {
 
 const HeaderStyle = styled.nav<locat>`
 div{
-    background: black;
     color: white;
     position:absolute;
     top: 0;
-    height: 10%;
+    height: 90px;
     width: 100%;
     left: 0;
     font-size:120%;
-}
-
-.img{
-position: absolute;
-height:100%;
+    z-index: 1  ;
 }
 
 .links{
@@ -42,23 +37,27 @@ height:100%;
 }
 
 #Home{
-    color: ${(props) => props.loca === "/" ? "#B22222" : "white"};
+    color: ${(props) => props.loca === "/" ? "white" : "white"};
 }
 
 #Presentation{
     color: ${(props) => props.loca === "/presentation" ? "#B22222" : "white"};
+
 }
 
-#Evenements{
-    color: ${(props) => props.loca === "/evenements" ? "#B22222" : "white"};
+#RealPerso{
+    color: ${(props) => props.loca === "/realperso" ? "#B22222" : "white"};
 }
 
 #Service{
-    color: ${(props) => props.loca[6] === "c" ? "#B22222" : "white"};
+    color: ${(props) => props.loca[1] === "s" ? "#B22222" : "white"};
 }
 
 #Dons{
     color: ${(props) => props.loca === "/don" ? "#B22222" : "white"};
+}
+
+#reseau{
 }
 
 `

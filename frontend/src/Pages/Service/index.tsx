@@ -7,7 +7,7 @@ function Service(){
     return (
         <ServicesStyle>
         <div id="all">
-            <h2 id="tittle"><span className="red">Nos</span> réalisations</h2>
+            <h2 id="tittle"><span className="red">Nos</span> préstations</h2>
             <div id="menu">
                 <nav>
                     <Link className="link" id="mariage" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Mariage</span> </Link>

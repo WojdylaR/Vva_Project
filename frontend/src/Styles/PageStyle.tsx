@@ -3,26 +3,13 @@ import styled from "styled-components";
 const PageStyle = styled.nav`
 
 
-    position: absolute;
-    color: white;
-    top: 10%;
-    width:100%;
-    left: 0;
 
-    animation-duration: 0.5s;
-    animation-name: opa;
-    opacity: 0;
-    animation-fill-mode: forwards;
-
-    @keyframes opa {
-        from {
-          opacity: 0;
-        }
-      
-        to {
-            opacity: 1;
-        }
-      }
+  position: absolute;
+  color: white;
+  width:100%;
+  left: 0;
+  top: 90px;
+  
 
       #tittle{
         position: relative;
@@ -36,7 +23,13 @@ const PageStyle = styled.nav`
         width: 80%;
         left: 10%;
         border-radius: 30px;
+        z-index: 1;
     }
+
+
+
+  
+
 
 .red {
   color: #B22222;

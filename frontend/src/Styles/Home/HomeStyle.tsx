@@ -2,8 +2,15 @@ import styled from "styled-components";
 
 const HomeStyle = styled.nav`
 
-  
-  
+#all{
+    position: relative;
+    top: -110px;
+    animation-duration: 2s;
+    animation-name: opa;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
 
 p.first {
     position : relative;
@@ -11,7 +18,51 @@ p.first {
     font-family: Optima;
 }
 
+#video{
+    width: 100%;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-name: blur_video;
+    opacity: 0.9;
+    animation-fill-mode: forwards;
+}
 
+@keyframes blur_video {
+    from {
+        opacity: 0.6;
+    }
+  
+    to {
+        opacity: 0.4    ;
+    }
+  }
+
+#txt_video{
+    position: absolute;
+    z-index:1;
+    top: 6%;
+    width: 100%;
+    text-align: center;
+    font-size: 900%;
+    word-spacing: 50px;
+    line-height: 225px;
+
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-name: opa_txt;
+    opacity: 0;
+    animation-fill-mode: forwards;
+}
+
+@keyframes opa_txt {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 0.9;
+    }
+  }
 
 .first_para {
     position: relative;
@@ -23,20 +74,6 @@ p.first {
 
     animation-delay: 0.5s;
     animation-duration: 1s;
-    animation-name: opa;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-.first_img {
-    position: absolute;
-    height: 100%;
-    right: 5%;
-    top: -3%;
-
-
-    animation-delay: 1s;
-    animation-duration: 0.5s;
     animation-name: opa;
     opacity: 0;
     animation-fill-mode: forwards;
@@ -67,19 +104,6 @@ p.second {
     font-size: 50%;
 }
 
-.second_img {
-    position: absolute;
-    height: 100%;
-    left: 5%;
-    top: -3%;
-
-    animation-delay: 3s;
-    animation-duration: 0.5s;
-    animation-name: opa;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
 
 @keyframes opa {
     from {
@@ -90,6 +114,8 @@ p.second {
         opacity: 1;
     }
   }
+
+  
 
 `
 

@@ -30,22 +30,28 @@ animation-duration: 0.75s;
 position: relative;
 text-decoration:none;
 }
+
 .img{
   position: relative;
   width: 13.166%;
   filter: blur(0px);
+  opacity: 1;
   border-radius: 10px;
 }
 
 .img:hover{
   filter: blur(4px);
+  opacity: 0.7;
   width: 13.20%;
   backgroud: green;
   
 }
 
 .img:hover ~ .tittle_link{
-  background-color:rgba(0, 0, 0, 0.5);
+  opacity: 1;
+}
+
+.img:hover ~ .tittle_link{
   opacity: 1;
 }
 

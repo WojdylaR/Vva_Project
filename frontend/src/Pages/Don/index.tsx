@@ -5,7 +5,7 @@ import DonsSyle from "../../Styles/Dons/DonsStyle";
 function Don(){
     return (
     <DonsSyle>
-        <div>
+        <div id="all">
             Nous sommes conscients que dans ce contexte de crise sanitaire, le pouvoir d'achat de bon nombre d'entre nous a fortement diminué.<br />
 C’est pourquoi nous avons créé une cagnotte Globe Deamers.<br />
 afin que chacun puisse participer en fonction de ses moyens financiers.<br />

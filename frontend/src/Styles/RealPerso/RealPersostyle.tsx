@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const EvenementsStyle = styled.nav`
+const RealPersostyle = styled.nav`
     animation-duration: 0.75s;
     animation-name: opa;
     opacity: 0;
@@ -17,4 +17,4 @@ const EvenementsStyle = styled.nav`
       }
       `
 
-export default EvenementsStyle
+export default RealPersostyle
