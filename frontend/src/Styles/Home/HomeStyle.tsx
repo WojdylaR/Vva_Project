@@ -11,6 +11,15 @@ const HomeStyle = styled.nav`
     animation-fill-mode: forwards;
 }
 
+.border{
+    position: relative;
+    width: 14%;
+    left: 43%;
+    top: 50px;
+    border-radius: 10px;
+    border-bottom: 4px solid white ;
+}
+
 @keyframes opa {
     from {
       opacity: 0;
@@ -36,7 +45,7 @@ const HomeStyle = styled.nav`
 #logo_video{
     position: absolute;
     z-index:1;
-    top: 30%;
+    top: 20%;
     width:15%;
     left:42.5%;
     word-spacing: 50px;
@@ -95,6 +104,83 @@ const HomeStyle = styled.nav`
 
 
 /******************************* Portraits ***************************/
+
+#portraits{
+    top: 100px;
+    position: relative;
+    left:4%;
+    width: 92%;
+    font-size:115%;
+    
+}
+
+#sous_titre_portraits{
+    position: relative;
+    left: 3%;
+    font-size: 185%;
+}
+
+.photo{
+    position: relative;
+    width: 28.66%;
+    margin-left: 3%;
+}
+
+.photo:hover{
+    opacity: 0.5;
+    border: solid 1px #aaa;
+}
+
+.prenom{
+    position:absolute;
+    top: 20%;
+    left: 3%;
+    width: 14%;
+    z-index:1;
+    font-size:200%;
+    opacity: 0;
+    background:grey;
+    border-top-right-radius:10px;
+}
+
+
+#prenom_pierre{
+    left:34.66%;
+}
+
+
+#prenom_ronan{
+    left: 66.32%;
+}
+
+.nom{
+    position:absolute;
+    bottom: 10%;
+    width: 14%;
+    z-index:1;
+    right:5%;
+    font-size:200%;
+    opacity: 0;
+    background: grey;
+    border-bottom-left-radius:10px;
+}
+
+#nom_pierre{
+    right:36.66%;
+}
+
+
+#nom_felix{
+    right: 68.32%;
+}
+
+.photo:hover ~ .prenom{
+    opacity: 1;
+}
+
+.photo:hover ~ .nom{
+    opacity: 1;
+}
 
 
 /******************************* Confiance ***************************/
