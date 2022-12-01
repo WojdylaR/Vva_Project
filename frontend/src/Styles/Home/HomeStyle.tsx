@@ -11,42 +11,36 @@ const HomeStyle = styled.nav`
     animation-fill-mode: forwards;
 }
 
+@keyframes opa {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+        opacity: 1;
+    }
+  }
 
-p.first {
-    position : relative;
-    height: 480px;
-    font-family: Optima;
-}
+/******************************* Video ***************************/
+
 
 #video{
     width: 100%;
     animation-delay: 3s;
     animation-duration: 1s;
-    animation-name: blur_video;
+    animation-name: opa_video;
     opacity: 0.9;
     animation-fill-mode: forwards;
 }
 
-@keyframes blur_video {
-    from {
-        opacity: 0.6;
-    }
-  
-    to {
-        opacity: 0.4    ;
-    }
-  }
-
-#txt_video{
+#logo_video{
     position: absolute;
     z-index:1;
-    top: 6%;
-    width: 100%;
-    text-align: center;
-    font-size: 900%;
+    top: 30%;
+    width:15%;
+    left:42.5%;
     word-spacing: 50px;
     line-height: 225px;
-
     animation-delay: 3s;
     animation-duration: 1s;
     animation-name: opa_txt;
@@ -62,61 +56,48 @@ p.first {
     to {
         opacity: 0.9;
     }
-  }
-
-.first_para {
-    position: relative;
-    top: 35%;
-    left: 10%;
-    width: 10%;
-    font-size: 300%;
-    line-height: 1.5;
-
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    animation-name: opa;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-p.second {
-    position: relative;
-    height: 480px;
-}
-
-.second_para {
-    font-family: Optima;
-    position: relative;
-    top: 30%;
-    left: 60%;
-    width: 10%;
-    font-size: 300%;
-    line-height: 1.5;
-
-    animation-delay: 2.5s;
-    animation-duration: 1s;
-    animation-name: opa;
-    opacity: 0;
-    animation-fill-mode: forwards;
-}
-
-.second_phrase {
-    font-size: 50%;
 }
 
 
-@keyframes opa {
+@keyframes opa_video {
     from {
-      opacity: 0;
+        opacity: 0.6;
     }
   
     to {
-        opacity: 1;
+        opacity: 0.4    ;
     }
-  }
+}
 
-  
+/******************************* TextPresentation ***************************/
 
+
+#TextPresentation{
+    top: 25px;
+    position: relative;
+    width:92%;
+    left:4%;
+    overflow:hidden;
+    line-height: 2;
+    font-size: 115%;
+}
+
+.sous_titre{
+    font-size: 185%;
+}
+
+.para{
+    position: relative;
+    width: 28.33%;
+    float:left;
+    margin-left: 3%;
+}
+
+
+/******************************* Portraits ***************************/
+
+
+/******************************* Confiance ***************************/
 `
 
 export default HomeStyle

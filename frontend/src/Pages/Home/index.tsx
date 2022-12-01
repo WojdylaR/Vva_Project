@@ -1,26 +1,16 @@
 import React from "react";
 import Footer from "../../Components/Footer";
+import TextPresentation from "../../Components/Home/TextPresentation";
+import Video from "../../Components/Home/Video";
 import HomeStyle from "../../Styles/Home/HomeStyle";
 
 function Home(){
     return (
         <HomeStyle>
-            <div id="all">
-            <p>
-            <h1 id="txt_video"><span className="">Va</span> Voir<br/>Ailleurs</h1>    
-                    <video autoPlay muted loop id="video" src={require('../../assets/background_video.mp4')} />
-                    
-            </p>
-                <p className="first">
-                    <span className="first_para"><span className="red">Créateurs</span> d'images,<br /> développeurs d'idées.</span>
-
-                </p>
-                <p className="second">
-                    <span className="second_para">Vous avez un <br />projet de film ?<br /><span className="second_phrase"><span className="red">Rejoingnez</span>-nous.</span></span>
-
-                </p>
-            </div>
-
+        <div id="all">
+            <Video />
+            <TextPresentation />
+        </div>
         </HomeStyle>
         
     )

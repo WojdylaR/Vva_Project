@@ -16,6 +16,12 @@ div{
     z-index: 1  ;
 }
 
+#logo{
+    position:absolute;
+    height: 90px;
+    left: 10px;
+}
+
 .links{
     position: absolute;
     top: 40%;
