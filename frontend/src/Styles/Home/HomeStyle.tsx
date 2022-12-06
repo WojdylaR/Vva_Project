@@ -15,9 +15,11 @@ const HomeStyle = styled.nav`
     position: relative;
     width: 14%;
     left: 43%;
+    height: 25x;
     top: 50px;
-    border-radius: 10px;
+    border-radius: 5px;
     border-bottom: 4px solid white ;
+    z-index: 1;
 }
 
 @keyframes opa {
@@ -82,7 +84,7 @@ const HomeStyle = styled.nav`
 
 
 #TextPresentation{
-    top: 25px;
+    top: 40px;
     position: relative;
     width:92%;
     left:4%;
@@ -106,12 +108,11 @@ const HomeStyle = styled.nav`
 /******************************* Portraits ***************************/
 
 #portraits{
-    top: 100px;
+    top: 25px;
     position: relative;
     left:4%;
     width: 92%;
     font-size:115%;
-    
 }
 
 #sous_titre_portraits{
@@ -131,9 +132,21 @@ const HomeStyle = styled.nav`
     border: solid 1px #aaa;
 }
 
-.prenom{
+.prenom_haut{
     position:absolute;
-    top: 20%;
+    top: 13%;
+    left: 3%;
+    width: 14%;
+    z-index:1;
+    font-size:200%;
+    opacity: 0;
+    background:grey;
+    border-top-right-radius:10px;
+}
+
+.prenom_bas{
+    position:absolute;
+    top: 60%;
     left: 3%;
     width: 14%;
     z-index:1;
@@ -153,9 +166,30 @@ const HomeStyle = styled.nav`
     left: 66.32%;
 }
 
-.nom{
+#prenom_liam{
+    left:34.66%;
+}
+
+
+#prenom_baz{
+    left: 66.32%;
+}
+
+.nom_haut{
     position:absolute;
-    bottom: 10%;
+    top: 30%;
+    width: 14%;
+    z-index:1;
+    right:5%;
+    font-size:200%;
+    opacity: 0;
+    background: grey;
+    border-bottom-left-radius:10px;
+}
+
+.nom_bas{
+    position:absolute;
+    bottom: 6%;
     width: 14%;
     z-index:1;
     right:5%;
@@ -174,16 +208,53 @@ const HomeStyle = styled.nav`
     right: 68.32%;
 }
 
-.photo:hover ~ .prenom{
+#nom_liam{
+    right:36.66%;
+}
+
+
+#nom_sacco{
+    right: 68.32%;
+}
+
+.photo:hover ~ .prenom_haut{
     opacity: 1;
 }
 
-.photo:hover ~ .nom{
+.photo:hover ~ .nom_haut{
     opacity: 1;
 }
 
+.photo:hover ~ .prenom_bas{
+    opacity: 1;
+}
+
+.photo:hover ~ .nom_bas{
+    opacity: 1;
+}
 
 /******************************* Confiance ***************************/
+
+#confiance{
+    top: 75px;
+    position: relative;
+    left:4%;
+    width: 92%;
+    font-size:115%;
+}
+
+#sous_titre_confiance{
+    position: relative;
+    left: 3%;
+    font-size: 185%;
+}
+
+#para_logo{
+    text-align:center;
+    line-height: 10;
+    letter-spacing: 100px;
+}
+
 `
 
 export default HomeStyle

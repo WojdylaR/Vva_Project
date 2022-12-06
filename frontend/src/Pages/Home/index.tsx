@@ -1,5 +1,6 @@
 import React from "react";
 import Footer from "../../Components/Footer";
+import Confiance from "../../Components/Home/Confiance";
 import Portraits from "../../Components/Home/Portraits";
 import TextPresentation from "../../Components/Home/TextPresentation";
 import Video from "../../Components/Home/Video";
@@ -14,6 +15,8 @@ function Home(){
             <TextPresentation />
             <div className="border" />
             <Portraits />
+            <div className="border"/>
+            <Confiance />
         </div>
         </HomeStyle>
         
