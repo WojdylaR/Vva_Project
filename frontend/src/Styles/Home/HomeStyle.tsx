@@ -93,7 +93,7 @@ const HomeStyle = styled.nav`
     font-size: 115%;
 }
 
-.sous_titre{
+.sous_titre_txt{
     font-size: 185%;
 }
 
@@ -140,7 +140,7 @@ const HomeStyle = styled.nav`
     z-index:1;
     font-size:200%;
     opacity: 0;
-    background:grey;
+    background:rgba(112,128,144, 0.3);
     border-top-right-radius:10px;
 }
 
@@ -151,8 +151,8 @@ const HomeStyle = styled.nav`
     width: 14%;
     z-index:1;
     font-size:200%;
+    background:rgba(112,128,144, 0.3);
     opacity: 0;
-    background:grey;
     border-top-right-radius:10px;
 }
 
@@ -183,7 +183,7 @@ const HomeStyle = styled.nav`
     right:5%;
     font-size:200%;
     opacity: 0;
-    background: grey;
+    background:rgba(112,128,144, 0.3);
     border-bottom-left-radius:10px;
 }
 
@@ -195,7 +195,7 @@ const HomeStyle = styled.nav`
     right:5%;
     font-size:200%;
     opacity: 0;
-    background: grey;
+    background:rgba(112,128,144, 0.3);
     border-bottom-left-radius:10px;
 }
 
@@ -252,7 +252,11 @@ const HomeStyle = styled.nav`
 #para_logo{
     text-align:center;
     line-height: 10;
-    letter-spacing: 100px;
+    letter-spacing: 150px;
+}
+
+.logo{
+    width: 5%;
 }
 
 `

@@ -1,7 +1,8 @@
 function Portraits(){
     return (
         <div id="portraits">
-            <h2 id="sous_titre_portraits">L'<span className="red">Equipe</span></h2>
+            <h2 id="sous_titre_portraits" className="sous_titre">L'<span className="red">Equipe</span></h2>
+            <span id="portraits">
             <span id="felix" className="photo_span">
                 <img id="felix_photo" className="photo" src={require('../../assets/felix.jpeg')} alt="Felix" />
                 <h4 id="felix_prenom" className="prenom_haut">
@@ -29,7 +30,6 @@ function Portraits(){
                     Développeur
                 </h4>
             </span>
-
             <span id="sacco" className="photo_span">
                 <img id="sacco_photo" className="photo" src={require('../../assets/sacco.jpeg')} alt="Sacco" />
                 <h4 id="sacco_prenom" className="prenom_bas">
@@ -56,6 +56,7 @@ function Portraits(){
                 <h4 id="nom_bazil" className="nom_bas">
                     PDG
                 </h4>
+            </span>
             </span>
         </div>
     )
