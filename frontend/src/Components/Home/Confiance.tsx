@@ -1,7 +1,7 @@
 function Confiance(){
     return (
         <div id="confiance">
-            <h2 id="sous_titre_confiance">Ils nous font <span className="red">Confiance</span></h2>
+            <h2 id="sous_titre_confiance">Ils parlent de <span className="red">Nous</span></h2>
             <p id="para_logo">
                 <a href="https://www.leprogres.fr/economie/2021/09/07/va-voir-ailleurs-site-e-commerce-social-et-solidaire-se-lance">
                     <img id="progres" className="logo" src={require('../../assets/Confiance/progres.png.webp')}/>

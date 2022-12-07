@@ -11,9 +11,9 @@ function Service(){
             <div id="menu">
                 <nav>
                     <Link className="link" id="mariage" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Mariage</span> </Link>
-                    <Link className="link" id="clip" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Clip</span> </Link>
+                    <Link className="link" id="captation" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Captation</span> </Link>
                     <Link className="link" id="corporate" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Corporate</span> </Link>
-                    <Link className="link" id="drone" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Drone</span> </Link>
+                    <Link className="link" id="immobilier" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Immobilier</span> </Link>
                     <Link className="link" id="evenement" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Evenement</span> </Link>
                     <Link className="link" id="fiction" to="/service/mariage"><img className="img" src={require('../../assets/img_mariage.png')} alt="mariage"/><span className="tittle_link" >Fiction</span> </Link>
                     

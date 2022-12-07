@@ -41,7 +41,7 @@ function Home(){
         slideInTop("sous_titre", 0.25, 1);
         slideInTop(".border", 0.25, 1);
         slideInTop("sous_titre_txt", 0.25, 1);
-        slideInTop("#portraits", 0.25, 1);
+        slideInTop("#portraits", 0, 3);
         slideInTop("#confiance", 0.25, 1)
     }, [])
 

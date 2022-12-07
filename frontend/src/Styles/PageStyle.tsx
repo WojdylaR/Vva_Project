@@ -4,6 +4,8 @@ const PageStyle = styled.nav`
 
 
 
+
+
   position: absolute;
   color: white;
   width:100%;
@@ -32,7 +34,9 @@ const PageStyle = styled.nav`
 
 
 .red {
-  color: #B22222;
+  -webkit-text-stroke: 1px;
+  -webkit-text-stroke-color: #B22222;
+  color: black;
 }
 
 `

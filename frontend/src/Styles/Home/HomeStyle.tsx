@@ -47,7 +47,7 @@ const HomeStyle = styled.nav`
 #logo_video{
     position: absolute;
     z-index:1;
-    top: 20%;
+    top: 15%;
     width:15%;
     left:42.5%;
     word-spacing: 50px;
@@ -125,6 +125,10 @@ const HomeStyle = styled.nav`
     position: relative;
     width: 28.66%;
     margin-left: 3%;
+    border: solid 20px white;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
 }
 
 .photo:hover{
