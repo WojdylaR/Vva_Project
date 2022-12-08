@@ -125,7 +125,7 @@ const HomeStyle = styled.nav`
     position: relative;
     width: 28.66%;
     margin-left: 3%;
-    border: solid 20px white;
+    border: solid 8px white;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
@@ -140,7 +140,7 @@ const HomeStyle = styled.nav`
     position:absolute;
     top: 13%;
     left: 3%;
-    width: 14%;
+    width: 10%;
     z-index:1;
     font-size:200%;
     opacity: 0;
@@ -182,7 +182,7 @@ const HomeStyle = styled.nav`
 .nom_haut{
     position:absolute;
     top: 30%;
-    width: 14%;
+    width: 18%;
     z-index:1;
     right:5%;
     font-size:200%;
@@ -194,7 +194,7 @@ const HomeStyle = styled.nav`
 .nom_bas{
     position:absolute;
     bottom: 6%;
-    width: 14%;
+    width: 12%;
     z-index:1;
     right:5%;
     font-size:200%;

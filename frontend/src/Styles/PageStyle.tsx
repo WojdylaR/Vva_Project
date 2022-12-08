@@ -34,9 +34,9 @@ const PageStyle = styled.nav`
 
 
 .red {
-  -webkit-text-stroke: 1px;
-  -webkit-text-stroke-color: #B22222;
-  color: black;
+  -webkit-text-stroke: 0px;
+  -webkit-text-stroke-color: ;
+  color: #B22222;
 }
 
 `
