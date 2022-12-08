@@ -17,6 +17,9 @@ animation-duration: 0.75s;
       }
 
 #all{
+  position: relative;
+  width: 92%;
+  left: 3%;
 }
 
 
@@ -24,11 +27,13 @@ animation-duration: 0.75s;
 #menu{
   word-spacing: 50px;
   text-align: center;
+  
 }
 
 .link{
 position: relative;
 text-decoration:none;
+margin-left: 50px;
 }
 
 .img{
@@ -58,8 +63,8 @@ text-decoration:none;
   position:absolute;
   color: white;
   background:rgba(0,0,0, 0.3);
-  left: -2%;
-  width: 90%;
+  left: -5%;
+  width: 110%;
   font-size: 200%;
   opacity: 1;
   top: -1750%;

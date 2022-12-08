@@ -32,6 +32,10 @@ div {
     
 }
 
+.link{
+    float:left;
+}
+
 .info {
     position: relative;
 }

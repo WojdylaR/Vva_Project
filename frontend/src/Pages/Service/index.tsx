@@ -30,27 +30,27 @@ function Service(){
                     <Link className="link" id="mariage" to="/service/mariage">
                         <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop  className="img" src={require('../../assets/mariage_video.mp4')} />
                         <span className="tittle_link" >
-                            Mariage</span> </Link>
+                            Mariage</span></Link>
                     <Link className="link" id="mariage" to="/service/mariage">
                         <video  onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} className="img" muted loop  src={require('../../assets/corporate_video.mp4')} />
                         <span className="tittle_link" >
-                            Corporate</span> </Link>
+                            Corporate</span></Link>
                     <Link className="link" id="mariage" to="/service/mariage">
                         <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/evenement_video.mp4')} />
                         <span className="tittle_link" >
-                            Evenement</span> </Link>
+                            Evenement</span></Link>
                             <Link className="link" id="mariage" to="/service/mariage">
                         <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/fiction_video.mp4')} />
                         <span className="tittle_link" >
-                            Fiction</span> </Link>
-                            <Link className="link" id="mariage" to="/service/mariage">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/immobilier_video.mp4')} />
-                        <span className="tittle_link" >
-                            Immobilier</span> </Link>
+                            Fiction</span></Link>
                             <Link className="link" id="mariage" to="/service/mariage">
                         <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/captation_video.mp4')} />
                         <span className="tittle_link" >
-                            Captation</span> </Link>
+                            Captation</span></Link>
+                            <Link className="link" id="mariage" to="/service/mariage">
+                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/immobilier_video.mp4')} />
+                        <span className="tittle_link" >
+                            Immobilier</span ></Link>
                     
                 </nav>
             </div>
