@@ -43,8 +43,6 @@ text-decoration:none;
   filter: blur(0px);
   opacity: 1;
   width: 13.20%;
-  backgroud: green;
-  
 }
 
 .img:hover ~ .tittle_link{

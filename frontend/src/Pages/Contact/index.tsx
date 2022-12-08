@@ -9,11 +9,23 @@ function Contact(){
             <div>
                 <p className="tittle_contact"><span className="red">NOUS</span> CONTACTER</p>
 
-                <p className="input"><p id="nom" className="info"><span className="inputTittle">Nom<span className="red">*</span> :</span><br/><input className="champ"/></p>
-                <p id="prenom" className="info"><span className="inputTittle">Prénom<span className="red">*</span> :</span><br/><input className="champ"/></p>
-                <p id="mail" className="info"><span className="inputTittle">Mail<span className="red">*</span> : </span><br/><input className="champ"/></p>
-                <p id="send"><TextToSend /></p>
-                <p id="obli"><span className="red">* champs obligatoire</span></p></p>
+                <p className="input">
+                    <p id="nom" className="info">
+                        <span className="inputTittle">Nom<span className="red">*</span> :</span>
+                        <span className="inputTittle2">Prénom<span className="red">*</span> :</span><br/>
+                        <input className="champ"/>
+                        <input className="champ2"/>
+                    </p>
+                    <br />
+                    <p id="prenom" className="info">
+                        <span className="inputTittle">Mail<span className="red">*</span> :</span>
+                        <span className="inputTittle2">Numéro de téléphone<span className="red">*</span> : </span><br/>
+                        <input className="champ"/>
+                        <input className="champ2"/>
+                    </p>
+                    <p id="send"><TextToSend /></p>
+                    <p id="obli"><span className="red">* champs obligatoire</span></p>
+                </p>
             </div>
         </ContactStyle>
     )

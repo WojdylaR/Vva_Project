@@ -29,10 +29,6 @@ const PageStyle = styled.nav`
     }
 
 
-
-  
-
-
 .red {
   -webkit-text-stroke: 0px;
   -webkit-text-stroke-color: ;

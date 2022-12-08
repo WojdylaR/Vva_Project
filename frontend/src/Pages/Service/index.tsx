@@ -40,7 +40,7 @@ function Service(){
                         <span className="tittle_link" >
                             Evenement</span> </Link>
                             <Link className="link" id="mariage" to="/service/mariage">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} loop className="img" src={require('../../assets/fiction_video.mp4')} />
+                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/fiction_video.mp4')} />
                         <span className="tittle_link" >
                             Fiction</span> </Link>
                             <Link className="link" id="mariage" to="/service/mariage">
@@ -48,7 +48,7 @@ function Service(){
                         <span className="tittle_link" >
                             Immobilier</span> </Link>
                             <Link className="link" id="mariage" to="/service/mariage">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} loop className="img" src={require('../../assets/captation_video.mp4')} />
+                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/captation_video.mp4')} />
                         <span className="tittle_link" >
                             Captation</span> </Link>
                     

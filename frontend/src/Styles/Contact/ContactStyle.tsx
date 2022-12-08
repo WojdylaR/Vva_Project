@@ -34,18 +34,22 @@ div {
 
 .info {
     position: relative;
-    left: 100px;
 }
 
-.champ {
+.champ{
     height: 25px;
-    width: 300px;
-    
+    width: 40%;
+}
+
+.champ2{
+    position:absolute;
+    left: 60%;
+    height: 25px;
+    width: 40%;
 }
 
 .champTxt {
     position: relative;
-    top: 50px;
     height: 250px;
     width: 500px;
 }
@@ -57,6 +61,12 @@ div {
 .inputTittle {
     position: relative;
 }
+
+.inputTittle2 {
+    position: absolute;
+    left:60%;
+}
+
 
 animation-duration: 0.75s;
     animation-name: opa;

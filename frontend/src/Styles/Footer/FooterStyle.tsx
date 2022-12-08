@@ -5,10 +5,13 @@ const FooterStyle = styled.nav`
 
 
 div{
+    font-family:Montserrat;
     position: relative;
-    font-family: optima;
     width: 100%;
     top:10px;
+    text-align: center;
+    line-height:1;
+    font-size: 125%;
 }
 
 #bordertop{
@@ -18,28 +21,20 @@ div{
     border-radius: 300px;
 }
 
-.reseaux{
-    position: relative;
-    text-align: center;
-}
-
-.logo{
-    text-decoration:none;
-}
-
 .contact{
     position: relative;
     background: white;
-    height: 10px;
     position: relative;
+    border:6px solid white;
     border-radius: 30px;
-    top: -16px;
+    font-size: 90%;
 }
 
 .link{
+    position:relative;
     color: black;
     text-decoration:none;
-    height: 800px;
+    width:200;
 }
 
 .link:hover{
