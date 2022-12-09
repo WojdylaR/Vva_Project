@@ -2,9 +2,9 @@ import React from "react";
 
 function TextToSend(){
     return(
-        <div>
+        <div id="txt_to_send">
             <p className="txttosend">Message<span className="red">*</span> :<input type="text" className="champTxt"/>
-            <button className="button">Envoyer</button></p>
+            <button id="button">Envoyer</button></p>
         </div>
     )
 }

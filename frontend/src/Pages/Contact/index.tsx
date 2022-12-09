@@ -13,7 +13,7 @@ function Contact(){
                     <p id="nom" className="info">
                         <span className="inputTittle">Nom<span className="red">*</span> :</span>
                         <span className="inputTittle2">Prénom<span className="red">*</span> :</span><br/>
-                        <input className="champ"/>
+                        <input className="champ" />
                         <input className="champ2"/>
                     </p>
                     <br />
@@ -23,8 +23,8 @@ function Contact(){
                         <input className="champ"/>
                         <input className="champ2"/>
                     </p>
-                    <p id="send"><TextToSend /></p>
-                    <p id="obli"><span className="red">* champs obligatoire</span></p>
+                    <p id="send"><TextToSend />
+                    <p id="obli"><span className="red">* champs obligatoire</span></p></p>
                 </p>
             </div>
         </ContactStyle>
