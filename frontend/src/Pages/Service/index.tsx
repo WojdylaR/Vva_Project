@@ -10,13 +10,11 @@ import {Link} from "react-router-dom"
 
 function Service(){
     const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
-        console.log("yo")
         e.currentTarget.pause();
 
       };
 
       const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) => {
-        console.log("yo")
         e.currentTarget.play();
         
       };

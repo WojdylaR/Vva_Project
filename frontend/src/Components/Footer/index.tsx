@@ -8,7 +8,7 @@ function Footer(){
         <FooterStyle>
             <div className="footer">
             <div id="bordertop"></div>
-                <h4 id="sous_titre">Envoyez-nous un message 🙂</h4>
+                <h4 id="sous_titre">Un projet ? on s’appelle ? On en discute ? 🙂</h4>
                     <a className="contact"> <Link className="link" to="/contact">Contact</Link> </a>
             </div>
         </FooterStyle>

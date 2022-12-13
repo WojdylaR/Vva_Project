@@ -104,6 +104,12 @@ const HomeStyle = styled.nav`
     margin-left: 3%;
 }
 
+.img_tittle{
+    position: relative;
+    height: 30px;
+    left: 30px;
+}
+
 
 /******************************* Portraits ***************************/
 
@@ -201,6 +207,11 @@ const HomeStyle = styled.nav`
     opacity: 0;
     background:rgba(112,128,144, 0.3);
     border-bottom-left-radius:10px;
+}
+
+#stay_fixed{
+    position:fixed;
+    color: red;
 }
 
 #nom_pierre{

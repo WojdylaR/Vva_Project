@@ -49,7 +49,7 @@ function Home(){
         <HomeStyle>
         <div id="all">
             <Video />
-            <div className="border" />
+            <div className="border"/>
             <TextPresentation />
             <div className="border" />
             <Portraits />

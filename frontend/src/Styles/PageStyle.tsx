@@ -20,7 +20,7 @@ const PageStyle = styled.nav`
       }
 
 #bordertoppa{
-  position: relative;
+  position: fixed;
         border-top: 4px solid white ;
         width: 80%;
         left: 10%;

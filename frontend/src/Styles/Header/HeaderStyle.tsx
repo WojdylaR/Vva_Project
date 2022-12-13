@@ -7,13 +7,14 @@ interface locat {
 const HeaderStyle = styled.nav<locat>`
 div{
     color: white;
-    position:absolute;
-    top: 0;
+    position:fixed;
+    top: 0%;
     height: 90px;
     width: 100%;
     left: 0;
     font-size:120%;
-    z-index: 1  ;
+    z-index: 1;
+    backdrop-filter: blur(5px);
 }
 
 #logo{
