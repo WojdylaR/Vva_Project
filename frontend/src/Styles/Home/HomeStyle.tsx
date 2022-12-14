@@ -106,7 +106,7 @@ const HomeStyle = styled.nav`
 
 .img_tittle{
     position: relative;
-    height: 30px;
+    height: 40px;
     left: 30px;
 }
 
