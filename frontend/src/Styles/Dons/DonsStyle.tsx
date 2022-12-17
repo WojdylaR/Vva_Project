@@ -1,15 +1,6 @@
 import styled from "styled-components";
 
 const DonsSyle = styled.nav`
-div {
-    font-family: optima;
-    position: relative;
-    top: 125px;
-    width: 64%;
-    left: 18%;
-    font-size: 150%;
-    line-height: 2;
-    height: 800px;
 
     animation-duration: 0.75s;
     animation-name: opa;
@@ -25,6 +16,26 @@ div {
             opacity: 1;
         }
       }
+
+#don{
+  top: 50px;
+  position: relative;
+  text-align: center;
+  font-family: optima;
+  font-size: 200%;
+  height: 1000px;
+  line-height: 0.5;
+}
+
+#photo{
+  position: relative;
+  width: 45%;
+  border-radius: 20px;
+}
+
+#logo_tipeee{
+  position: relative;
+  width: 25%;
 }
 `
 

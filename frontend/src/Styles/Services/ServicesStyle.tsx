@@ -40,7 +40,7 @@ margin-left: 50px;
   position: relative;
   width: 13.166%;
   filter: blur(4px);
-  opacity: 1;
+  opacity: 0.8;
   border-radius: 10px;
 }
 
@@ -62,7 +62,7 @@ margin-left: 50px;
 .tittle_link{
   position:absolute;
   color: white;
-  background:rgba(0,0,0, 0.3);
+  background:rgba(0,0,0, 0.0);
   left: -5%;
   width: 110%;
   font-size: 200%;
