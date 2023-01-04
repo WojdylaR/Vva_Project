@@ -15,6 +15,12 @@ const RealPersostyle = styled.nav`
             opacity: 1;
         }
       }
+
+#video{
+  position: relative;
+  top:30px;
+  width: 100%;
+}
       `
 
 export default RealPersostyle

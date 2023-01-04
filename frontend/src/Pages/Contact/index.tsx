@@ -6,7 +6,7 @@ import ContactStyle from "../../Styles/Contact/ContactStyle";
 function Contact(){
     return (
         <ContactStyle>
-            <div>
+            <div id="all_input">
                 <p className="tittle_contact"><span className="red">NOUS</span> CONTACTER</p>
 
                 <p className="input">
@@ -26,6 +26,9 @@ function Contact(){
                     <p id="send"><TextToSend />
                     <p id="obli"><span className="red">* champs obligatoire</span></p></p>
                 </p>
+            </div>
+            <div id="second_div">
+                Ceci et la second div
             </div>
         </ContactStyle>
     )

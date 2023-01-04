@@ -23,19 +23,20 @@ const DonsSyle = styled.nav`
   text-align: center;
   font-family: optima;
   font-size: 200%;
-  height: 1000px;
+  height: 1200px;
   line-height: 0.5;
 }
 
 #photo{
   position: relative;
-  width: 45%;
+  width: 60%;
   border-radius: 20px;
 }
 
 #logo_tipeee{
   position: relative;
   width: 25%;
+  top: -5%;
 }
 `
 
