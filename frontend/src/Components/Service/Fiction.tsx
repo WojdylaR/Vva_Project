@@ -1,16 +1,20 @@
+import ServicesStylePage from "../../Styles/Services/ServiceStylePage"
+
 function Fiction() {
     return (
+        <ServicesStylePage>
         <div>
             <p>
 
             </p>
-            <p id="fiction_txt">
+            <p id="fiction_txt" className="txt_right">
             Avec des membres reconnus pour leur polyvalence et leur capacité à s'adapter en toutes 
             circonstances, nous vous proposons de vous accompagner dans la réalisation de vos 
             fictions ou court-métrages en tous genres: de la régie au son en passant par la lumière 
             en allant même jusqu'à l'écriture ou la propositions d'idées, nous sommes votre solution !
             </p>
         </div>
+        </ServicesStylePage>
     )
 }
 

@@ -70,6 +70,10 @@ margin-left: 50px;
   top: -1750%;
 }
 
+.txt_right{
+  background: red;
+}
+
 `
 
 export default ServicesStyle

@@ -4,7 +4,7 @@ function Evenement () {
             <p>
 
             </p>
-            <p id="evenement_txt">
+            <p id="evenement_txt" className="txt_right">
             Comme vous l'aurez sûrement compris, nous sommes multi-tâches et surtout motivés 
             à vous aider à garder en mémoires des souvenirs marquants! Professionnels, 
             particuliers ou encore bénévoles dans le milieu associatif, nous serons là pour 
