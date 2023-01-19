@@ -2,17 +2,25 @@ import styled from "styled-components";
 
 const ServicesStylePage = styled.nav `
 
-.txt_right{
+position: relative;
+top: 40px;
 
-    display: table;
+.picture_right{
+    left: 3%;
+    position: relative;
+    width: 37%;
+    line-height: 2;
+}
+
+.picture{
+    width: 100%;
+}
+
+.txt_right{
     position: relative;
     background: red;
-    width: 60%;
-    left: 35%;
-    height: 700px;
-    font-size: 150%;
-    line-height: 2;
-    vertical-align: middle;
+    width: 52%;
+    left: 45%;
 }
 
 `
