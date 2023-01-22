@@ -7,25 +7,30 @@ function Contact(){
     return (
         <ContactStyle>
             <div id="all_input">
-                <p className="tittle_contact"><span className="red">NOUS</span> CONTACTER</p>
+                <h1 className="tittle_contact"><span className="red">NOUS</span> CONTACTER</h1>
 
-                <p className="input">
-                    <p id="nom" className="info">
-                        <span className="inputTittle">Nom<span className="red">*</span> :</span>
-                        <span className="inputTittle2">Prénom<span className="red">*</span> :</span><br/>
-                        <input className="champ" />
-                        <input className="champ2"/>
-                    </p>
+                <div id="info">
+                    <span className="top"><span className="info">
+                        <input type="text" autoComplete="off" />
+                        <label className="lab" htmlFor="prenom">Prenom</label>
+                    </span>
+                    <span className="info">
+                        <span className="right"><input type="text" autoComplete="off" />
+                        <label className="lab" htmlFor="nom">Nom</label></span>
+                    </span></span>
                     <br />
-                    <p id="prenom" className="info">
-                        <span className="inputTittle">Mail<span className="red">*</span> :</span>
-                        <span className="inputTittle2">Numéro de téléphone<span className="red">*</span> : </span><br/>
-                        <input className="champ"/>
-                        <input className="champ2"/>
-                    </p>
-                    <p id="send"><TextToSend />
+                    <span className="info"><span id="bot">
+                        <input type="text" autoComplete="off" />
+                        <label className="lab" htmlFor="mail">Mail</label></span>
+                    </span>
+                    <span className="info" ><span id="bot">
+                        <span className="right"><input type="text" autoComplete="off" />
+                        <label className="lab" htmlFor="telephone">Téléphone</label></span></span>
+                    </span>
+                    
+                </div>
+                <p id="send"><TextToSend />
                     <p id="obli"><span className="red">* champs obligatoire</span></p></p>
-                </p>
             </div>
             <div id="second_div">
                 Ceci et la second div

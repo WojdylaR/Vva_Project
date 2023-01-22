@@ -10,7 +10,6 @@ const location = useLocation();
             <div className="all">
             <img id="logo" src={require('../../assets/logo_vva_blanc.png')} alt="logo_vva_blanc" />
                 <nav className="links">
-                    
                     <Link className="link" id="Home"to="/">Home</Link><span> </span>
                     <Link className="link" id="Service" to="/service">Services</Link><span> </span>
                     <Link className="link" id="RealPerso" to="/realperso">Real</Link><span> </span>

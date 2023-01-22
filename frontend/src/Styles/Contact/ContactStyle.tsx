@@ -6,6 +6,7 @@ const ContactStyle = styled.nav`
     font-family: optima;
     width: 50%;
     float:left;
+    left: 10%;
 }
 
 .tittle_contact {
@@ -13,7 +14,6 @@ const ContactStyle = styled.nav`
     width: 100%;
     font-size: 200%;
     font-weight: 400;
-    left: 15%;
 }
 
 #obli{
@@ -22,14 +22,55 @@ const ContactStyle = styled.nav`
     top: -10px;
 }
 
-.input {
-    top: 25px;
-    position: relative;
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto;
-    line-height: 1;
+#info {
+    
 }
+
+#info input {
+        font-size: 100%;
+        padding: 0.8em;
+        outline: none;
+        border: 2px solid rgb(200, 200, 200);
+        background-color: transparent;
+        border-radius: 10px;
+        width: 20%;
+        color: white;
+}
+
+.right{
+    position:relative;
+    left:10%;
+}
+
+#bot{
+    position:relative;
+    top: 50px;
+}
+
+.info label {
+    font-size: 100%;
+    position: absolute;
+    left: 0;
+    background-color: transparent;
+    padding: 0.8em;
+    margin-left: 0.5em;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    color: white;
+  }
+
+.info :focus ~label {
+    transform: translateY(-50%) scale(.9);
+    margin: 0em;
+    margin-left: 1.3em;
+    padding: 0.4em;
+    background-color: black;
+  }
+
+
+#info :focus {
+    border-color: rgb(150, 150, 200);
+  }
 
 .link{
     float:left;
@@ -39,28 +80,14 @@ const ContactStyle = styled.nav`
     position: relative;
 }
 
+
+
 .champ{
-    height: 25px;
     width: 40%;
-    border-top: 3px black;
-    border-right: 3px black;
-    border-left: 3px black;
-    border-bottom: 3px white solid;
-    background:rgba(255,255,255, 0.1);
-    border-radius: 3px;
 }
 
 .champ2{
-    position:absolute;
-    left: 60%;
-    height: 25px;
     width: 40%;
-    border-top: 3px black;
-    border-right: 3px black;
-    border-left: 3px black;
-    border-bottom: 3px white solid;
-    background:rgba(255,255,255, 0.1);
-    border-radius: 3px;
 }
 
 .champTxt {
@@ -72,21 +99,9 @@ const ContactStyle = styled.nav`
 #txt_to_send{
     position: relative;
     height: 350px;
+    top: 100px;
 }
 
-.txttosend{
-    position: relative;
-    top: 50px;
-}
-
-.inputTittle {
-    position: relative;
-}
-
-.inputTittle2 {
-    position: absolute;
-    left:60%;
-}
 
 #button{
     position: relative;

@@ -5,7 +5,6 @@ const FooterStyle = styled.nav`
 
 
 div{
-    font-family:Montserrat;
     position: relative;
     width: 100%;
     top:10px;
@@ -21,27 +20,42 @@ div{
     border-radius: 300px;
 }
 
-.contact{
-    position: relative;
-    background: white;
-    position: relative;
-    border:6px solid white;
-    border-radius: 30px;
-    font-size: 90%;
-}
+button {
+    background-color: #444141;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+    text-decoration:none
+   }
 
-.link{
-    position:relative;
-    color: black;
+
+
+   button:hover {
+    background-image: linear-gradient(90deg, #B22222 50%, white 50%, #B22222 50%, white 10%);
+    animation: slidernbw 5s linear infinite;
+    color: #000;
+   }
+   
+   @keyframes slidernbw {
+    to {
+     background-position: 20vw;
+    }
+   }
+
+#Contact{
+    
     text-decoration:none;
-    width:200;
+    color: white;
 }
 
-.link:hover{
-    text-decoration: underline;
-}
-.link:active{
-    color: grey;
+#Contact:hover{
+    text-decoration:none;
+    color: black;
 }
 
 `

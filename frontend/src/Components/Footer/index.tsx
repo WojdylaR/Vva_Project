@@ -9,7 +9,7 @@ function Footer(){
             <div className="footer">
             <div id="bordertop"></div>
                 <h4 id="sous_titre">Un projet ? on s’appelle ? On en discute ? 🙂</h4>
-                    <a className="contact"> <Link className="link" to="/contact">Contact</Link> </a>
+                    <button ><Link className="link" id="Contact"to="/contact">Contact</Link></button>
             </div>
         </FooterStyle>
     )

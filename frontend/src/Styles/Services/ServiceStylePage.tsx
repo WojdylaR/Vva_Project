@@ -20,7 +20,6 @@ top: 40px;
     position: relative;
     background: red;
     width: 52%;
-    left: 45%;
 }
 
 `
