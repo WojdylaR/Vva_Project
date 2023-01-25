@@ -20,9 +20,10 @@ animation-duration: 0.75s;
   position: relative;
   width: 92%;
   left: 3%;
+  top: 40px;
 }
 
-
+height: 800px;
 
 #menu{
   word-spacing: 50px;

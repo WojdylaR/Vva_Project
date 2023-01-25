@@ -3,13 +3,16 @@ import styled from "styled-components";
 const ServicesStylePage = styled.nav `
 
 position: relative;
-top: 40px;
+top: 80px;
+height: 800px;
+vertical-align: middle;
 
-.picture_right{
+.picture_left{
     left: 3%;
     position: relative;
     width: 37%;
     line-height: 2;
+    float: left;
 }
 
 .picture{
@@ -18,8 +21,15 @@ top: 40px;
 
 .txt_right{
     position: relative;
-    background: red;
-    width: 52%;
+    width: 50%;
+    float: right;
+    right: 5%;
+    line-height: 2.3;
+    font-size: 150%;
+}
+
+#mariage_txt{
+    top: 50px;
 }
 
 `
