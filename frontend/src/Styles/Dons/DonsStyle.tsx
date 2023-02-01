@@ -23,7 +23,7 @@ const DonsSyle = styled.nav`
   text-align: center;
   font-family: optima;
   font-size: 200%;
-  height: 1200px;
+  height: 850px;
   line-height: 0.5;
 }
 

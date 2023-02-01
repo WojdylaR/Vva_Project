@@ -30,13 +30,15 @@ button {
     font-weight: bold;
     letter-spacing: 1px;
     border: none;
-    text-decoration:none
+    text-decoration:none;
+    position: relative;
+    top: -10px;
    }
 
 
 
    button:hover {
-    background-image: linear-gradient(90deg, #B22222 50%, white 50%, #B22222 50%, white 10%);
+    background-image: linear-gradient(90deg, white 50%, white 50%, white 50%, white 10%);
     animation: slidernbw 5s linear infinite;
     color: #000;
    }

@@ -5,9 +5,9 @@ function Mariage(){
         <ServicesStylePage>
         <div>
             <p className="picture_left">
-                <img className="picture" src={require('../../assets/mariage_picture.jpg')} alt="mariage" />
-                <img className="picture" src={require('../../assets/mariage_picture.jpg')} alt="mariage" />
-                <img className="picture" src={require('../../assets/mariage_picture.jpg')} alt="mariage" />
+                <img className="picture" src={require('../../assets/mariage_picture1.jpg')} alt="mariage" />
+                <img className="picture" src={require('../../assets/mariage_picture2.jpg')} alt="mariage" />
+                <img className="picture" src={require('../../assets/mariage_picture3.jpg')} alt="mariage" />
             </p>
             <p id="mariage_txt" className="txt_right">
             Vous souhaitez garder un souvenir mémorable d'un moment qui devrait rester comme l'un des plus beaux

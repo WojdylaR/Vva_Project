@@ -9,8 +9,8 @@ vertical-align: middle;
 
 .picture_left{
     left: 3%;
-    position: relative;
-    width: 37%;
+        position: relative;
+        width: 37%;
     line-height: 2;
     float: left;
 }

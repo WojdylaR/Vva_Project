@@ -20,7 +20,7 @@ animation-duration: 0.75s;
   position: relative;
   width: 92%;
   left: 3%;
-  top: 40px;
+  top: 100px;
 }
 
 height: 800px;

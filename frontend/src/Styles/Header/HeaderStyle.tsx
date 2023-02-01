@@ -43,6 +43,20 @@ div{
     color: grey;
 }
 
+#logo_social{
+        position: absolute;
+        width: 200px;
+        left: 90%;
+        top: 30%;
+}
+
+.logo_soc{
+    position: realtive;
+    z-index: 2;
+    width: 30px;
+    margin-left: 10px;
+}
+
 #Home{
     color: ${(props) => props.loca === "/" ? "white" : "white"};
 }
