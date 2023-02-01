@@ -46,7 +46,7 @@ div{
 #logo_social{
         position: absolute;
         width: 200px;
-        left: 90%;
+        left: 89%;
         top: 30%;
 }
 
