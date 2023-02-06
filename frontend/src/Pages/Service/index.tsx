@@ -10,7 +10,7 @@ import {Link} from "react-router-dom"
 
 function Service(){
     const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
-        e.currentTarget.pause();
+        e.currentTarget.play();
 
       };
 
@@ -25,27 +25,27 @@ function Service(){
             <div id="menu">
                 <nav>
                     <Link className="link" id="mariage" to="/service/mariage">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop  className="img" src={require('../../assets/mariage_video.mp4')} />
+                        <video autoPlay muted loop  className="img" src={require('../../assets/mariage_video.mp4')} />
                         <span className="tittle_link" >
                             Mariage</span></Link>
                     <Link className="link" id="mariage" to="/service/corporate">
-                        <video  onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} className="img" muted loop  src={require('../../assets/corporate_video.mp4')} />
+                        <video  autoPlay className="img" muted loop  src={require('../../assets/corporate_video.mp4')} />
                         <span className="tittle_link" >
                             Corporate</span></Link>
                     <Link className="link" id="mariage" to="/service/evenement">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/evenement_video.mp4')} />
+                        <video autoPlay muted loop className="img" src={require('../../assets/evenement_video.mp4')} />
                         <span className="tittle_link" >
                             Evenement</span></Link>
                             <Link className="link" id="mariage" to="/service/fiction">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/fiction_video.mp4')} />
+                        <video autoPlay muted loop className="img" src={require('../../assets/fiction_video.mp4')} />
                         <span className="tittle_link" >
                             Fiction</span></Link>
                             <Link className="link" id="mariage" to="/service/documentaire">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/captation_video.mp4')} />
+                        <video autoPlay muted loop className="img" src={require('../../assets/captation_video.mp4')} />
                         <span className="tittle_link" >
                             Documentaire</span></Link>
                             <Link className="link" id="mariage" to="/service/patrimoine">
-                        <video onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} muted loop className="img" src={require('../../assets/immobilier_video.mp4')} />
+                        <video autoPlay muted loop className="img" src={require('../../assets/immobilier_video.mp4')} />
                         <span className="tittle_link" >
                             Patrimoine</span ></Link>
                     

@@ -15,7 +15,8 @@ const location = useLocation();
                     <Link className="link" id="Home"to="/">Home</Link><span> </span>
                     <Link className="link" id="Service" to="/service">Services</Link><span> </span>
                     <Link className="link" id="RealPerso" to="/realperso">Real</Link><span> </span>
-                    <Link className="link" id="Dons" to="/don">Dons</Link><span> </span> 
+                    <Link className="link" id="Dons" to="/don">Dons</Link><span> </span>
+                    <Link className="link" id="Contact" to="/contact">Contact</Link>
                 </nav>
                 <SocialLogo />
                 

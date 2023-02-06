@@ -7,6 +7,7 @@ top: 80px;
 height: 800px;
 vertical-align: middle;
 
+
 .picture_left{
     left: 3%;
         position: relative;

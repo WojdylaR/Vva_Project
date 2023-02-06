@@ -78,6 +78,10 @@ div{
     color: ${(props) => props.loca === "/don" ? "#B22222" : "white"};
 }
 
+#Contact{
+    color: ${(props) => props.loca === "/contact" ? "#B22222" : "white"};
+}
+
 #reseau{
 }
 

@@ -21,7 +21,7 @@ position: relative;
 
 #video{
   position: relative;
-  top:30px;
+  top:50px;
   width: 100%;
 }
 
@@ -39,7 +39,12 @@ position: relative;
 
 #txt{
   position: relative;
-  top: 50px;
+  top: 30px;
+  width: 60%;
+  left: 20%;
+  font-size: 125%;
+  border-radius: 10px;
+  background-image: url("../../asset/background_img.jpg");
 }
       `
 
