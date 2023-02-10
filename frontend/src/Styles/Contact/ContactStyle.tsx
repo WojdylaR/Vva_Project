@@ -90,7 +90,7 @@ const ContactStyle = styled.nav`
     width: 40%;
 }
 
-.champTxt {
+#champTxt {
     position: relative;
     height: 250px;
     width: 500px;
@@ -137,9 +137,18 @@ button {
 
 #second_div{
     position:relative;
+    top: 50px;
     text-align: center;
-    width:50%;
-    left:50%;
+    width: 50%;
+    float: right;
+    right: 5%;
+    line-height: 2.3;
+    font-size: 150%;
+}
+
+#txt_scnd_div{
+    position: relative;
+    top 150px;
 }
 
 animation-duration: 0.75s;
@@ -156,6 +165,10 @@ animation-duration: 0.75s;
             opacity: 1;
         }
       }
+
+
+
+
 `
 
 export default ContactStyle

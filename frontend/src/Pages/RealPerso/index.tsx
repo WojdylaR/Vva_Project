@@ -24,12 +24,18 @@ function RealPerso(){
         <RealPersostyle>
         <div id="realperso">
             <p id="txt">
-            Alors que Va Voir Ailleurs a un peu plus d'un an maintenant, de nombreuses vidéos en tous genres ont déjà vu le jour: reportages, court-métrages, vidéos humoristiques, publicités et bien d'autres encore... 
-Ce qu'il faut savoir, c'est que nous sommes  deux jeunes passionnés autodidactes. Nous avons forgé notre expérience au fur et à mesure de nos réalisations avec la plupart du temps du matériel de basse qualité mais toujours avec la même ligne de conduite, faire rentrer les gens dans notre univers tout en gardant ce même non-conformisme. 
-
-À contrario donc de la plupart des vidéastes à l'heure actuelle, nous ne cachons pas que filmer pour autrui nous plaît mais que nous préférons bien évidemment prendre en charge et échafauder un projet de A à Z. 
-Passionnés par l'humain, l'écologie, la politique ou encore les enjeux sociétaux, nous voulons mettre en lumière ce qui nous anime tous les jours. Fort de plusieurs voyages à travers le monde, nous aimons être au coeur des sujets d'actualités et étant avides de savoir, nous nous intéressons à tous types de sujets. Notre marque de fabrique? Notre humour, certains seront hermétiques d'autres sympatisants, tout dépend si vous aimez le conformisme ou non. Personnellement on a déjà choisi notre camp et nous ne sommes pas prêts de changer. 
-Alors qu'est que vous attendez pour embarquer dans cette folle aventure avec nous ?
+            Va Voir Ailleurs a un peu plus d'un an maintenant, de <span className="red">nombreuses</span> vidéos  ont déjà vu le 
+            jour: reportages, court-métrages, vidéos humoristiques, publicités et bien d'autres encore... 
+            Nous nous essayons encore à <span className="red">plusieurs</span> formats afin de trouver notre "scope" de réalisation. 
+            Nous avons forgé notre <span className="red">expérience</span> au fur et à mesure de nos réalisations avec la même ligne de 
+            conduite : mettre en lumière des projets philanthropiques, être au coeur de l'actualité ou 
+            bien suivre des gens extraordinaires tout en gardant une touche de <span className="red">non-conformisme</span>. En 
+            parallèle de nos prestations de vidéos pour autrui, nous proposons nos <span className="red">réalisations</span> ( que vous pouvez 
+            suivre sur nos réseaux). Passionnés par l'humain, l'écologie, la politique ou encore les enjeux 
+            sociétaux, nous voulons mettre en <span className="red">lumière</span> ce qui nous anime tous les jours.  Notre marque de fabrique? 
+            Notre <span className="red">humour</span>, certains seront hermétiques d'autres sympatisants, tout dépend si vous 
+            aimez le conformisme ou non. Personnellement on a déjà choisi notre camp et nous ne sommes 
+            pas prêts de changer. Alors qu'est que vous attendez pour embarquer dans cette <span className="red">aventure</span> avec nous ?
             </p>
             <p id="video">
                 <span id="video1"><YoutubeEmbed id="video1" url={video1.url} width={video1.width}/></span>

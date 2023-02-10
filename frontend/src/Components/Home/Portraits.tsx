@@ -7,6 +7,7 @@ function Portraits(){
                 <h4 id="felix_prenom" className="prenom_haut">
                     Félix
                 </h4>
+                <a id="linkedin_fel" className="linkedin_haut" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img  src={require('../../assets/logo_linkedin.png')} alt="logo_linkedin" /></a>
                 <h4 id="nom_felix" className="nom_haut">
                     Co-Fondateur
                 </h4>
@@ -16,6 +17,7 @@ function Portraits(){
                 <h4 id="prenom_pierre" className="prenom_haut">
                     Pierre
                 </h4>
+                <a id="linkedin_pierre" className="linkedin_haut" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img  src={require('../../assets/logo_linkedin.png')} alt="logo_linkedin" /></a>
                 <h4 id="nom_pierre" className="nom_haut">
                     Co-Fondateur
                 </h4>
@@ -25,6 +27,7 @@ function Portraits(){
                 <h4 id="prenom_ronan" className="prenom_haut">
                     Ronan
                 </h4>
+                <a id="linkedin_ronan" className="linkedin_haut" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img  src={require('../../assets/logo_linkedin.png')} alt="logo_linkedin" /></a>
                 <h4 id="nom_ronan" className="nom_haut">
                     Développeur
                 </h4>
@@ -35,7 +38,7 @@ function Portraits(){
                 <img id="sacco_photo" className="photo" src={require('../../assets/sacco.jpeg')} alt="Sacco" />
                 <h4 id="sacco_prenom" className="prenom_bas">
                     Clément
-                </h4>
+                </h4><a id="linkedin_sacco" className="linkedin_bas" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img  src={require('../../assets/logo_linkedin.png')} alt="logo_linkedin" /></a>
                 <h4 id="nom_sacco" className="nom_bas">
                     Graphiste
                 </h4>
@@ -45,6 +48,7 @@ function Portraits(){
                 <h4 id="prenom_liam" className="prenom_bas">
                     Liam
                 </h4>
+                <a id="linkedin_liam" className="linkedin_bas" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img  src={require('../../assets/logo_linkedin.png')} alt="logo_linkedin" /></a>
                 <h4 id="nom_liam" className="nom_bas">
                     Cadreur
                 </h4>
@@ -54,6 +58,7 @@ function Portraits(){
                 <h4 id="prenom_baz" className="prenom_bas">
                     Bazil
                 </h4>
+                <a id="linkedin_anne_so" className="linkedin_bas" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img  src={require('../../assets/logo_linkedin.png')} alt="logo_linkedin" /></a>
                 <h4 id="nom_bazil" className="nom_bas">
                     PDG
                 </h4>

@@ -3,6 +3,8 @@ import TextToSend from "../../Components/Contact/TextToSend";
 import Footer from "../../Components/Footer";
 import ContactStyle from "../../Styles/Contact/ContactStyle";
 
+
+
 function Contact(){
     return (
         <ContactStyle>
@@ -33,7 +35,8 @@ function Contact(){
                     <p id="obli"><span className="red">* champs obligatoire</span></p></p>
             </div>
             <div id="second_div">
-                Ceci et la second div
+            <h2>Un projet où une envie de vidéo ?</h2><p id="txt_scnd_div">Envoyez-nous un message pour que nous 
+            puissions y réfléchir brièvement avec notre équipe de production, on vous rappelle et on en discute ? 🙂</p>
             </div>
         </ContactStyle>
     )

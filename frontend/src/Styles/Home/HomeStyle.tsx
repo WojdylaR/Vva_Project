@@ -248,6 +248,51 @@ const HomeStyle = styled.nav`
     opacity: 1;
 }
 
+.linkedin_haut{
+    position: absolute;
+    opacity: 0;
+    width: 28.66%;
+    z-index:1;
+    left:3%;
+    text-align: center;
+    top:46%;
+}
+
+
+
+#linkedin_pierre{
+    left:34.66%;
+}
+
+#linkedin_liam{
+    left:34.66%;
+}
+
+#linkedin_ronan{
+    left:66.32%;
+}
+
+#linkedin_anne_so{
+    left:66.32%;
+}
+
+.linkedin_bas{
+    position: absolute;
+    opacity: 0;
+    width: 28.66%;
+    z-index:1;
+    left:3%;
+    text-align: center;
+    top:93%;
+}
+.photo:hover ~ .linkedin_haut{
+    opacity: 1;
+}
+
+.photo:hover ~ .linkedin_bas{
+    opacity: 1;
+}
+
 /******************************* Confiance ***************************/
 
 #confiance{
