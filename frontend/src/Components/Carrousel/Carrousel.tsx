@@ -1,24 +1,56 @@
-import CarrouselStyle from "../../Styles/Carrousel/CarrouselStyle"
+import React, {useState, ReactDOM} from 'react';
+import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
+import CarrouselStyle from '../../Styles/Carrousel/CarrouselStyle';
+import interfaceCarrousel from './interfaceCarrousel';
+import InterfaceCarrousel from './interfaceCarrousel';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
-function Carrousel() {
+const CARDS = 10;
+const MAX_VISIBILITY = 3;
+
+const Card = ({title}:any, {content}:any) => (
+  <div className='card'>
+    <h2>{title}</h2>
+    <p>{content}</p>
+  </div>
+);
+
+
+const Carousel = ({children}:any) => {
+  const [active, setActive] = useState(2);
+  const count = React.Children.count(children);
+  
+  return (
+    <div className='carousel'>
+      {active > 0 && <button className='nav left' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline/></button>}
+      {React.Children.map(children, (child, i) => (
+        <div className='card-container' style={{
+            }}>
+          {child}
+        </div>
+      ))}
+      {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
+    </div>
+  );
+};
+
+function AllCarrousel (){
+    const [carrouselState, setCarrouselState] = useState<interfaceCarrousel>()
+    const [test, setTest] = useState("green")
+    
+
+
   return(
-    <CarrouselStyle>
-    <section id="slideshow">
-			  <div className="entire-content">
-				  <div className="content-carrousel">
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/758733/pexels-photo-758733.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/21261/pexels-photo.jpg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/567973/pexels-photo-567973.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/776653/pexels-photo-776653.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/54630/japanese-cherry-trees-flowers-spring-japanese-flowering-cherry-54630.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/131046/pexels-photo-131046.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/302515/pexels-photo-302515.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-					  <figure className="shadow"><img src="https://images.pexels.com/photos/301682/pexels-photo-301682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-			    	<figure className="shadow"><img src="https://images.pexels.com/photos/933054/pexels-photo-933054.jpeg?w=940&h=650&auto=compress&cs=tinysrgb"/></figure>
-		    </div>
-	    </div>
-  </section>
-  </CarrouselStyle>
+  <div className='app'>
+    <CarrouselStyle active={test}>
+    <Carousel>
+      {[...new Array(CARDS)].map((_, i) => (
+        <Card title={'Card ' + (i + 1)} content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+      ))}
+    </Carousel>
+    </CarrouselStyle>
+  </div>
 )}
 
-export default Carrousel
+export default AllCarrousel

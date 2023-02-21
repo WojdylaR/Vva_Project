@@ -1,13 +1,3 @@
-import React from "react";
-import PropTypes from "prop-types";
-import internal from "stream";
-
-interface VideoInfo{
-  url: string;
-  width: number;
-  height: number;
-}
-
 function YoutubeEmbed(props:any) {
   return (
   <div className="video-responsive">
