@@ -1,12 +1,12 @@
 import ServicesStylePage from "../../Styles/Services/ServiceStylePage"
-import Carrousel from "../Carrousel/Carrousel"
+import AllCarrousel from "../Carrousel/Carrousel"
 
 function Corporate () {
     return(
         <ServicesStylePage>
         <div>
             <p className="picture_left">
-                <Carrousel />
+                <AllCarrousel />
             </p>
             <p id="corporate_txt" className="txt_right">
                 Si vous souhaitez améliorer votre communication et augmenter votre visibilité 
