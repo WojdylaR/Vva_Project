@@ -17,10 +17,9 @@ interface CustomCSSProperties extends CSSProperties {
 const CARDS = 10;
 const MAX_VISIBILITY = 3;
 
-const Card = ({title}: any, {content}:any) => (
+const Card = () => (
   <div className='card'>
-    <h2>{title}</h2>
-    <p>{content}</p>
+    <img className="picture" src={require('../../assets/fiction1.jpg')} alt="mariage" />
   </div>
 );
 
@@ -30,12 +29,11 @@ const Carousel = ({children}:any) => {
   
   return (
     <div className='carousel'>
-      {active > 0 && <button className='nav left' onClick={() => {setActive(active - 1);
+      {active < count - 1 && <button className='nav left' onClick={() => {setActive(active + 1);
 }}
             ><TiChevronLeftOutline/></button>}
       {React.Children.map(children, (child, i) => (
         <div
-        key={i}
         className="card-container"
         style={{
           '--direction': i - active,
@@ -51,7 +49,7 @@ const Carousel = ({children}:any) => {
           {child}
         </div>
       ))}
-      {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline/></button>}
+      {active > 0 && <button className='nav right' onClick={() => setActive(i => i - 1)}><TiChevronRightOutline/></button>}
     </div>
   );
 };
@@ -60,7 +58,7 @@ const AllCarrousel = () => (
   <div className='allCarroussel'>
     <Carousel>
       {[...new Array(CARDS)].map((_, i) => (
-        <Card title={'Card ' + (i + 1)} content='Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'/>
+        <Card />
       ))}
     </Carousel>
   </div>

@@ -1,7 +1,7 @@
-$color-purple: #8B5CF6;
-$color-pink: #EC4899;
+
+
 $color-gray: #9CA3AF;
-$color-black: #1F2937;
+
 $card-size: 23rem;
 
 
@@ -10,7 +10,8 @@ $card-size: 23rem;
 }
 
 .carousel {
-  position: relative;
+  top: 100px;
+  position: absolute;
   width: $card-size;
   height: $card-size;
   perspective: 500px;
@@ -34,19 +35,10 @@ $card-size: 23rem;
   width: 100%;
   height: 100%;
   padding: 2rem;
-  background-color: hsl(280deg, 40%, calc(100% - var(--abs-offset) * 50%));
   border-radius: 1rem;
-  color: $color-gray;
   text-align: justify;
   transition: all 0.3s ease-out;
   
-  h2 {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-    margin: 0 0 0.7em;
-    color: $color-black;
-  }
   
   p, h2 {
     transition: all 0.3s ease-out;
@@ -61,7 +53,7 @@ $card-size: 23rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 50%;
+  top: 20%;
   z-index: 2;
   cursor: pointer;
   user-select: none;

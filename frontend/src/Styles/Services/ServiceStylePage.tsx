@@ -2,17 +2,15 @@ import styled from "styled-components";
 
 const ServicesStylePage = styled.nav `
 
-position: relative;
-top: 80px;
+    position: relative;
+    top: 80px;
 height: 800px;
 vertical-align: middle;
 
 
 .picture_left{
-    left: 3%;
+    left: 10%;
         position: relative;
-        width: 37%;
-    line-height: 2;
     float: left;
 }
 
