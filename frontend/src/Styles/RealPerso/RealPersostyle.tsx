@@ -16,35 +16,43 @@ const RealPersostyle = styled.nav`
         }
       }
 
-height: 800px;
-position: relative;
-
-#video{
+#realperso{
   position: relative;
-  top:50px;
-  width: 100%;
+  top :30px;
 }
-
-#video1{
-  position: relative;
-  float: left;
-  left: 1%;
-}
-
-#video2{
-  position: relative;
-  right: -3%;
-}
-
 
 #txt{
   position: relative;
-  top: 30px;
-  width: 60%;
-  left: 20%;
+  width: 80%;
+  left: 10%;
   font-size: 125%;
   border-radius: 10px;
   background-image: url("../../asset/background_img.jpg");
+}
+
+#cate{
+  position: relative;
+  left: 10%;
+  top 30px;
+}
+
+.video{
+  width:300px;
+  position: relative;
+  margin-left: 25px;
+}
+
+.video:hover{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.video:active{
+  position: fixed;
+  left: 5%;
+  width: 90%;
+  z-index: 2;
+  top: 10%;
 }
       `
 

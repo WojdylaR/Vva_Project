@@ -48,7 +48,7 @@ margin-left: 50px;
 .img:hover{
   filter: blur(0px);
   opacity: 1;
-  width: 13.20%;
+  transform: scale(1.2);
 }
 
 .img:hover ~ .tittle_link{

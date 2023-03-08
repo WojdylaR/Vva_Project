@@ -8,23 +8,17 @@ height: 800px;
 vertical-align: middle;
 
 
-.picture_left{
-    left: 10%;
-        position: relative;
-    float: left;
-}
-
 .picture{
     width: 100%;
 }
 
-.txt_right{
+.txt{
     position: relative;
-    width: 50%;
-    float: right;
-    right: 5%;
+    width: 70%;
+    left: 15%;
     line-height: 2.3;
     font-size: 150%;
+    top: 450px;
 }
 
 #mariage_txt{

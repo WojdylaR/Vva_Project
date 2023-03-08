@@ -1,23 +1,23 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../../Components/Footer";
 import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
 import YoutubeEmbed from "../../Components/RealPerso/YoutubeEmbed";
 
 function RealPerso(){
+    let play = 0;
+    const [width, setWidth] = useState('300px')
 
-    interface VideoInfo{
-        url: string;
-        width: number;
-    }
-
-    const video1:VideoInfo = {
-        url:"xMgrlOwA0II",
-        width: 857,
-    }
-
-    const video2:VideoInfo = {
-        url:"ldtu-tBBwNw",
-        width: 857  ,
+    const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
+        if (play === 0)
+        {   
+            e.currentTarget.play();
+            play = 1;
+            console.log(e.currentTarget.play())
+        } else {
+            e.currentTarget.load();
+            play = 0;
+            console.log(e.currentTarget.pause())
+        }
     }
 
     return (
@@ -36,12 +36,18 @@ function RealPerso(){
             Notre <span className="red">humour</span>, certains seront hermétiques d'autres sympatisants, tout dépend si vous 
             aimez le conformisme ou non. Personnellement on a déjà choisi notre camp et nous ne sommes 
             pas prêts de changer. Alors qu'est que vous attendez pour embarquer dans cette <span className="red">aventure</span> avec nous ?
+            </p>            
+        </div>
+        <div id="cate">
+            <p>
+                <h2 className="titre_cate">- Nos dernières réalisations : </h2>
+                <video loop className="video" onClick={handleOnMouseOut} poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/salon_agri_presentation.mp4')} />
+                <video  loop className="video" onClick={handleOnMouseOut} poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/galerien.mp4')} />  
             </p>
-            <p id="video">
-                <span id="video1"><YoutubeEmbed id="video1" url={video1.url} width={video1.width}/></span>
-                <span id="video2"><YoutubeEmbed url={video2.url} width={video2.width}/></span>
+            <p>
+                <h2 className="titre_cate">- Évènementiels :</h2>
+                <video loop className="video" onClick={handleOnMouseOut} style={{width: width}}poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/salon_agri_presentation.mp4')} />
             </p>
-            
         </div>
         </RealPersostyle>
     )
