@@ -10,6 +10,7 @@ function Documentaire() {
                 <img className="picture" src={require('../../assets/documentaire3.jpg')} alt="mariage" />
             </p>
             <p id="documentaire_txt" className="txt_right">
+                <h1>Documentaire.</h1>
             Si nous proposons principalement à l'heure actuelle des réalisations personnelles de notre propres 
             documentaires, nous sommes à l'écoute et prêts à vous aider dans l'un de vos projets !<br />
             Nous pouvons également vous proposer des vidéos sur-mesures de vos vacances de rêve pour 

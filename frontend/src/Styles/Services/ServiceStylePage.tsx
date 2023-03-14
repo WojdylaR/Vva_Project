@@ -2,27 +2,38 @@ import styled from "styled-components";
 
 const ServicesStylePage = styled.nav `
 
-    position: relative;
-    top: 80px;
-height: 800px;
-vertical-align: middle;
-
-
 .picture{
-    width: 100%;
+    position: relative;
+    width: 50%;
+    left: 0;
+    top : 10px;
+    margin-bot: 0;
 }
 
 .txt{
-    position: relative;
-    width: 70%;
-    left: 15%;
+    position: absolute;
     line-height: 2.3;
-    font-size: 150%;
-    top: 450px;
+    width: 40%;
+    margin-left:0;
+    left: 55%;
+    top :0%;
 }
 
 #mariage_txt{
     top: 50px;
+}
+
+h1{
+    position: relative;
+    width: 50%;
+    font-size: 250%;
+    font-weight: 500;
+    border-bottom: 2px solid currentColor;
+}
+.sous_txt{
+    position: relative;
+    top: 50px;
+    font-size: 125%;
 }
 
 `

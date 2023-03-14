@@ -1,36 +1,36 @@
-Montserrat Variable Font
-========================
+Chivo Variable Font
+===================
 
-This download contains Montserrat as both variable fonts and static fonts.
+This download contains Chivo as both variable fonts and static fonts.
 
-Montserrat is a variable font with this axis:
+Chivo is a variable font with this axis:
   wght
 
 This means all the styles are contained in these files:
-  Montserrat-VariableFont_wght.ttf
-  Montserrat-Italic-VariableFont_wght.ttf
+  Chivo-VariableFont_wght.ttf
+  Chivo-Italic-VariableFont_wght.ttf
 
 If your app fully supports variable fonts, you can now pick intermediate styles
 that aren’t available as static fonts. Not all apps support variable fonts, and
-in those cases you can use the static font files for Montserrat:
-  static/Montserrat-Thin.ttf
-  static/Montserrat-ExtraLight.ttf
-  static/Montserrat-Light.ttf
-  static/Montserrat-Regular.ttf
-  static/Montserrat-Medium.ttf
-  static/Montserrat-SemiBold.ttf
-  static/Montserrat-Bold.ttf
-  static/Montserrat-ExtraBold.ttf
-  static/Montserrat-Black.ttf
-  static/Montserrat-ThinItalic.ttf
-  static/Montserrat-ExtraLightItalic.ttf
-  static/Montserrat-LightItalic.ttf
-  static/Montserrat-Italic.ttf
-  static/Montserrat-MediumItalic.ttf
-  static/Montserrat-SemiBoldItalic.ttf
-  static/Montserrat-BoldItalic.ttf
-  static/Montserrat-ExtraBoldItalic.ttf
-  static/Montserrat-BlackItalic.ttf
+in those cases you can use the static font files for Chivo:
+  static/Chivo-Thin.ttf
+  static/Chivo-ExtraLight.ttf
+  static/Chivo-Light.ttf
+  static/Chivo-Regular.ttf
+  static/Chivo-Medium.ttf
+  static/Chivo-SemiBold.ttf
+  static/Chivo-Bold.ttf
+  static/Chivo-ExtraBold.ttf
+  static/Chivo-Black.ttf
+  static/Chivo-ThinItalic.ttf
+  static/Chivo-ExtraLightItalic.ttf
+  static/Chivo-LightItalic.ttf
+  static/Chivo-Italic.ttf
+  static/Chivo-MediumItalic.ttf
+  static/Chivo-SemiBoldItalic.ttf
+  static/Chivo-BoldItalic.ttf
+  static/Chivo-ExtraBoldItalic.ttf
+  static/Chivo-BlackItalic.ttf
 
 Get started
 -----------

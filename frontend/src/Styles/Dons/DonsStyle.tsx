@@ -21,7 +21,6 @@ const DonsSyle = styled.nav`
   top: 50px;
   position: relative;
   text-align: center;
-  font-family: optima;
   font-size: 200%;
   height: 850px;
   line-height: 0.5;

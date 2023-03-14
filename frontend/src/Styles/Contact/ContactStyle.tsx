@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 const ContactStyle = styled.nav`
+position: relative;
+top: 75px;
+
 #all_input{
     position: relative;
     font-family: optima;
@@ -12,8 +15,9 @@ const ContactStyle = styled.nav`
 .tittle_contact {
     position :relative;
     width: 100%;
+    top: -35px;
     font-size: 200%;
-    font-weight: 400;
+    font-weight: 100;
 }
 
 #obli{
@@ -24,6 +28,10 @@ const ContactStyle = styled.nav`
 
 #info {
     
+}
+
+h2{
+    font-weight:300;
 }
 
 #info input {
@@ -137,7 +145,7 @@ button {
 
 #second_div{
     position:relative;
-    top: 50px;
+    top: 100px;
     text-align: center;
     width: 50%;
     float: right;
@@ -148,7 +156,7 @@ button {
 
 #txt_scnd_div{
     position: relative;
-    top 150px;
+    top 100px;
 }
 
 animation-duration: 0.75s;

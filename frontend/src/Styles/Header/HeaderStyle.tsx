@@ -12,7 +12,7 @@ div{
     height: 90px;
     width: 100%;
     left: 0;
-    font-size:120%;
+    font-size:100%;
     z-index: 1;
     backdrop-filter: blur(5px);
 }
@@ -25,15 +25,16 @@ div{
 
 .links{
     position: absolute;
-    top: 40%;
+    top: 10%;
     width: 100%;
     text-align: center;
     word-spacing: 100px;
+    
 }
 
 .link{
+    font-weight: 100;
     text-decoration:none;
-    
 }
 
 .link:hover{

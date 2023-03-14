@@ -1,5 +1,4 @@
 import React, {useState} from 'react';
-import ReactDOM from 'react-dom';
 import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
 import { CSSProperties } from 'react';
 import '../../Styles/Carrousel/CarrouselStyle.scss'
@@ -19,7 +18,7 @@ const MAX_VISIBILITY = 3;
 
 const Card = () => (
   <div className='card'>
-    <img className="picture" src={require('../../assets/fiction1.jpg')} alt="mariage" />
+    <img className="picture" src={require('../../assets/carousel_test.png')} alt="mariage" />
   </div>
 );
 
@@ -45,8 +44,7 @@ const Carousel = ({children}:any) => {
             'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block', // <-- ajout de la propriété "--offset"
         } as CustomCSSProperties} // <-- spécification du type "CustomCSSProperties"
       >
-          {console.log(i === active ? 1 : 0)}
-          {child}
+          {i === active ? child : ""}
         </div>
       ))}
       {active > 0 && <button className='nav right' onClick={() => setActive(i => i - 1)}><TiChevronRightOutline/></button>}
@@ -55,7 +53,7 @@ const Carousel = ({children}:any) => {
 };
 
 const AllCarrousel = () => (
-  <div className='allCarroussel'>
+  <div className="allCarroussel">
     <Carousel>
       {[...new Array(CARDS)].map((_, i) => (
         <Card />

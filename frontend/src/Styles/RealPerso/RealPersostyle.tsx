@@ -32,8 +32,8 @@ const RealPersostyle = styled.nav`
 
 #cate{
   position: relative;
-  left: 10%;
   top 30px;
+  text-align: center;
 }
 
 .video{

@@ -40,12 +40,12 @@ function RealPerso(){
         </div>
         <div id="cate">
             <p>
-                <h2 className="titre_cate">- Nos dernières réalisations : </h2>
+                <h2 className="titre_cate">Nos dernières réalisations : </h2>
                 <video loop className="video" onClick={handleOnMouseOut} poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/salon_agri_presentation.mp4')} />
                 <video  loop className="video" onClick={handleOnMouseOut} poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/galerien.mp4')} />  
             </p>
             <p>
-                <h2 className="titre_cate">- Évènementiels :</h2>
+                <h2 className="titre_cate">Évènementiels :</h2>
                 <video loop className="video" onClick={handleOnMouseOut} style={{width: width}}poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/salon_agri_presentation.mp4')} />
             </p>
         </div>

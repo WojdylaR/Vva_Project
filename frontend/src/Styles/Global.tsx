@@ -11,10 +11,17 @@ const GlobalStyle = createGlobalStyle`
     font-style: normal;
 }
 
-div {
-    font-family: Montserrat, sans-serif;
+h1 {
+    font-family: "Chivo";
+    
 }
 
+h2{
+    font-family: Roboto;
+ }
+ div{
+    font-family: Optima;
+ }
 `
 
 export default GlobalStyle
