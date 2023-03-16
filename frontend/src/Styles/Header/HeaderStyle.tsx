@@ -28,12 +28,12 @@ div{
     top: 10%;
     width: 100%;
     text-align: center;
-    word-spacing: 100px;
+    word-spacing: 80px;
     
 }
 
 .link{
-    font-weight: 100;
+    font-weight: 300;
     text-decoration:none;
 }
 

@@ -24,18 +24,15 @@ function RealPerso(){
         <RealPersostyle>
         <div id="realperso">
             <p id="txt">
-            Va Voir Ailleurs a un peu plus d'un an maintenant, de <span className="red">nombreuses</span> vidéos  ont déjà vu le 
-            jour: reportages, court-métrages, vidéos humoristiques, publicités et bien d'autres encore... 
-            Nous nous essayons encore à <span className="red">plusieurs</span> formats afin de trouver notre "scope" de réalisation. 
-            Nous avons forgé notre <span className="red">expérience</span> au fur et à mesure de nos réalisations avec la même ligne de 
-            conduite : mettre en lumière des projets philanthropiques, être au coeur de l'actualité ou 
-            bien suivre des gens extraordinaires tout en gardant une touche de <span className="red">non-conformisme</span>. En 
-            parallèle de nos prestations de vidéos pour autrui, nous proposons nos <span className="red">réalisations</span> ( que vous pouvez 
-            suivre sur nos réseaux). Passionnés par l'humain, l'écologie, la politique ou encore les enjeux 
-            sociétaux, nous voulons mettre en <span className="red">lumière</span> ce qui nous anime tous les jours.  Notre marque de fabrique? 
-            Notre <span className="red">humour</span>, certains seront hermétiques d'autres sympatisants, tout dépend si vous 
-            aimez le conformisme ou non. Personnellement on a déjà choisi notre camp et nous ne sommes 
-            pas prêts de changer. Alors qu'est que vous attendez pour embarquer dans cette <span className="red">aventure</span> avec nous ?
+            <span className="trait_horizontal_top" />
+            <span className="trait_vertical_top" />
+            Nous avons forgé notre expérience au fur et à mesure de nos réalisations avec la même ligne de conduite : mettre 
+            en lumière des projets philanthropiques, être au coeur de l'actualité ou bien suivre des gens extraordinaires tout 
+            en gardant une touche de non-conformisme.<br />Passionnés par l'humain, l'écologie, la politique ou encore les 
+            enjeux sociétaux, nous voulons mettre en images ce qui nous anime tous les jours. 
+            Alors qu'est que vous attendez pour embarquer dans cette aventure avec nous ?
+            <span className="trait_horizontal_bot"   ></span>
+            <span className="trait_vertical_bot" />
             </p>            
         </div>
         <div id="cate">

@@ -32,7 +32,7 @@ h1{
 }
 .sous_txt{
     position: relative;
-    top: 50px;
+    top: 85px;
     font-size: 125%;
 }
 

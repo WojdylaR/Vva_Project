@@ -19,6 +19,8 @@ const PageStyle = styled.nav`
         left: 3%;
       }
 
+
+      
 #bordertoppa{
   position: fixed;
         border-top: 4px solid white ;
@@ -29,11 +31,6 @@ const PageStyle = styled.nav`
     }
 
 
-.red {
-  -webkit-text-stroke: 0px;
-  -webkit-text-stroke-color: ;
-  color: #B22222;
-}
 
 `
 

@@ -10,6 +10,8 @@ function Contact(){
     const [prenom, setPrenom] = useState("");
     const [mail, setMail] = useState("");
     const [numero, setNumero] = useState("");
+    const [adresse, setAdresse] = useState("")
+    const [entreprise, setEntreprise] = useState("")
 
     const API_KEY= "17d7fcce8d579965da3a47743b75490f40c33e377379cdad93cdfadb7f547595"
 
@@ -18,7 +20,7 @@ function Contact(){
         console.log(message)
     }
     const sendMail = () => {
-        const allMessage = "Nom: " + nom + " Prenom:" + prenom + " Mail: " + mail + " Numéro: " + numero + " Message:" + message;
+        const allMessage = "Nom: " + nom + ", Prenom:" + prenom + ", Mail: " + mail + ", Numéro: " + numero + ", Message:" + message + ", Adresse: " + adresse + ", Entreprise: " + entreprise;
         axios({
             method: "POST",
             url: `https://api.mailslurp.com/sendEmail?apiKey=${API_KEY}`,
@@ -41,20 +43,29 @@ function Contact(){
                 <div id="info">
                     <span className="top"><span className="info">
                         <input type="text" autoComplete="off" onChange={e => {setPrenom(e.target.value)}}/>
-                        <label className="lab" htmlFor="prenom">Prenom</label>
+                        <label className="lab" htmlFor="prenom">Prenom<span className="red">*</span></label>
                     </span>
                     <span className="info">
                         <span className="right"><input type="text" autoComplete="off" onChange={e => {setNom(e.target.value)}}/>
-                        <label className="lab" htmlFor="nom">Nom</label></span>
+                        <label className="lab" htmlFor="nom">Nom<span className="red">*</span></label></span>
                     </span></span>
-                    <br />
-                    <span className="info"><span id="bot">
+                    <span className="brlarge"></span>
+                    <span className="info"><span id="mid">
                         <input type="text" autoComplete="off" onChange={e => {setMail(e.target.value)}}/>
-                        <label className="lab" htmlFor="mail">Mail</label></span>
+                        <label className="lab" htmlFor="mail">Mail<span className="red">*</span></label></span>
+                    </span>
+                    <span className="info" ><span id="mid">
+                        <span className="right"><input type="text" autoComplete="off" onChange={e => {setNumero(e.target.value)}}/>
+                        <label className="lab" htmlFor="telephone">Téléphone<span className="red">*</span></label></span></span>
+                    </span>
+                    <span className="brlarge"></span>
+                    <span className="info"><span id="bot">
+                        <input type="text" autoComplete="off" onChange={e => {setAdresse(e.target.value)}}/>
+                        <label className="lab" htmlFor="mail">Adresse</label></span>
                     </span>
                     <span className="info" ><span id="bot">
-                        <span className="right"><input type="text" autoComplete="off" onChange={e => {setNumero(e.target.value)}}/>
-                        <label className="lab" htmlFor="telephone">Téléphone</label></span></span>
+                        <span className="right"><input type="text" autoComplete="off" onChange={e => {setEntreprise(e.target.value)}}/>
+                        <label className="lab" htmlFor="telephone">Entreprise</label></span></span>
                     </span>
                     
                 </div>
@@ -67,7 +78,7 @@ function Contact(){
                     <p id="obli"><span className="red">* champs obligatoire</span></p>
             </div>
             <div id="second_div">
-            <h2>Un projet où une envie de vidéo ?</h2><p id="txt_scnd_div">Envoyez-nous un message pour que nous 
+            <h2 className="scnd_tittle">Un projet où une envie de vidéo ?</h2><p id="txt_scnd_div">Envoyez-nous un message pour que nous 
             puissions y réfléchir brièvement avec notre équipe de production, on vous rappelle et on en discute ? 🙂</p>
             </div>
         </ContactStyle>

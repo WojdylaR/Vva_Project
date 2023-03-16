@@ -18,16 +18,13 @@ top: 75px;
     top: -35px;
     font-size: 200%;
     font-weight: 100;
+    
 }
 
 #obli{
     font-size: 75%;
     position: relative;
     top: -10px;
-}
-
-#info {
-    
 }
 
 h2{
@@ -45,14 +42,14 @@ h2{
         color: white;
 }
 
+.brlarge {
+    display: block;
+    margin-bottom: 2em;
+}
+
 .right{
     position:relative;
     left:10%;
-}
-
-#bot{
-    position:relative;
-    top: 50px;
 }
 
 .info label {
@@ -107,7 +104,7 @@ h2{
 #txt_to_send{
     position: relative;
     height: 350px;
-    top: 100px;
+    top: 2em;
 }
 
 
@@ -152,11 +149,20 @@ button {
     right: 5%;
     line-height: 2.3;
     font-size: 150%;
+    
+}
+
+.scnd_tittle{
+    position: relative;
+    border-bottom: 2px solid currentColor;
+    width: 70%;
+    left: 15%;
 }
 
 #txt_scnd_div{
     position: relative;
     top 100px;
+    
 }
 
 animation-duration: 0.75s;

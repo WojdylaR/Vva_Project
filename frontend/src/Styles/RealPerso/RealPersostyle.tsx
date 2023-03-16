@@ -27,7 +27,6 @@ const RealPersostyle = styled.nav`
   left: 10%;
   font-size: 125%;
   border-radius: 10px;
-  background-image: url("../../asset/background_img.jpg");
 }
 
 #cate{
