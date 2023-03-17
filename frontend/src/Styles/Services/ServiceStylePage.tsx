@@ -36,6 +36,10 @@ h1{
     font-size: 125%;
 }
 
+.hide {
+    display: none;
+  }
+
 `
 
 

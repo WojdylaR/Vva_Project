@@ -27,7 +27,6 @@ const RealPersostyle = styled.nav`
   width: 70%;
   left: 15%;
   font-size: 125%;
-  border-radius: 10px;
 }
 
 #cate{

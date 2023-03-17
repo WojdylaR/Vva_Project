@@ -2,15 +2,28 @@ import ServicesStylePage from "../../Styles/Services/ServiceStylePage"
 import AllCarrousel from "../Carrousel/Carrousel"
 
 function Corporate () {
+    let pic_carroussel = [ "corporate/corpo1.png",
+                            "corporate/corpo2.png",
+                            "corporate/corpo3.png",
+                            "corporate/carousel_test.png",
+                            "corporate/corpo1.png",]
+
+
     return(
+        
         <ServicesStylePage>
         <div>
-            <p>
-                <img className="picture" src={require('../../assets/carousel_test.png')} alt="mariage" />
+        <div>
+            <img className="hide" src={require("../../assets/pic_service/corporate/corpo1.png")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/corporate/corpo2.png")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/corporate/corpo3.png")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/corporate/carousel_test.png")} alt="" />
+        </div>
+            <p>                
+                <AllCarrousel picture={pic_carroussel}/>
             </p>
-            <p id="corporate_txt" className="txt">
+            <p className="txt">
                 <h1>Corporate.</h1>
-                
                 <span className="sous_txt">
                 <span className="trait_horizontal_top" />
                 <span className="trait_vertical_top" />

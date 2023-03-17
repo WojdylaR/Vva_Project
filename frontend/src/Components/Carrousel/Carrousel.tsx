@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
 import { CSSProperties } from 'react';
 import '../../Styles/Carrousel/CarrouselStyle.scss'
+import interfaceCarrousel from './interfaceCarrousel';
 
 interface CustomCSSProperties extends CSSProperties {
   '--offset'?: any;
@@ -13,53 +14,54 @@ interface CustomCSSProperties extends CSSProperties {
   'display': any,
 }
 
-const CARDS = 10;
+const CARDS = 5;
 const MAX_VISIBILITY = 3;
 
-const Card = () => (
+const Card = (props:any) => (
+  
   <div className='card'>
-    <img className="picture" src={require('../../assets/carousel_test.png')} alt="mariage" />
+    <img className="picture"  src={require(`../../assets/pic_service/${props.picture}`)} alt="mariage" />
+    
   </div>
 );
 
 const Carousel = ({children}:any) => {
-  const [active, setActive] = useState(2);
+  const [active, setActive] = useState(3);
   const count = React.Children.count(children);
   
   return (
     <div className='carousel'>
-      {active < count - 1 && <button className='nav left' onClick={() => {setActive(active + 1);
-}}
-            ><TiChevronLeftOutline/></button>}
+      {active < count - 1 && <button className='nav left' onClick={() => {setActive(active + 1);}}>
+        <TiChevronLeftOutline/>
+        </button>}
       {React.Children.map(children, (child, i) => (
         <div
         className="card-container"
         style={{
-          '--direction': i - active,
-          '--abs-offset': Math.abs(i - active),
           '--active': i === active ? 1 : 0,
-          '--offset': i - active,
-          'pointer-events': active === i ? 'auto' : 'none',
-            'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
-            'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block', // <-- ajout de la propriété "--offset"
-        } as CustomCSSProperties} // <-- spécification du type "CustomCSSProperties"
+            
+        } as CustomCSSProperties}
       >
           {i === active ? child : ""}
         </div>
       ))}
-      {active > 0 && <button className='nav right' onClick={() => setActive(i => i - 1)}><TiChevronRightOutline/></button>}
+      {active > 1 && <button className='nav right' onClick={() => setActive(i => i - 1)}><TiChevronRightOutline/></button>}
     </div>
   );
 };
 
-const AllCarrousel = () => (
+const AllCarrousel = (props: any) => {
+  const test = props.picture.pic1
+
+  return(
   <div className="allCarroussel">
     <Carousel>
+    {console.log("pic = " + props.picture)}
       {[...new Array(CARDS)].map((_, i) => (
-        <Card />
+        <Card picture={props.picture[i]}/>
       ))}
     </Carousel>
   </div>
-);
+)};
 
 export default AllCarrousel
