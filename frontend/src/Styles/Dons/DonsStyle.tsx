@@ -21,10 +21,11 @@ const DonsSyle = styled.nav`
   top: 50px;
   position: relative;
   text-align: center;
-  font-size: 200%;
+  font-size: 125%;
   height: 850px;
-  line-height: 0.5;
+  line-height: 1.5;
 }
+
 
 #photo{
   position: relative;

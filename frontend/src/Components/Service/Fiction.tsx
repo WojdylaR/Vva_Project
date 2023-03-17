@@ -29,8 +29,8 @@ function Fiction () {
                 <span className="trait_vertical_top" />
             Avec des membres reconnus pour leur polyvalence et leur capacité à s'adapter en toutes 
             circonstances, nous vous proposons de vous accompagner dans la réalisation de vos 
-            fictions ou court-métrages en tous genres: de la régie au son en passant par la lumière 
-            en allant même jusqu'à l'écriture ou la propositions d'idées, nous sommes votre solution !
+            fictions ou court-métrages 🎞 en tous genres: de la régie 🎬 au son 🔊 en passant par la lumière 💡 
+            en allant même jusqu'à l'écriture 🖋 ou la propositions d'idées, nous sommes votre solution !
             <span className="trait_horizontal_bot"   ></span>
                 <span className="trait_vertical_bot" />
                 </span>

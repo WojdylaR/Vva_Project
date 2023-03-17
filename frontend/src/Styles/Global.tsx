@@ -54,6 +54,7 @@ h2{
     width: 70px;
     z-index: 1;
     top: 50px;
+    left: 20px;
     float: right;
 }
 .trait_vertical_bot{
@@ -62,7 +63,7 @@ h2{
     width: 4px;
     z-index: 1;
     top: -20px;
-    left: 70px;
+    left: 90px;
     float: right;
 }
 

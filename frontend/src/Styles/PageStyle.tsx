@@ -9,7 +9,6 @@ const PageStyle = styled.nav`
   position: absolute;
   color: white;
   width:100%;
-  left: 0;
   top: 90px;
   
 

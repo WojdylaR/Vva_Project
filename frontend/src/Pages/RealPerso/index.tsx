@@ -29,9 +29,9 @@ function RealPerso(){
             <p id="txt">
             <span className="trait_horizontal_top" />
             <span className="trait_vertical_top" />
-            Nous avons forgé notre expérience au fur et à mesure de nos réalisations avec la même ligne de conduite : mettre 
-            en lumière des projets philanthropiques, être au coeur de l'actualité ou bien suivre des gens extraordinaires tout 
-            en gardant une touche de non-conformisme.<br />Passionnés par l'humain, l'écologie, la politique ou encore les 
+            Nous avons forgé notre expérience 🎮 au fur et à mesure de nos réalisations avec la même ligne de conduite : mettre 
+            en lumière des projets philanthropiques 🙏, être au coeur de l'actualité 📰 ou bien suivre des gens extraordinaires tout 
+            en gardant une touche de non-conformisme.<br />Passionnés par l'humain 👨‍👦, l'écologie 🌳, la politique ou encore les 
             enjeux sociétaux, nous voulons mettre en images ce qui nous anime tous les jours. 
             Alors qu'est que vous attendez pour embarquer dans cette aventure avec nous ?
             <span className="trait_horizontal_bot"   ></span>

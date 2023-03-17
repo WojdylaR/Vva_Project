@@ -29,8 +29,8 @@ function Documentaire () {
                 <span className="trait_horizontal_top" />
                 <span className="trait_vertical_top" />
             Si nous proposons principalement à l'heure actuelle des réalisations personnelles de notre propres 
-            documentaires, nous sommes à l'écoute et prêts à vous aider dans l'un de vos projets !<br />
-            Nous pouvons également vous proposer des vidéos sur-mesures de vos vacances de rêve pour 
+            documentaires 📸, nous sommes à l'écoute et prêts à vous aider dans l'un de vos projets !<br />
+            Nous pouvons également vous proposer des vidéos 🎥 sur-mesures de vos vacances 🛫 de rêve pour 
             garder des souvenirs inoubliables !
             <span className="trait_horizontal_bot"   ></span>
                 <span className="trait_vertical_bot" />
