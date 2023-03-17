@@ -1,24 +1,27 @@
 import React, { useState } from "react";
-import Footer from "../../Components/Footer";
 import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
-import YoutubeEmbed from "../../Components/RealPerso/YoutubeEmbed";
 
 function RealPerso(){
     let play = 0;
     const [width, setWidth] = useState('300px')
 
-    const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
-        if (play === 0)
-        {   
-            e.currentTarget.play();
-            play = 1;
-            console.log(e.currentTarget.play())
-        } else {
-            e.currentTarget.load();
-            play = 0;
-            console.log(e.currentTarget.pause())
-        }
+    const handleOnClick = (e: React.MouseEvent<HTMLVideoElement>) => {
+        
     }
+
+
+
+    const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
+        e.currentTarget.load();
+            console.log(e.currentTarget.pause())
+
+      };
+
+      const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) => {
+        console.log("yo")
+        e.currentTarget.play();
+
+      };
 
     return (
         <RealPersostyle>
@@ -38,12 +41,27 @@ function RealPerso(){
         <div id="cate">
             <p>
                 <h2 className="titre_cate">Nos dernières réalisations : </h2>
-                <video loop className="video" onClick={handleOnMouseOut} poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/salon_agri_presentation.mp4')} />
-                <video  loop className="video" onClick={handleOnMouseOut} poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/galerien.mp4')} />  
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/salon_a.jpeg')} src={require('../../assets/real_perso/salon_a.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/teaser_sa.jpg')} src={require('../../assets/real_perso/salon_agri_presentation.mp4')} />
+                <video  loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/galerien.jpg')} src={require('../../assets/real_perso/galerien.mp4')} /> 
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/tipee.jpg')} src={require('../../assets/real_perso/tipee.mp4')} /> 
+            </p>
+            <p>
+                <h2 className="titre_cate">Humanitaire : </h2>
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/humanitaire/accueil_humanitaire.jpeg')} src={require('../../assets/real_perso/humanitaire/accueil_humanitaire.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/humanitaire/alphabetisation.jpeg')} src={require('../../assets/real_perso/humanitaire/alphabetisation.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/humanitaire/soin_pt.jpeg')} src={require('../../assets/real_perso/humanitaire/soin_pt.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/humanitaire/aides_scolaire.jpeg')} src={require('../../assets/real_perso/humanitaire/aides_scolaire.mp4')} />
             </p>
             <p>
                 <h2 className="titre_cate">Évènementiels :</h2>
-                <video loop className="video" onClick={handleOnMouseOut} style={{width: width}}poster="https://imghost.io/images/2017/07/01/transparent.png" src={require('../../assets/salon_agri_presentation.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/salon_a.jpeg')} src={require('../../assets/real_perso/salon_a.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/teaser_sa.jpg')} src={require('../../assets/real_perso/salon_agri_presentation.mp4')} />
+            </p>
+            <p>
+                <h2 className="titre_cate">Interview : </h2>
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/interview/interview_samuel.jpg')} src={require('../../assets/real_perso/interview/interview_samuel.mp4')} />
+                <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/interview/interview_anais.jpeg')} src={require('../../assets/real_perso/interview/interview_anais.mp4')} />
             </p>
         </div>
         </RealPersostyle>

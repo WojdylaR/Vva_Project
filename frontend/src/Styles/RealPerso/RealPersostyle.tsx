@@ -22,17 +22,19 @@ const RealPersostyle = styled.nav`
 }
 
 #txt{
+  top: 50px;
   position: relative;
-  width: 80%;
-  left: 10%;
+  width: 70%;
+  left: 15%;
   font-size: 125%;
   border-radius: 10px;
 }
 
 #cate{
   position: relative;
-  top 30px;
-  text-align: center;
+  left: 10%;
+  top: 125px;
+  margin-bottom: 150px;
 }
 
 .video{
@@ -42,8 +44,11 @@ const RealPersostyle = styled.nav`
 }
 
 .video:hover{
-  transform: scale(1.1);
+  transform: scale(1.3);
   cursor: pointer;
+  postion: relative;
+  top: -25px;
+  z-index: 2;
 }
 
 .video:active{
