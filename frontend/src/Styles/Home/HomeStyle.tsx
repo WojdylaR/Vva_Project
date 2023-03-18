@@ -47,9 +47,9 @@ const HomeStyle = styled.nav`
 #logo_video{
     position: absolute;
     z-index:1;
-    top: 10%;
-    width:30%;
-    left:35%;
+    width:25%;
+    left:37.5%;
+    top: 18vw;
     word-spacing: 50px;
     line-height: 225px;
     animation-delay: 3s;

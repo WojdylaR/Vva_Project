@@ -31,6 +31,7 @@ const RealPersostyle = styled.nav`
 
 #cate{
   position: relative;
+  width: 90%;
   left: 10%;
   top: 125px;
   margin-bottom: 150px;

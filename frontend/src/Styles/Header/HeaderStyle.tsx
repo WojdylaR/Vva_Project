@@ -29,7 +29,6 @@ div{
     width: 100%;
     text-align: center;
     word-spacing: 80px;
-    
 }
 
 .link{
@@ -39,6 +38,7 @@ div{
 
 .link:hover{
     text-decoration: underline;
+    opacity:1.0;
 }
 .link:active{
     color: grey;

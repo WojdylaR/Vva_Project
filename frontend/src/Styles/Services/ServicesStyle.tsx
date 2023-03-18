@@ -21,9 +21,8 @@ animation-duration: 0.75s;
   width: 92%;
   left: 3%;
   top: 100px;
+  margin-bottom: 200px;
 }
-
-height: 800px;
 
 #menu{
   word-spacing: 50px;
@@ -68,7 +67,7 @@ margin-left: 50px;
   width: 110%;
   font-size: 200%;
   opacity: 1;
-  top: -1750%;
+  top:  -19vw;
 }
 
 .txt_right{
