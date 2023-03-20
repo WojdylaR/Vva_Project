@@ -17,6 +17,11 @@ div{
     backdrop-filter: blur(5px);
 }
 
+.link_logo{
+    position: relative;
+    z-index:3;
+}
+
 #logo{
     position:absolute;
     height: 90px;
@@ -32,7 +37,7 @@ div{
 }
 
 .link{
-    font-weight: 300;
+    font-weight: 500;
     text-decoration:none;
 }
 
@@ -47,12 +52,11 @@ div{
 #logo_social{
         position: absolute;
         width: 200px;
-        left: 89%;
+        right: 10px;
         top: 30%;
 }
 
 .logo_soc{
-    position: realtive;
     z-index: 2;
     width: 30px;
     margin-left: 10px;

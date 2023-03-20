@@ -66,6 +66,7 @@ margin-left: 50px;
   left: -5%;
   width: 110%;
   font-size: 200%;
+  font-weight: 500;
   opacity: 1;
   top:  -19vw;
 }

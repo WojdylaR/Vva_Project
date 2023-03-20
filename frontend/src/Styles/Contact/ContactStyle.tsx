@@ -142,14 +142,13 @@ button {
 
 #second_div{
     position:relative;
-    top: 100px;
+    top: 0px;
     text-align: center;
     width: 50%;
     float: right;
     right: 5%;
     line-height: 2.3;
     font-size: 150%;
-    
 }
 
 .scnd_tittle{
@@ -159,10 +158,34 @@ button {
     left: 15%;
 }
 
+.prenom{
+    font-size: 125%;
+}
+
+.fondateur{
+    position: relative;
+    top: -20px;
+    font-size: 75%;
+}
+
+.numero2{
+    position: relative;
+    border: solid;
+    width: 180px;
+    display: inline;
+}
+
+.numero1{
+    border: solid;
+    margin-right: 50px;
+    width: 180px;
+    display: inline;
+    position: relativ;e
+}
 #txt_scnd_div{
     position: relative;
     top 100px;
-    
+    margin-bottom: 200px;
 }
 
 animation-duration: 0.75s;

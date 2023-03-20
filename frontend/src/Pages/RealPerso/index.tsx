@@ -54,7 +54,7 @@ function RealPerso(){
                 <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/humanitaire/aides_scolaire.jpeg')} src={require('../../assets/real_perso/humanitaire/aides_scolaire.mp4')} />
             </p>
             <p>
-                <h2 className="titre_cate">Évènementiels :</h2>
+                <h2 className="titre_cate">Évènementiel :</h2>
                 <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/salon_a.jpeg')} src={require('../../assets/real_perso/salon_a.mp4')} />
                 <video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/teaser_sa.jpg')} src={require('../../assets/real_perso/salon_agri_presentation.mp4')} />
             </p>

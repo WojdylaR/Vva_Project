@@ -22,8 +22,6 @@ const DonsSyle = styled.nav`
   position: relative;
   text-align: center;
   font-size: 125%;
-  height: 850px;
-  line-height: 1.5;
 }
 
 
@@ -36,7 +34,7 @@ const DonsSyle = styled.nav`
 #logo_tipeee{
   position: relative;
   width: 25%;
-  top: -5%;
+  top: -20px;
 }
 `
 

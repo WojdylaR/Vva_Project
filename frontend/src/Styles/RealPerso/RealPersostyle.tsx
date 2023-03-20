@@ -22,11 +22,13 @@ const RealPersostyle = styled.nav`
 }
 
 #txt{
-  top: 50px;
+  top: 20px;
   position: relative;
   width: 70%;
+  font-weight: 500;
   left: 15%;
-  font-size: 125%;
+  line-height: 1.8;
+  font-size: 145%;
 }
 
 #cate{
