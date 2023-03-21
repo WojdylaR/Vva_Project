@@ -170,17 +170,20 @@ button {
 
 .numero2{
     position: relative;
-    border: solid;
+    border-bottom: solid;
     width: 180px;
     display: inline;
+    font-family: "Chivo";
+    font-weight: 300;
 }
 
 .numero1{
-    border: solid;
+    border-bottom: solid;
     margin-right: 50px;
     width: 180px;
     display: inline;
-    position: relativ;e
+    font-family: "Chivo";
+    font-weight: 300;
 }
 #txt_scnd_div{
     position: relative;

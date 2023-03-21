@@ -5,7 +5,7 @@ const ServicesStylePage = styled.nav `
 .picture{
     position: relative;
     width: 50%;
-    left: 0;
+    left: 0%;
     top : 10px;
     margin-bot: 0;
 }

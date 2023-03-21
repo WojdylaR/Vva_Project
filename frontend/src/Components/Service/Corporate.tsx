@@ -4,9 +4,9 @@ import AllCarrousel from "../Carrousel/Carrousel"
 function Corporate () {
     let pic_carroussel = [ "corporate/corpo1.png",
                             "corporate/corpo2.png",
+                            "corporate/corpo4.jpg",
                             "corporate/corpo3.png",
-                            "corporate/carousel_test.png",
-                            "corporate/corpo1.png",]
+                            "corporate/corpo5.jpg",]
 
 
     return(
@@ -17,7 +17,8 @@ function Corporate () {
             <img className="hide" src={require("../../assets/pic_service/corporate/corpo1.png")} alt="" />
             <img className="hide" src={require("../../assets/pic_service/corporate/corpo2.png")} alt="" />
             <img className="hide" src={require("../../assets/pic_service/corporate/corpo3.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/carousel_test.png")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/corporate/corpo4.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/corporate/corpo5.jpg")} alt="" />
         </div>
             <p>                
                 <AllCarrousel picture={pic_carroussel}/>

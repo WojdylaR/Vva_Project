@@ -2,11 +2,11 @@ import ServicesStylePage from "../../Styles/Services/ServiceStylePage"
 import AllCarrousel from "../Carrousel/Carrousel"
 
 function Documentaire () {
-    let pic_carroussel = [ "corporate/corpo1.png",
-                            "corporate/corpo2.png",
-                            "corporate/corpo3.png",
-                            "corporate/carousel_test.png",
-                            "corporate/corpo1.png",]
+    let pic_carroussel = [ "documentaire/documentaire1.jpg",
+                            "documentaire/documentaire2.jpg",
+                            "documentaire/documentaire3.jpg",
+                            "documentaire/documentaire4.jpg",
+                            "documentaire/documentaire5.jpg",]
 
 
     return(
@@ -14,10 +14,11 @@ function Documentaire () {
         <ServicesStylePage>
         <div>
         <div>
-            <img className="hide" src={require("../../assets/pic_service/corporate/corpo1.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/corpo2.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/corpo3.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/carousel_test.png")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/documentaire/documentaire1.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/documentaire/documentaire2.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/documentaire/documentaire3.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/documentaire/documentaire4.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/documentaire/documentaire5.jpg")} alt="" />
         </div>
             <p>                
                 <AllCarrousel picture={pic_carroussel}/>

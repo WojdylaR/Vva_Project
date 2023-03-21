@@ -72,10 +72,9 @@ function Contact(){
                 <div id="txt_to_send">
             <input type="text" id="champTxt" onChange={e => {setMessage(e.target.value)}}/><br /> 
             <button id="button" onClick={sendMail
-            }>Envoyer</button>
-            <p id="test">{message}</p>
-        </div>
-                    <p id="obli"><span className="red">* champs obligatoire</span></p>
+            }>Envoyer</button><br/>
+            <p><span className="red">* champs obligatoire</span></p>
+        </div>      
             </div>
             <div id="second_div">
             <h2 className="scnd_tittle">Un projet ou une envie de vidéo ?</h2><p id="txt_scnd_div">

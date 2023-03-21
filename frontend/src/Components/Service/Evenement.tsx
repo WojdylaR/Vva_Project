@@ -2,11 +2,11 @@ import ServicesStylePage from "../../Styles/Services/ServiceStylePage"
 import AllCarrousel from "../Carrousel/Carrousel"
 
 function Evenement () {
-    let pic_carroussel = [ "corporate/corpo1.png",
-                            "corporate/corpo2.png",
-                            "corporate/corpo3.png",
-                            "corporate/carousel_test.png",
-                            "corporate/corpo1.png",]
+    let pic_carroussel = [ "evenement/evenement5.jpg",
+                            "evenement/evenement2.jpg",
+                            "evenement/evenement3.jpg",
+                            "evenement/evenement4.jpg",
+                            "evenement/evenement1.jpg",]
 
 
     return(
@@ -14,10 +14,11 @@ function Evenement () {
         <ServicesStylePage>
         <div>
         <div>
-            <img className="hide" src={require("../../assets/pic_service/corporate/corpo1.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/corpo2.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/corpo3.png")} alt="" />
-            <img className="hide" src={require("../../assets/pic_service/corporate/carousel_test.png")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/evenement/evenement1.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/evenement/evenement2.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/evenement/evenement3.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/evenement/evenement4.jpg")} alt="" />
+            <img className="hide" src={require("../../assets/pic_service/evenement/evenement5.jpg")} alt="" />
         </div>
             <p>                
                 <AllCarrousel picture={pic_carroussel}/>
