@@ -21,6 +21,7 @@ top: 75px;
     
 }
 
+
 #obli{
     font-size: 75%;
     position: relative;

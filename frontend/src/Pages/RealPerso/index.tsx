@@ -25,15 +25,15 @@ function RealPerso(){
 
     return (
         <RealPersostyle>
-        <div id="realperso">
+        <div id="realperso"><h1 className="tittle_contact"><span className="red2">NOS</span> REALISATIONS</h1>
             <p id="txt">
             <span className="trait_horizontal_top" />
             <span className="trait_vertical_top" />
-            Nous avons forgé notre expérience 🎮 au fur et à mesure de nos réalisations avec la même ligne de conduite : mettre 
-            en lumière des projets philanthropiques 🙏, être au coeur de l'actualité 📰 ou bien suivre des gens extraordinaires tout 
-            en gardant une touche de non-conformisme.<br />Passionnés par l'humain 👨‍👦, l'écologie 🌳, la politique ou encore les 
-            enjeux sociétaux, nous voulons mettre en images ce qui nous anime tous les jours. 
-            Alors qu'est que vous attendez pour embarquer dans cette aventure avec nous ?
+            Nous avons forgé notre <span className="red"> expérience</span> 🎮 au fur et à mesure de nos <span className="red">réalisations</span> avec la même ligne de conduite : mettre 
+            en lumière des projets <span className="red">philanthropiques</span> 🙏, être au coeur de l'actualité 📰 ou bien suivre des gens <span className="red">extraordinaires</span> tout 
+            en gardant une touche de <span className="red">non-conformisme</span>.<br />Passionnés par l'humain 👨‍👦, l'écologie 🌳, la politique ou encore les 
+            enjeux <span className="red">sociétaux</span>, nous voulons mettre en images ce qui nous anime tous les jours. 
+            Alors qu'est que vous attendez pour embarquer dans cette <span className="red">aventure</span> avec nous ?
             <span className="trait_horizontal_bot"   ></span>
             <span className="trait_vertical_bot" />
             </p>            

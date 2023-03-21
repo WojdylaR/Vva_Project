@@ -21,6 +21,20 @@ const RealPersostyle = styled.nav`
   top :30px;
 }
 
+
+.red2{
+  color: #B22222;
+}
+
+.tittle_contact {
+  position :relative;
+  width: 100%;
+  left: 10%;
+  font-size: 200%;
+  font-weight: 100;
+  
+}
+
 #txt{
   top: 20px;
   position: relative;
@@ -60,6 +74,11 @@ const RealPersostyle = styled.nav`
   z-index: 2;
   top: 10%;
 }
+
+.red{
+  font-weight: 700;
+}
+
       `
 
 export default RealPersostyle

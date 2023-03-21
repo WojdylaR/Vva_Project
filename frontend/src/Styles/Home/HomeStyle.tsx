@@ -312,7 +312,7 @@ const HomeStyle = styled.nav`
 #para_logo{
     text-align:center;
     line-height: 10;
-    letter-spacing: 150px;
+    letter-spacing: 250px;
 }
 
 .logo{
