@@ -58,16 +58,8 @@ const RealPersostyle = styled.nav`
   transform: scale(1.3);
   cursor: pointer;
   postion: relative;
-  top: -25px;
+  top: ;
   z-index: 2;
-}
-
-.video:active{
-  position: fixed;
-  left: 5%;
-  width: 90%;
-  z-index: 2;
-  top: 10%;
 }
 
 .red{

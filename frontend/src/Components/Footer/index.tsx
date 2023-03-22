@@ -14,6 +14,7 @@ function Footer(){
                         <a className="logo" href="https://www.instagram.com/va_voir_ailleurs__/?hl=fr"><img className="logo_soc" id="logo_yt" src={require('../../assets/logo/logo_instagram.png')} alt="logo_instagram" /></a> <br />
                         <a className="logo" href="https://www.linkedin.com/company/va-voir-ailleurs/"><img className="logo_soc" id="logo_instagram" src={require('../../assets/logo/logo_linkedin.png')} alt="logo_linkedin" /></a>
                         <a className="logo" href="https://www.youtube.com/channel/UCmagj97a6B0ocvQQzsMqHFQ"><img className="logo_soc" id="logo_linkedin" src={require('../../assets/logo/logo_yt.png')} alt="logo_yt" /></a>
+                        <a className="logo" href="https://fr.tipeee.com/va-voir-ailleurs"><img className="logo_soc"  src={require('../../assets/logo/tipee.png')} alt="logo_yt" /></a>
                     </span>
                 </div>
                 <div className="grid-item">

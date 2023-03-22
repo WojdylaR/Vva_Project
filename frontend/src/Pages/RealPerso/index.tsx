@@ -3,11 +3,6 @@ import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
 
 function RealPerso(){
     let play = 0;
-    const [width, setWidth] = useState('300px')
-
-    const handleOnClick = (e: React.MouseEvent<HTMLVideoElement>) => {
-        
-    }
 
 
 

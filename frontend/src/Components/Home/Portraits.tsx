@@ -54,7 +54,7 @@ function Portraits(){
                 </h4>
             </span>
             <span id="baz">
-                <img id="baz_photo" className="photo" src={require('../../assets/portraits/baz.jpeg')} alt="Bazil" />
+                <img id="baz_photo" className="photo" src={require('../../assets/portraits/anne_so.png')} alt="Bazil" />
                 <h4 id="prenom_baz" className="prenom_bas">
                     Bazil
                 </h4>

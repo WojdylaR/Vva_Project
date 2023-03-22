@@ -51,9 +51,8 @@ div{
 
 #logo_social{
         position: absolute;
-        width: 200px;
-        right: 10px;
-        top: 30%;
+        right: 20px;
+        top: 10%;
 }
 
 .logo_soc{
