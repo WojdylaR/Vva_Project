@@ -169,18 +169,29 @@ button {
     font-size: 185%;
 }
 
-.para{
+.TextPresentation{
+    top: 40px;
     position: relative;
-    width: 28.33%;
-    float:left;
-    margin-left: 3%;
+    line-height: 2;
+    font-size: 115%;
 }
 
-.img_tittle{
+.TextPresentation .grille{
     position: relative;
-    height: 40px;
-    left: 30px;
+    width: 99%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 29vw));
+    justify-content: center;
+    grid-gap: 15px;
 }
+.TextPresentation  .grid_item{
+    width: 29vw;
+    min-width: 300px;
+    
+}
+
+
 
 
 /******************************* Portraits ***************************/
@@ -190,7 +201,7 @@ button {
 
 #sous_titre_portraits{
     position: relative;
-    left: 7%;
+    left: 5%;
     width: 90%;
     font-size: 185%;
 }
@@ -214,7 +225,7 @@ button {
     grid-gap: 15px;
 }
 
-.grid_item{
+.equipe .grid_item{
     width: 29vw;
     min-width: 200px;
     
@@ -288,7 +299,7 @@ button {
 
 #sous_titre_confiance{
     position: relative;
-    left: 3%;
+    left: 1%;
     font-size: 185%;
 }
 
