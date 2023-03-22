@@ -1,4 +1,5 @@
 import HomeStyle from "../../Styles/Home/HomeStyle"
+import { Link } from "react-router-dom"
 
 function Nous() {
     
@@ -31,9 +32,10 @@ function Nous() {
                 <span className="trait_vertical_bot" />
                 </p>
                 <p className="but">
+                <Link className="link" id="Contact" to="/contact">
                 <button>
                     <b>Rejoignez-nous!</b>
-                </button></p>
+                </button></Link></p>
             </div>
         </HomeStyle>
     )

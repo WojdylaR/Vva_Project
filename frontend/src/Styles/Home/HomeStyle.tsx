@@ -117,6 +117,7 @@ const HomeStyle = styled.nav`
 }
 
 button {
+    cursor: pointer;
     position: relative;
     font-size: 1.5em;
     padding: 0.7em 1.4em;
