@@ -1,7 +1,6 @@
 import React from "react";
 import Footer from "../../Components/Footer";
 import Confiance from "../../Components/Home/Confiance";
-import Portraits from "../../Components/Home/Portraits";
 import TextPresentation from "../../Components/Home/TextPresentation";
 import Video from "../../Components/Home/Video";
 import HomeStyle from "../../Styles/Home/HomeStyle";
@@ -10,6 +9,7 @@ import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import { ScrollTrigger} from 'gsap/ScrollTrigger'
 import { useEffect, useRef} from 'react'
 import Nous from "../../Components/Home/nous";
+import Equipe from "../../Components/Home/Equipe";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -43,7 +43,7 @@ function Home(){
         slideInTop("sous_titre", 0.25, 1);
         slideInTop(".border", 0.25, 1);
         slideInTop("sous_titre_txt", 0.25, 1);
-        slideInTop("#portraits", 0, 3);
+        slideInTop(".equipe", 0, 3);
         slideInTop("#confiance", 0.25, 1)
     }, [])
 
@@ -56,7 +56,7 @@ function Home(){
             <div className="border"/>
             <TextPresentation />
             <div className="border" />
-            <Portraits />
+            <Equipe />
             <div className="border"/>
             <Confiance />
         </div>

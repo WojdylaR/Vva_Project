@@ -12,7 +12,7 @@ div{
     height: 90px;
     width: 100%;
     left: 0;
-    font-size:100%;
+    font-size: 100%;
     z-index: 1;
     backdrop-filter: blur(5px);
 }
@@ -25,7 +25,6 @@ div{
 #logo{
     position:absolute;
     height: 90px;
-    left: 10px;
 }
 
 .links{
@@ -33,7 +32,7 @@ div{
     top: 10%;
     width: 100%;
     text-align: center;
-    word-spacing: 80px;
+    word-spacing: 6vw;
 }
 
 .link{
@@ -59,6 +58,10 @@ div{
     z-index: 2;
     width: 30px;
     margin-left: 10px;
+}
+
+.logo_soc:hover{
+    transform: scale(1.2);
 }
 
 #Home{

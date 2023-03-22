@@ -185,185 +185,96 @@ button {
 
 /******************************* Portraits ***************************/
 
-#portraits{
-    top: 25px;
-    position: relative;
-    left:4%;
-    width: 92%;
-    font-size:115%;
-}
+
+
 
 #sous_titre_portraits{
     position: relative;
-    left: 3%;
+    left: 7%;
+    width: 90%;
     font-size: 185%;
 }
 
-.photo{
+.equipe{
     position: relative;
-    width: 28.66%;
-    margin-left: 3%;
+    top : 50px;
+    font-size: 115%;
+    margin-bottom: 50px;
+    
+}
+
+
+.equipe .grille{
+    position: relative;
+    width: 99%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 29vw));
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+.grid_item{
+    width: 29vw;
+    min-width: 200px;
+    
+}
+
+.equipe .photo{
     border: solid 8px white;
     box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box;
+    width: 29vw;
+    min-width: 200px;   
 }
 
-.photo:hover{
-    opacity: 0.5;
-    border: solid 1px #aaa;
-}
-
-.prenom_haut{
-    position:absolute;
-    top: 13%;
-    left: 3%;
-    width: 10%;
-    z-index:1;
-    font-size:200%;
-    opacity: 0;
+.equipe .nom{
+    position: absolute;
+    top: 25%;
+    font-size: 2vw;
+    width: 50%;
     background:rgba(112,128,144, 0.3);
+    padding-left: 1vw;
     border-top-right-radius:10px;
-}
-
-.prenom_bas{
-    position:absolute;
-    top: 60%;
-    left: 3%;
-    width: 14%;
-    z-index:1;
-    font-size:200%;
-    background:rgba(112,128,144, 0.3);
     opacity: 0;
-    border-top-right-radius:10px;
+    font-family: "Chivo";
 }
 
-
-#prenom_pierre{
-    left:34.66%;
-}
-
-
-#prenom_ronan{
-    left: 66.32%;
-}
-
-#prenom_liam{
-    left:34.66%;
-}
-
-
-#prenom_baz{
-    left: 66.32%;
-}
-
-.nom_haut{
-    position:absolute;
-    top: 30%;
-    width: 18%;
-    z-index:1;
-    right:5%;
-    font-size:200%;
-    opacity: 0;
+.equipe .fonction{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    padding-right: 1vw;
+    font-size: 2vw;
+    width: 55%;
     background:rgba(112,128,144, 0.3);
     border-bottom-left-radius:10px;
-}
-
-.nom_bas{
-    position:absolute;
-    bottom: 6%;
-    width: 12%;
-    z-index:1;
-    right:5%;
-    font-size:200%;
     opacity: 0;
-    background:rgba(112,128,144, 0.3);
-    border-bottom-left-radius:10px;
+    font-family: "Chivo";
 }
 
-#stay_fixed{
-    position:fixed;
-    color: red;
-}
-
-#nom_pierre{
-    right:36.66%;
-}
-
-
-#nom_felix{
-    right: 68.32%;
-}
-
-#nom_liam{
-    right:36.66%;
-}
-
-
-#nom_sacco{
-    right: 68.32%;
-}
-
-.photo:hover ~ .prenom_haut{
-    opacity: 1;
-}
-
-.photo:hover ~ .nom_haut{
-    opacity: 1;
-}
-
-.photo:hover ~ .prenom_bas{
-    opacity: 1;
-}
-
-.photo:hover ~ .nom_bas{
-    opacity: 1;
-}
-
-.linkedin_haut{
+.card .linkedin{
     position: absolute;
-    opacity: 0;
-    width: 28.66%;
-    z-index:1;
-    left:3%;
+    bottom: 5px;
+    width: 100%;
     text-align: center;
-    top:46%;
-}
-
-
-
-#linkedin_pierre{
-    left:34.66%;
-}
-
-#linkedin_liam{
-    left:34.66%;
-}
-
-#linkedin_ronan{
-    left:66.32%;
-}
-
-#linkedin_anne_so{
-    left:66.32%;
-}
-
-.linkedin_bas{
-    position: absolute;
     opacity: 0;
-    width: 28.66%;
-    z-index:1;
-    left:3%;
-    text-align: center;
-    top:93%;
 }
-.photo:hover ~ .linkedin_haut{
+
+
+.card:hover .photo{
+    opacity: 0.3;
+}
+
+.card:hover .linkedin{
+    opacity: 1;
+}
+.card:hover .nom{
+    opacity: 1;
+}
+.card:hover .fonction{
     opacity: 1;
 }
 
-.photo:hover ~ .linkedin_bas{
-    opacity: 1;
-}
 
 /******************************* Confiance ***************************/
 
