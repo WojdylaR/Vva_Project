@@ -34,8 +34,8 @@ h2{
         position : absolute;
         border-top: 4px solid #B22222;
         width: 70px;
-        top: -20px;
-        left: -20px;
+        top: -40px;
+        left: -40px;
         z-index: 1;
  }
 
@@ -43,8 +43,8 @@ h2{
     position : absolute;
         border-top: 70px solid #B22222;
         width: 4px;
-        left: -20px;
-        top: -20px;
+        left: -40px;
+        top: -40px;
         z-index: 1;
 }
 

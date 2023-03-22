@@ -83,7 +83,7 @@ button {
     color: white;
     font-weight: 600;
     position: relative;
-    top : -10px;
+    top : -20px;
 }
 
 .txt_reseau{

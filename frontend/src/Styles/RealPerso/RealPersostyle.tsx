@@ -21,11 +21,6 @@ const RealPersostyle = styled.nav`
   top :30px;
 }
 
-
-.red2{
-  color: #B22222;
-}
-
 .tittle_contact {
   position :relative;
   width: 100%;

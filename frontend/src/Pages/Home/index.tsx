@@ -9,6 +9,7 @@ import gsap from 'gsap'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import { ScrollTrigger} from 'gsap/ScrollTrigger'
 import { useEffect, useRef} from 'react'
+import Nous from "../../Components/Home/nous";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -38,6 +39,7 @@ const slideInTop = (elem:string, delay:number, duration:number) => {
 function Home(){
     useEffect(() => {
         slideInTop("#TextPresentation", 0.25, 1);
+        slideInTop("#nous", 0.25, 1);
         slideInTop("sous_titre", 0.25, 1);
         slideInTop(".border", 0.25, 1);
         slideInTop("sous_titre_txt", 0.25, 1);
@@ -49,6 +51,8 @@ function Home(){
         <HomeStyle>
         <div id="all">
             <Video />
+            <div className="border" />
+            <Nous />
             <div className="border"/>
             <TextPresentation />
             <div className="border" />

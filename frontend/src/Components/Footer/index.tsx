@@ -8,7 +8,7 @@ function Footer(){
             <div className="grille">
                 <div className="grid-item">
                     <span className="txt_reseau">
-                        <h2>Nous suivre: </h2>
+                        <h2>Nous suivre </h2>
                         <a className="logo" href="https://www.facebook.com/VaVoirAilleursExcursion/?ref=bookmarks"><img className="logo_soc" id="logo_fb" src={require('../../assets/logo/logo_fb.png')} alt="logo_fb" /></a>
                         <a className="logo" href="https://www.youtube.com/channel/UCmagj97a6B0ocvQQzsMqHFQ"><img className="logo_soc" id="logo_tictok" src={require('../../assets/logo/logo_tictok.png')} alt="logo_tiktok" /></a>
                         <a className="logo" href="https://www.instagram.com/va_voir_ailleurs__/?hl=fr"><img className="logo_soc" id="logo_yt" src={require('../../assets/logo/logo_instagram.png')} alt="logo_instagram" /></a> <br />
@@ -27,12 +27,12 @@ function Footer(){
                 </div>
                 <div className="grid-item">
                     <span className="txt_nav">
-                        <h2>Navigation:</h2>
+                        <h2>Navigation</h2>
                         <nav className="links">
-                            <Link className="link" id="Home"to="/">- Home</Link><br />
-                            <Link className="link" id="Service" to="/service">- Services</Link><br />
-                            <Link className="link" id="RealPerso" to="/realperso">- Real</Link><br />
-                            <Link className="link" id="Dons" to="/don">- Dons</Link>
+                            <Link className="link" id="Home"to="/">• Home</Link><br />
+                            <Link className="link" id="Service" to="/service">• Services</Link><br />
+                            <Link className="link" id="RealPerso" to="/realperso">• Real</Link><br />
+                            <Link className="link" id="Dons" to="/don">• Dons</Link>
                             
                         </nav>
                     </span>
