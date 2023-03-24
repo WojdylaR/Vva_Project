@@ -1,35 +1,48 @@
 import React from "react"
-import {Route, Routes} from 'react-router-dom'
+import {Route, Routes, useLocation} from 'react-router-dom'
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Mariage from "./Components/Service/Mariage"
 import Contact from "./Pages/Contact"
 import Don from "./Pages/Don"
-import Evenements from "./Pages/Evenements"
+import RealPerso from "./Pages/RealPerso"
 import Home from "./Pages/Home"
-import Presentation from "./Pages/Presentation"
 import Service from "./Pages/Service"
 import GlobalStyle from "./Styles/Global"
 import PageStyle from "./Styles/PageStyle"
+import Documentaire from "./Components/Service/Documentaire"
+import Evenement from "./Components/Service/Evenement"
+import Corporate from "./Components/Service/Corporate"
+import Fiction from "./Components/Service/Fiction"
+import Patrimoine from "./Components/Service/Patrimoine"
+import Button from "./Components/Button/Button"
+
 
 function App(){
+const location = useLocation();
+
     return (
         <div>
             <Header />
+            {location.pathname === "/contact" ? "" :<Button />}
             <GlobalStyle />
             <PageStyle>
             <div id="bordertoppa"></div>
             <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/don" element={<Don />} />
-                <Route path="/presentation" element={<Presentation />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/evenements" element={<Evenements />} />
+                <Route path="/realperso" element={<RealPerso />} />
                 <Route path="/service" element={<Service />} />
                 <Route path="/service/mariage" element={<Mariage />} />
+                <Route path="/service/corporate" element={<Corporate />} />
+                <Route path="/service/evenement" element={<Evenement />} />
+                <Route path="/service/fiction" element={<Fiction />} />
+                <Route path="/service/documentaire" element={<Documentaire />} />
+                <Route path="/service/patrimoine" element={<Patrimoine />} />
             </Routes>
 
-            <Footer />
+            {location.pathname === "/contact" ? "" :<Footer />}
             </PageStyle>
         </div>
     )

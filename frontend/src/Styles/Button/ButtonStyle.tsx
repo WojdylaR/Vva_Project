@@ -15,10 +15,11 @@ const ButtonStyle = styled.div`
         text-align: center;
         font-size: 13px;
         padding: 16px;
-        width: 150px;
+        width: 160px;
         transition: all 0.5s;
         cursor: pointer;
         margin: 5px;
+        font-weight: 700;
        }
 
 button span {

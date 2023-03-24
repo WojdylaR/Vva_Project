@@ -154,17 +154,6 @@ button {
 
 /******************************* TextPresentation ***************************/
 
-
-#TextPresentation{
-    top: 40px;
-    position: relative;
-    width:92%;
-    left:4%;
-    overflow:hidden;
-    line-height: 2;
-    font-size: 115%;
-}
-
 .sous_titre_txt{
     font-size: 185%;
 }
@@ -174,6 +163,7 @@ button {
     position: relative;
     line-height: 2;
     font-size: 115%;
+    margin-bottom: 50px;
 }
 
 .TextPresentation .grille{

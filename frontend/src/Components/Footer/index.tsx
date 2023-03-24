@@ -22,7 +22,7 @@ function Footer(){
                         <span className="p1">
                         <h2 id="sous_titre">Un projet ? On en discute ? 🙂</h2>
                         
-                        <button ><Link className="link" id="Contact"to="/contact">Contact</Link></button><br/></span>
+                        <Link className="link" id="Contact"to="/contact"><button >Contact</button></Link><br/></span>
                         <span className="p2">Pierre: +33618995138 Félix: +33625581625 <br/><span className="mail"><img className="mail_logo"  src={require('../../assets/logo/mail.png')} alt="mail_logo" />: vvaprod@hotmail.com</span></span>
                     </span>
                 </div>

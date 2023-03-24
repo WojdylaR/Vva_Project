@@ -8,14 +8,11 @@ function RealPerso(){
 
     const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
         e.currentTarget.load();
-            console.log(e.currentTarget.pause())
 
       };
 
       const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) => {
-        console.log("yo")
         e.currentTarget.play();
-
       };
 
     return (

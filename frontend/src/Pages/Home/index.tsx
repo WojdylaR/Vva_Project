@@ -38,7 +38,7 @@ const slideInTop = (elem:string, delay:number, duration:number) => {
 
 function Home(){
     useEffect(() => {
-        slideInTop("#TextPresentation", 0.25, 1);
+        slideInTop(".TextPresentation", 0.25, 1);
         slideInTop("#nous", 0.25, 1);
         slideInTop("sous_titre", 0.25, 1);
         slideInTop(".border", 0.25, 1);

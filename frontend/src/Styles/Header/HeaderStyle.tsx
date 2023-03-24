@@ -43,6 +43,7 @@ div{
 .link:hover{
     text-decoration: underline;
     opacity:1.0;
+    
 }
 .link:active{
     color: grey;
