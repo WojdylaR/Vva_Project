@@ -7,6 +7,7 @@ const FooterStyle = styled.nav`
 div{
     position: relative;
     top:0px;
+    left: 0px;
     background: #141414;
 }
 
@@ -20,7 +21,7 @@ div{
 button {
     background-color: #444141;
     border-radius: 10px;
-    color: #fff;
+    color: #fff;    
     cursor: pointer;
     padding: 10px 20px;
     font-size: 18px;
@@ -70,12 +71,14 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
+
     grid-gap: 70px;
 }
 
 .grid-item{
     width: 350px;
     height: 170px;
+    justify-self: center;
 }
 
 .txt_nav .link {
@@ -97,11 +100,14 @@ button {
 }
 
 .txt_nav{
-    right: 20px;
+    left: 100px;
     position: absolute;
-    width: 100;
     line-height: 1.5;
     word-spacing: 10px;
+}
+
+.link:hover{
+    text-decoration: underline;
 }
 
 .txt_logo{
@@ -113,8 +119,12 @@ button {
 .txt_logo #logo_video{
     top : 110px;
     position: absolute;
-    right: -70px;
+    right: 70px;
     width: 80px;
+}
+
+.logo_soc:hover{
+    transform: scale(1.2);
 }
 
 .txt_contact .p1{

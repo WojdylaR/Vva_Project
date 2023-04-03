@@ -10,14 +10,7 @@ const PageStyle = styled.nav`
   color: white;
   width:100%;
   top: 90px;
-  
-
-      #tittle{
-        position: relative;
-        font-size: 200%;
-        left: 3%;
-      }
-
+  left: 0;
 
       
 #bordertoppa{

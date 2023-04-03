@@ -20,13 +20,12 @@ h2{
     font-family: Roboto;
  }
  div{
-    font-family: Optima;
+    font-family: Inter;
+    font-weight: 300;
  }
 
 
 .red {
-    -webkit-text-stroke: 0px;
-    -webkit-text-stroke-color: ;
     color: #B22222;
   }
 

@@ -210,22 +210,22 @@ button {
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 29vw));
+    grid-template-columns: repeat(auto-fill, minmax(180px, 29vw));
     justify-content: center;
     grid-gap: 15px;
+    
 }
 
 .equipe .grid_item{
     width: 29vw;
-    min-width: 200px;
-    
+    min-width: 180px;
 }
 
 .equipe .photo{
     border: solid 8px white;
     box-sizing: border-box;
     width: 29vw;
-    min-width: 200px;   
+    min-width: 180px;   
 }
 
 .equipe .nom{
@@ -300,7 +300,7 @@ button {
 }
 
 .logo{
-    width: 5%;
+    width: 55px;
 }
 
 `

@@ -27,14 +27,19 @@ const RealPersostyle = styled.nav`
   left: 10%;
   font-size: 200%;
   font-weight: 100;
-  
+  margin-bottom: 50px;
 }
+
+.red2 {
+  color: #B22222;
+}
+
 
 #txt{
   top: 20px;
   position: relative;
   width: 70%;
-  font-weight: 500;
+  font-weight: 300;
   left: 15%;
   line-height: 1.8;
   font-size: 145%;
