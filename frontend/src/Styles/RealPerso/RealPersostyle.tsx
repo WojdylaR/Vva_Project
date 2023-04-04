@@ -60,10 +60,8 @@ const RealPersostyle = styled.nav`
 }
 
 .video:hover{
-  transform: scale(1.3);
   cursor: pointer;
   postion: relative;
-  top: ;
   z-index: 2;
 }
 

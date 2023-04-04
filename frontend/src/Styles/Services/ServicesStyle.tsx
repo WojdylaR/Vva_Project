@@ -24,7 +24,7 @@ animation-duration: 0.75s;
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 14vw));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 14vw));
     grid-gap: 30px;
     justify-content: center;
     margin-bottom: 70px;
@@ -46,7 +46,7 @@ animation-duration: 0.75s;
 
 .grid_item{
   width: 14vw;
-  min-width: 200px;
+  min-width: 170px;
   
 }
 

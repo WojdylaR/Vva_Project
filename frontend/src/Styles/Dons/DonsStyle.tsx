@@ -21,19 +21,21 @@ const DonsSyle = styled.nav`
   top: 50px;
   position: relative;
   text-align: center;
-  font-size: 125%;
+  font-size: max(100%, 1.5vw);
 }
 
 
 #photo{
   position: relative;
   width: 60%;
+  min-width: 450px;
   border-radius: 20px;
 }
 
 #logo_tipeee{
   position: relative;
   width: 25%;
+  min-width: 350px;
   top: -20px;
 }
 `
