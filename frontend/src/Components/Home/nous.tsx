@@ -15,8 +15,8 @@ function Nous() {
                 géopolitique, “Va Voir Ailleurs” est un <span className="red">collectif</span> de réalisateurs tourné vers les questions de la 
                 transition écologique ainsi que du milieu associatif.<br/><br/>
 
-                🔗 Vous pouvez trouver l’intégralité de nos <span className="red">réalisations</span> sur notre chaîne <span className="red">Youtube</span> (lien URL). 
-                Ces réalisations sont auto-financées à 100% par nos contributeurs <span className="red">Tipeee</span> (lien YRL) et nous-mêmes.<br /><br/>
+                🔗 Vous pouvez trouver l’intégralité de nos <span className="red">réalisations</span> sur notre chaîne <a className="lien" href="https://www.youtube.com/channel/UCmagj97a6B0ocvQQzsMqHFQ"><span className="red">Youtube</span></a>. 
+                Ces réalisations sont auto-financées à 100% par nos contributeurs <a className="lien" href="https://fr.tipeee.com/va-voir-ailleurs"><span className="red">Tipeee</span></a> et nous-mêmes.<br /><br/>
 
                 📚 Dorénavant, <span className="red">"Va Voir Ailleurs"</span> propose ses services de vidéastes. De 
                 l’écriture du <span className="red">scénario</span> à la mise en place du <span className="red">tournage</span> jusqu’à l’aide 

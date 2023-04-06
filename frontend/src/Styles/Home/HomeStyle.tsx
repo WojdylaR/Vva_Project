@@ -112,10 +112,6 @@ const HomeStyle = styled.nav`
     left: 40px;
 }
 
-.red2{
-
-}
-
 button {
     cursor: pointer;
     position: relative;
@@ -150,6 +146,11 @@ button {
  #nous button:active {
     box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
     transform: translate(0.1em, 0.1em);
+  }
+
+#nous .lien{
+    text-decoration: none;
+    font-size: 110%;
   }
 
 /******************************* TextPresentation ***************************/
