@@ -25,7 +25,7 @@ function Documentaire () {
             </p>
             <p id="documentaire_txt" className="txt">
             
-                <h1>Documentaire.</h1>
+                <h1>Documentaire. 📺</h1>
                 <span className="sous_txt">
                 <span className="trait_horizontal_top" />
                 <span className="trait_vertical_top" />

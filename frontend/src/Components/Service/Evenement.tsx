@@ -24,7 +24,7 @@ function Evenement () {
                 <AllCarrousel picture={pic_carroussel}/>
             </p>
             <p id="evenement_txt" className="txt">
-                <h1>Evenement.</h1>
+                <h1>Evenement. 🎆</h1>
                 <span className="sous_txt">
                 <span className="trait_horizontal_top" />
                 <span className="trait_vertical_top" />

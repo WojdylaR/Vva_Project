@@ -296,11 +296,11 @@ button {
 #para_logo{
     text-align:center;
     line-height: 10;
-    letter-spacing: 250px;
+    letter-spacing: 200px;
 }
 
 .logo{
-    width: 55px;
+    width: 75px;
 }
 
 `

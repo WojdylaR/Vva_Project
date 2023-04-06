@@ -51,7 +51,7 @@ function RealPerso(){
                 <a href="https://www.youtube.com/watch?v=nbwPETO47pU"><video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/teaser_sa.jpg')} src={require('../../assets/real_perso/salon_agri_presentation.mp4')} /></a>
             </p>
             <p>
-                <h2 className="titre_cate">Interview : </h2>
+                <h2 className="titre_cate">Interviews : </h2>
                 <a href="https://www.youtube.com/watch?v=1SALvg9SDbY"><video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/interview/interview_samuel.jpg')} src={require('../../assets/real_perso/interview/interview_samuel.mp4')} /></a>
                 <a href="https://www.youtube.com/watch?v=P3cZJm5k4DI"><video loop muted className="video" onMouseOut={handleOnMouseOut} onMouseOver={handleOnMouseOver} poster={require('./../../assets/real_perso/interview/interview_anais.jpeg')} src={require('../../assets/real_perso/interview/interview_anais.mp4')} /></a>
             </p>

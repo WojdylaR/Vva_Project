@@ -1,5 +1,3 @@
-import React from "react";
-import Footer from "../../Components/Footer";
 import Confiance from "../../Components/Home/Confiance";
 import TextPresentation from "../../Components/Home/TextPresentation";
 import Video from "../../Components/Home/Video";
@@ -7,7 +5,7 @@ import HomeStyle from "../../Styles/Home/HomeStyle";
 import gsap from 'gsap'
 import { ScrollToPlugin} from 'gsap/ScrollToPlugin'
 import { ScrollTrigger} from 'gsap/ScrollTrigger'
-import { useEffect, useRef} from 'react'
+import { useEffect} from 'react'
 import Nous from "../../Components/Home/nous";
 import Equipe from "../../Components/Home/Equipe";
 

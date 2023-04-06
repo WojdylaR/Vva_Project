@@ -24,7 +24,7 @@ function Corporate () {
                 <AllCarrousel picture={pic_carroussel}/>
             </p>
             <p className="txt">
-                <h1>Corporate.</h1>
+                <h1>Corporate. 📊</h1>
                 <span className="sous_txt">
                 <span className="trait_horizontal_top" />
                 <span className="trait_vertical_top" />
