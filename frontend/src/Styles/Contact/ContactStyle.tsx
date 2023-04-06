@@ -10,6 +10,7 @@ top: 75px;
     width: 50%;
     float:left;
     left: 10%;
+
 }
 
 .tittle_contact {
@@ -208,7 +209,12 @@ animation-duration: 0.75s;
       }
 
 
-
+.logo_phone{
+    position: relative;
+    width: 25px;
+    left: -5px;
+    top: 5px;
+}
 
 `
 

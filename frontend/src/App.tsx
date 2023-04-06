@@ -41,7 +41,8 @@ const location = useLocation();
                 <Route path="/service/documentaire" element={<Documentaire />} />
                 <Route path="/service/patrimoine" element={<Patrimoine />} />
             </Routes>
-            <Footer />
+
+            {location.pathname === "/contact" ? "" :<Footer />}
             </PageStyle>
         </div>
     )

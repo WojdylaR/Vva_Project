@@ -86,7 +86,7 @@ function Contact(){
             <p className="contact_numero">
                 <span className="prenom">Félix & Pierre</span><br/>
                 <span className="fondateur">Co-fondateurs</span><br />
-                <h3 className="numero1">0625581625</h3> <h3 className="numero2">0618995138</h3>
+                <img className="logo_phone"  src={require('../../assets/logo/logo_phone.png')} alt="phone" />:<h3 className="numero1">0625581625</h3> <img className="logo_phone"  src={require('../../assets/logo/logo_phone.png')} alt="phone" />:<h3 className="numero2">0618995138</h3>
             </p>
             </div>
         </ContactStyle>
