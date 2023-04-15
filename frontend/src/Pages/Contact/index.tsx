@@ -37,46 +37,50 @@ function Contact(){
 
     return (
         <ContactStyle>
-            <div id="all_input">
+            <div className="contact">
+                <div className="grille">
+                    <div id="grid_item">
                 <h1 className="tittle_contact"><span className="red">NOUS</span> CONTACTER</h1>
-
-                <div id="info">
-                    <span className="top"><span className="info">
+                <div className="all_input">
+                    <div id="grille_info">
+                        <div className="info_item">
+                    <span className="info">
                         <input type="text" autoComplete="off" onChange={e => {setPrenom(e.target.value)}}/>
                         <label className="lab" htmlFor="prenom">Prenom<span className="red">*</span></label>
-                    </span>
+                        </span>
+                        </div><div className="info_item">
                     <span className="info">
-                        <span className="right"><input type="text" autoComplete="off" onChange={e => {setNom(e.target.value)}}/>
-                        <label className="lab" htmlFor="nom">Nom<span className="red">*</span></label></span>
-                    </span></span>
-                    <span className="brlarge"></span>
-                    <span className="info"><span id="mid">
+                        <input type="text" autoComplete="off" onChange={e => {setNom(e.target.value)}}/>
+                        <label className="lab" htmlFor="nom">Nom<span className="red">*</span></label>
+                    </span>
+                    </div><div className="info_item">
+                    <span className="info">
                         <input type="text" autoComplete="off" onChange={e => {setMail(e.target.value)}}/>
                         <label className="lab" htmlFor="mail">Mail<span className="red">*</span></label></span>
+                        </div><div className="info_item">
+                    <span className="info" >
+                        <input type="text" autoComplete="off" onChange={e => {setNumero(e.target.value)}}/>
+                        <label className="lab" htmlFor="telephone">Téléphone<span className="red">*</span></label>
                     </span>
-                    <span className="info" ><span id="mid">
-                        <span className="right"><input type="text" autoComplete="off" onChange={e => {setNumero(e.target.value)}}/>
-                        <label className="lab" htmlFor="telephone">Téléphone<span className="red">*</span></label></span></span>
-                    </span>
-                    <span className="brlarge"></span>
-                    <span className="info"><span id="bot">
+                    </div><div className="info_item">
+                    <span className="info">
                         <input type="text" autoComplete="off" onChange={e => {setAdresse(e.target.value)}}/>
                         <label className="lab" htmlFor="mail">Adresse</label></span>
-                    </span>
-                    <span className="info" ><span id="bot">
-                        <span className="right"><input type="text" autoComplete="off" onChange={e => {setEntreprise(e.target.value)}}/>
-                        <label className="lab" htmlFor="telephone">Entreprise</label></span></span>
-                    </span>
-                    
+                        </div><div className="info_item">
+                    <span className="info" >
+                        <input type="text" autoComplete="off" onChange={e => {setEntreprise(e.target.value)}}/>
+                        <label className="lab" htmlFor="telephone">Entreprise</label></span>
+                        </div>
                 </div>
                 <div id="txt_to_send">
             <input type="text" id="champTxt" onChange={e => {setMessage(e.target.value)}}/><br /> 
             <button id="button" onClick={sendMail
             }>Envoyer</button><br/>
-            <p><span className="red">* champs obligatoire</span></p>
+            <p className="obli"><span className="red">* champs obligatoire</span></p>
         </div>      
-            </div>
-            <div id="second_div">
+            </div></div>
+            <div id="grid_item">
+                <div className="scnd_div">
             <h2 className="scnd_tittle">Un projet ou une envie de vidéo ?</h2><p id="txt_scnd_div">
             <span className="trait_horizontal_top" />
             <span className="trait_vertical_top" />Envoyez-nous un message pour que nous 
@@ -86,8 +90,11 @@ function Contact(){
             <p className="contact_numero">
                 <span className="prenom">Félix & Pierre</span><br/>
                 <span className="fondateur">Co-fondateurs</span><br />
-                <img className="logo_phone"  src={require('../../assets/logo/logo_phone.png')} alt="phone" />:<h3 className="numero1">0625581625</h3> <img className="logo_phone"  src={require('../../assets/logo/logo_phone.png')} alt="phone" />:<h3 className="numero2">0618995138</h3>
+                <span className="num"><img className="logo_phone"  src={require('../../assets/logo/logo_phone.png')} alt="phone" />:<h3 className="numero1">0625581625</h3> <img className="logo_phone"  src={require('../../assets/logo/logo_phone.png')} alt="phone" />:<h3 className="numero2">0618995138</h3></span>
             </p>
+            </div>
+            </div> 
+            </div>
             </div>
         </ContactStyle>
     )

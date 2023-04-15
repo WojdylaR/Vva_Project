@@ -100,7 +100,7 @@ button {
 }
 
 .txt_nav{
-    left: 100px;
+    left: 150px;
     position: absolute;
     line-height: 1.5;
     word-spacing: 10px;
@@ -117,7 +117,7 @@ button {
 }
 
 .txt_logo #logo_video{
-    top : 110px;
+    top: 50px;
     position: absolute;
     right: 70px;
     width: 80px;

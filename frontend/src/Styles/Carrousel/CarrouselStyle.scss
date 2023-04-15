@@ -52,14 +52,14 @@ $card-size: 100%;
   border: unset;
   
   &.left {
-    left: 5%;
+    left: 15%;
     top: 50%;
     transform: translateX(-100%) translatey(-50%);
   }
   
   &.right {
     top: 50%;
-    right:  55%;
+    right:  15%;
     transform: translateX(100%) translatey(-50%);
   }
 }

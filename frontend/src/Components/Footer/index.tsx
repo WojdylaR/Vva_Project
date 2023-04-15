@@ -39,7 +39,7 @@ function Footer(){
                     </span>
                 </div>
                 <span className="txt_logo">
-                            <img id="logo_video" src={require('../../assets/logo/logo_vva_cam.png')} alt="logo_vva_blanc" />
+                            <Link className="link" id="Home"to="/"><img id="logo_video" src={require('../../assets/logo/logo_vva_cam.png')} alt="logo_vva_blanc" /></Link>
                     </span>
             </div>
             

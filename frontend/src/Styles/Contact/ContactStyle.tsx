@@ -13,40 +13,65 @@ top: 75px;
 
 }
 
+.contact .grille{
+    position: relative;
+    width: 99%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 49%));
+    justify-content: center;
+    grid-gap: 15px;
+}
+
+
+
+.contact .grid_item{
+    width: 100%;
+    min-width: 480px;
+}
+
+
 .tittle_contact {
     position :relative;
     width: 100%;
     top: -35px;
     font-size: 200%;
     font-weight: 100;
-    
 }
 
-
-#obli{
-    font-size: 75%;
-    position: relative;
-    top: -10px;
-}
-
-h2{
+h1{
     font-weight:300;
+    left: 10%;
+    position: relative;
+    width: 50%
 }
 
-#info input {
+
+#grille_info{
+    position: relative;
+    width: 99%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 48%));
+    grid-gap: 15px;
+}
+
+#grille_info input {
         font-size: 100%;
         padding: 0.8em;
         outline: none;
         border: 2px solid rgb(200, 200, 200);
         background-color: transparent;
         border-radius: 10px;
-        width: 20%;
+        width: 100%;
         color: white;
 }
 
-.brlarge {
-    display: block;
-    margin-bottom: 2em;
+.all_input{
+    position :relative;
+    width: 80%;
+    left: 10%;
+    margin-bottom: 50px;
 }
 
 .right{
@@ -75,7 +100,7 @@ h2{
   }
 
 
-#info :focus {
+#grille_info :focus {
     border-color: rgb(150, 150, 200);
   }
 
@@ -87,25 +112,15 @@ h2{
     position: relative;
 }
 
-
-
-.champ{
-    width: 40%;
-}
-
-.champ2{
-    width: 40%;
-}
-
 #champTxt {
     position: relative;
-    height: 250px;
-    width: 500px;
+    height: 300px;
+    width: 100%;
 }
 
 #txt_to_send{
     position: relative;
-    height: 350px;
+    height: 350;
     top: 2em;
 }
 
@@ -113,7 +128,7 @@ h2{
 button {
     position: relative;
     top:10px;
-    width:510px;
+    width: 100%;
     padding: 17px 40px;
     border-radius: 10px;
     border: 0;
@@ -137,27 +152,28 @@ button {
     transition: 200ms;
    }
 
-#obli{
+.obli{
     position:relative;
-    top: 70px;
+    top: 10px;
 }
 
-#second_div{
+.scnd_div{
     position:relative;
-    top: 0px;
+    top: -50px;
     text-align: center;
-    width: 50%;
+    width: 80%;
     float: right;
-    right: 5%;
+    right: 10%;
     line-height: 2.3;
     font-size: 150%;
+    margin-bottom: 100px;
 }
 
 .scnd_tittle{
     position: relative;
     border-bottom: 2px solid currentColor;
-    width: 70%;
-    left: 15%;
+    width: 100%;
+    font-weight: 300;
 }
 
 .prenom{
@@ -211,9 +227,15 @@ animation-duration: 0.75s;
 
 .logo_phone{
     position: relative;
-    width: 25px;
+    width: 1.75vw;
+    min-width: 22px;
     left: -5px;
     top: 5px;
+}
+
+.num {
+    white-space:nowrap;
+    font-size: max(80%, 1.5vw)
 }
 
 `

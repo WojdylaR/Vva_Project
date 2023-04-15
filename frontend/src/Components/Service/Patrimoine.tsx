@@ -12,18 +12,22 @@ function Patrimoine () {
     return(
         
         <ServicesStylePage>
-        <div>
-        <div>
+        <div className="service_page">
+            <div>
             <img className="hide" src={require("../../assets/pic_service/patrimoine/patrimoine1.jpg")} alt="" />
             <img className="hide" src={require("../../assets/pic_service/patrimoine/patrimoine2.jpg")} alt="" />
             <img className="hide" src={require("../../assets/pic_service/patrimoine/patrimoine3.jpg")} alt="" />
             <img className="hide" src={require("../../assets/pic_service/patrimoine/patrimoine4.jpg")} alt="" />
             <img className="hide" src={require("../../assets/pic_service/patrimoine/patrimoine5.jpg")} alt="" />
-        </div>
-            <p>                
+        </div >
+            <div className="grille">
+                <div className="grid_item" >
+                    <p className="picture">               
                 <AllCarrousel picture={pic_carroussel}/>
-            </p>
-            <p className="txt">
+            </p> 
+                </div>
+                <div className="grid_item">
+                    <p className="txt">
                 <h1>Patrimoine. 🏡</h1>
                 <span className="sous_txt">
                 <span className="trait_horizontal_top" />
@@ -34,10 +38,12 @@ function Patrimoine () {
                 Faire la promotion d'un village 🏘, d'un monument 🏛 ou d'un artisanat local ? <br />
                 Nous sommes là pour vous accompagner mettre en lumière les lieux ou objets qui vous tiennent
                      à coeur !
-                     <span className="trait_horizontal_bot"   ></span>
-                <span className="trait_vertical_bot" />
-                </span>
-            </p>
+                     <span className="trait_horizontal_bot"></span>
+                        <span className="trait_vertical_bot" />
+                        </span>
+                    </p>
+                </div>
+            </div>
         </div>
         </ServicesStylePage>
     )

@@ -151,6 +151,8 @@ button {
 #nous .lien{
     text-decoration: none;
     font-size: 110%;
+    text-decoration: underline;
+    text-decoration-color: #B22222;
   }
 
 /******************************* TextPresentation ***************************/

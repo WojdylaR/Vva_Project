@@ -42,7 +42,7 @@ const RealPersostyle = styled.nav`
   font-weight: 300;
   left: 15%;
   line-height: 1.8;
-  font-size: 145%;
+  font-size: max(115%, 1.30vw);
 }
 
 #cate{

@@ -18,7 +18,7 @@ animation-duration: 0.75s;
 
 
 
-.grille{
+.service .grille{
   top: 50px;
   position: relative;
     width: 99%;
@@ -30,7 +30,7 @@ animation-duration: 0.75s;
     margin-bottom: 70px;
 }
 
-.tittle_serv{
+.service .tittle_serv{
   position: absolute;
   top: 45%;
   width: 100%;
@@ -44,7 +44,7 @@ animation-duration: 0.75s;
 }
 
 
-.grid_item{
+.service .grid_item{
   width: 14vw;
   min-width: 170px;
   

@@ -2,30 +2,32 @@ import styled from "styled-components";
 
 const ServicesStylePage = styled.nav `
 
-.picture{
+.service_page{
+}
+
+.service_page .grille{
     position: relative;
-    width: 50%;
-    left: 0%;
-    top : 10px;
-    margin-bot: 0;
+    width: 99%;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(480px, 49%));
+    justify-content: center;
+    grid-gap: 15px;
 }
 
-.txt{
-    position: absolute;
-    line-height: 2.3;
-    width: 40%;
-    margin-left:0;
-    left: 55%;
-    top :0%;
+.service_page .picture{
+    position: relative;
+    width: 100%;
 }
 
-#mariage_txt{
-    top: 50px;
+.service_page .grid_item{
+    width: 100%;
+    min-width: 480px;
 }
 
 h1{
     position: relative;
-    width: 50%;
+    width: 80%;
     font-size: 250%;
     font-weight: 500;
     border-bottom: 2px solid currentColor;
@@ -33,7 +35,19 @@ h1{
 .sous_txt{
     position: relative;
     top: 85px;
-    font-size: 125%;
+    font-size: max(110%, 1.25vw);
+}
+
+
+
+.service_page .txt{
+    position: relative;
+    line-height: 2.3;
+    width: 80%;
+    min-height: 600px;
+    left: 10%;
+    margin-left:0;
+    top :0%;
 }
 
 .hide {
