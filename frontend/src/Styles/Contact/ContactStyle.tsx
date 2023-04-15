@@ -3,6 +3,7 @@ import styled from "styled-components";
 const ContactStyle = styled.nav`
 position: relative;
 top: 75px;
+left: 0%;
 
 #all_input{
     position: relative;
@@ -14,11 +15,12 @@ top: 75px;
 }
 
 .contact .grille{
+    left: 0%
     position: relative;
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 49%));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 49%));
     justify-content: center;
     grid-gap: 15px;
 }
@@ -26,14 +28,13 @@ top: 75px;
 
 
 .contact .grid_item{
-    width: 100%;
-    min-width: 480px;
+    width: 49%;
+    min-width: 350px;
 }
 
 
 .tittle_contact {
     position :relative;
-    width: 100%;
     top: -35px;
     font-size: 200%;
     font-weight: 100;
@@ -197,7 +198,7 @@ button {
 
 .numero1{
     border-bottom: solid;
-    margin-right: 50px;
+    margin-right: 10px;
     width: 180px;
     display: inline;
     font-family: "Chivo";

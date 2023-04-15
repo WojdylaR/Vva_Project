@@ -28,7 +28,7 @@ const DonsSyle = styled.nav`
 #photo{
   position: relative;
   width: 60%;
-  min-width: 450px;
+  min-width: 350px;
   border-radius: 20px;
 }
 

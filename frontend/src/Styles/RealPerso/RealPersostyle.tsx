@@ -23,7 +23,7 @@ const RealPersostyle = styled.nav`
 
 .tittle_contact {
   position :relative;
-  width: 100%;
+  width: 80%;
   left: 10%;
   font-size: 200%;
   font-weight: 100;
