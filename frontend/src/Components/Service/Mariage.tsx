@@ -27,7 +27,7 @@ function Mariage () {
             </p> 
                 </div>
                 <div className="grid_item">
-                    <p className="txt">
+                    <p className="txt" style={{}}>
                 <h1>Mariage. 👰🤵</h1>
                 <span className="sous_txt">
                 <span className="trait_horizontal_top" />

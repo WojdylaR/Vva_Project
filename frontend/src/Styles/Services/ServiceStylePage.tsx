@@ -10,7 +10,7 @@ const ServicesStylePage = styled.nav `
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(480px, 49%));
+    grid-template-columns: repeat(auto-fill, minmax(390px, 49%));
     justify-content: center;
     grid-gap: 15px;
 }
@@ -22,7 +22,7 @@ const ServicesStylePage = styled.nav `
 
 .service_page .grid_item{
     width: 100%;
-    min-width: 480px;
+    min-width: 390px;
 }
 
 h1{
@@ -35,7 +35,7 @@ h1{
 .sous_txt{
     position: relative;
     top: 85px;
-    font-size: max(110%, 1.25vw);
+    font-size: max(110%, 1.15vw);
 }
 
 
@@ -43,9 +43,8 @@ h1{
 .service_page .txt{
     position: relative;
     line-height: 2.3;
-    width: 80%;
-    min-height: 600px;
-    left: 10%;
+    width: 70%;
+    left: 15%;
     margin-left:0;
     top :0%;
 }

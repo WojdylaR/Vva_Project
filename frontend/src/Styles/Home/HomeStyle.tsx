@@ -4,7 +4,7 @@ const HomeStyle = styled.nav`
 
 #all{
     position: relative;
-    top: -110px;
+    top: -0px;
     animation-duration: 2s;
     animation-name: opa;
     opacity: 0;
@@ -109,7 +109,6 @@ const HomeStyle = styled.nav`
     position: relative;
     width: 100%;
     top: 75px;
-    left: 40px;
 }
 
 button {

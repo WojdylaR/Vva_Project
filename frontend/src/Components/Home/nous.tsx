@@ -7,7 +7,7 @@ function Nous() {
         <HomeStyle>
             <div id="nous">
                 <h2>“Va Voir Ailleurs” <span className="red">QUEZACO</span> ? 🎥</h2>
-                <p>
+                <p className="txt_nous">
                 <span className="trait_horizontal_top" />
                 <span className="trait_vertical_top" />
                 📈 Initialement association <span className="red">réalisatrice </span>de projets humanitaires sous forme 
