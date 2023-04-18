@@ -5,14 +5,6 @@ position: relative;
 top: 75px;
 left: 0%;
 
-#all_input{
-    position: relative;
-    font-family: optima;
-    width: 50%;
-    float:left;
-    left: 10%;
-
-}
 
 .contact .grille{
     left: 0%
@@ -72,7 +64,7 @@ h1{
     position :relative;
     width: 80%;
     left: 10%;
-    margin-bottom: 50px;
+    margin-bottom: 150px;
 }
 
 .right{
@@ -167,7 +159,6 @@ button {
     right: 10%;
     line-height: 2.3;
     font-size: 150%;
-    margin-bottom: 100px;
 }
 
 .scnd_tittle{

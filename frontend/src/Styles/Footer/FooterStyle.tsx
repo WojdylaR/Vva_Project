@@ -89,6 +89,7 @@ button {
     top : -20px;
 }
 
+
 .txt_reseau{
     position: relative;
     left: 20px;
@@ -105,6 +106,27 @@ button {
     line-height: 1.5;
     word-spacing: 10px;
 }
+
+.txt_nav_petit_ecran{
+    word-spacing: 10px;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+
+.link_petit_ecran {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    position: relative;
+    top : -20px;
+}
+
+.txt_nav_petit_ecran .links{
+    position: relative;
+    top 20px;
+}
+
 
 .link:hover{
     text-decoration: underline;
