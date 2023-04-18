@@ -67,7 +67,7 @@ const HeaderStyle = styled.nav<locat>`
 }
 
 #Home{
-    color: ${(props) => props.loca === "/" ? "white" : "white"};
+    color: ${(props) => props.loca === "/" ? "#B22222" : "white"};
 }
 
 #Presentation{
@@ -136,8 +136,21 @@ const HeaderStyle = styled.nav<locat>`
     top: 90px;
     width: 100%;
     left: 0px;
+    background: rgb(20, 20, 20, 0.9);
     backdrop-filter: blur(5px);
+    line-height: 2;
 }
+
+.menunav .links{
+    position: relative;
+    width: 80%;
+    left: 10%;
+}
+
+.menunav .link{
+    text-decoration: none;
+}
+
 
 
 .button_menu{

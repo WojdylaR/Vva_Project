@@ -212,7 +212,7 @@ button {
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(180px, 29vw));
+    grid-template-columns: repeat(auto-fill, minmax(170px, 29vw));
     justify-content: center;
     grid-gap: 15px;
     
@@ -220,7 +220,7 @@ button {
 
 .equipe .grid_item{
     width: 29vw;
-    min-width: 180px;
+    min-width: 170px;
 }
 
 .equipe .photo{
@@ -287,6 +287,7 @@ button {
     left:4%;
     width: 92%;
     font-size:115%;
+    margin-bottom: 75px;
 }
 
 #sous_titre_confiance{
@@ -302,7 +303,7 @@ button {
 }
 
 .logo{
-    width: 75px;
+    width: max(60px, 5vw);
 }
 
 `

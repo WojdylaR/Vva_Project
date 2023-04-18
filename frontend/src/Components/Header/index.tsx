@@ -30,7 +30,7 @@ const location = useLocation();
                
                
             </div>
-            {isOpen === 0 ? <MenuNav /> : ""}
+            {isOpen === 0 ? <MenuNav PropUseIsOpen={UseIsOpen}/> : ""}
             </HeaderStyle>
         )
     } else {
