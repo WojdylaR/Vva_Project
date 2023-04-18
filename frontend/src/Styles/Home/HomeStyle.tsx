@@ -19,7 +19,7 @@ const HomeStyle = styled.nav`
     top: 50px;
     border-radius: 5px;
     border-bottom: 4px solid white ;
-    z-index: 1;
+    z-index: 2;
 }
 
 @keyframes opa {

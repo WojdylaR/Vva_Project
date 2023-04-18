@@ -1,14 +1,42 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, } from "react-router-dom";
 import HeaderStyle from "../../Styles/Header/HeaderStyle";
 import SocialLogo from "./socialLogo";
+import useWindowSize from "../../Hook/useScreenSize";
+import { useState } from "react";
+import MenuNav from "./MenuNav";
 
 
 function Header(){
 const location = useLocation();
-{console.log("location = " + location.pathname)}
+
+    const screenWidth = useWindowSize().width;
+    const [isOpen, UseIsOpen] = useState(1)
+
+    
+
+    if( screenWidth === undefined || screenWidth <= 900){
+        return (
+            <HeaderStyle loca={location.pathname}>
+            <div id="little_screen">
+                <div  className="button_menu"><input type="checkbox" id="checkbox" />
+                    <label  onClick={() => isOpen === 1 ? UseIsOpen(0) : UseIsOpen(1)} htmlFor="checkbox" className="toggle">
+                        <div className="bars" id="bar1"></div>
+                        <div className="bars" id="bar2"></div>
+                        <div className="bars" id="bar3"></div>
+                    </label>
+                </div>
+                <Link className="link_logo" id="Home"to="/"><img id="logo" src={require('../../assets/logo/logo_vva_blanc.png')} alt="logo_vva_blanc" /></Link>
+                <SocialLogo /> 
+               
+               
+            </div>
+            {isOpen === 0 ? <MenuNav /> : ""}
+            </HeaderStyle>
+        )
+    } else {
     return (
         <HeaderStyle loca={location.pathname}>
-            <div className="all">
+            <div id="big_screen">
             <Link className="link_logo" id="Home"to="/"><img id="logo" src={require('../../assets/logo/logo_vva_blanc.png')} alt="logo_vva_blanc" /></Link>
                 <nav className="links">
                     <h2><Link className="link" id="Home"to="/">Home</Link><span> </span>
@@ -19,10 +47,11 @@ const location = useLocation();
                 </nav>
                 <SocialLogo />
                 
+                
             </div>
             
         </HeaderStyle>
     )
-}
+}}
 
 export default Header

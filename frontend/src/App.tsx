@@ -24,7 +24,7 @@ const location = useLocation();
     return (
         <div>
             <Header />
-            {location.pathname === "/contact" ? "" :<Button />}
+            {location.pathname === "/contact" ? "" : <Button />}
             <GlobalStyle />
             <PageStyle>
             <div id="bordertoppa"></div>
