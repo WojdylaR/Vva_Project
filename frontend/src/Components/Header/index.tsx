@@ -2,23 +2,26 @@ import { Link, useLocation, } from "react-router-dom";
 import HeaderStyle from "../../Styles/Header/HeaderStyle";
 import SocialLogo from "./socialLogo";
 import useWindowSize from "../../Hook/useScreenSize";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import MenuNav from "./MenuNav";
 
 
 function Header(){
 const location = useLocation();
+const checkboxRef = useRef<HTMLInputElement>(null);
 
     const screenWidth = useWindowSize().width;
-    const [isOpen, UseIsOpen] = useState(1)
+    const [isOpen, UseIsOpen] = useState(0);
 
-    
+    useEffect(() => {if (checkboxRef.current && checkboxRef.current.checked === true && isOpen === 0){
+        checkboxRef.current.checked = false;
+    }}, [isOpen])
 
     if( screenWidth === undefined || screenWidth <= 900){
         return (
             <HeaderStyle loca={location.pathname}>
             <div id="little_screen">
-                <div  className="button_menu"><input type="checkbox" id="checkbox" />
+                <div  className="button_menu"><input type="checkbox" ref={checkboxRef} id="checkbox" />
                     <label  onClick={() => isOpen === 1 ? UseIsOpen(0) : UseIsOpen(1)} htmlFor="checkbox" className="toggle">
                         <div className="bars" id="bar1"></div>
                         <div className="bars" id="bar2"></div>
@@ -30,7 +33,7 @@ const location = useLocation();
                
                
             </div>
-            {isOpen === 0 ? <MenuNav PropUseIsOpen={UseIsOpen}/> : ""}
+            {isOpen === 1 ? <MenuNav PropUseIsOpen={UseIsOpen}/> : ""}
             </HeaderStyle>
         )
     } else {
