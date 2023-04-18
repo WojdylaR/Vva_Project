@@ -1,5 +1,7 @@
 import styled from "styled-components";
 
+
+
 const ServicesStylePage = styled.nav `
 
 .service_page{
@@ -34,7 +36,7 @@ h1{
 }
 .sous_txt{
     position: relative;
-    top: 85px;
+    top: 55px;
     font-size: max(110%, 1.15vw);
 }
 
@@ -47,6 +49,7 @@ h1{
     left: 15%;
     margin-left:0;
     top :0%;
+    margin-bottom: 150px;
 }
 
 .hide {

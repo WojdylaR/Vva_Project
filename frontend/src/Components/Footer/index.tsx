@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
+import useWindowSize from "../../Hook/useScreenSize";
 import FooterStyle from "../../Styles/Footer/FooterStyle";
 
 function Footer(){
+    const screenWidth = useWindowSize().width
+
+    if( screenWidth === undefined || screenWidth <= 10){
+        return(
+            <div>
+
+            </div>
+        )
+        }else{
+
+
     return(
     <FooterStyle>
         <div className="footer">
@@ -47,6 +59,6 @@ function Footer(){
         <p className="ronan">Va voir ailleurs © 2023 Tous droits réservés | Mentions Légales et politique de confidentialité | Site réalisé par <a className="rw" href="https://www.linkedin.com/in/ronan-wojdyla-07aa3920a/">Ronan Wojdyla</a></p>   
         </FooterStyle>
     )
-}
+}}
 
 export default Footer
