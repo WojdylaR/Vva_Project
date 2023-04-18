@@ -49,16 +49,88 @@ h1{
     grid-gap: 15px;
 }
 
-#grille_info input {
-        font-size: 100%;
-        padding: 0.8em;
-        outline: none;
-        border: 2px solid rgb(200, 200, 200);
-        background-color: transparent;
-        border-radius: 10px;
-        width: 100%;
-        color: white;
-}
+
+
+
+
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    width: 100%;
+    max-width: 180px;
+  }
+  
+  .form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: white;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+  }
+  
+  .form__field::placeholder {
+    color: transparent;
+  }
+  
+  .form__field:placeholder-shown ~ .form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+  }
+  
+  .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+  }
+  
+  .form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #B22222, #B22222);
+    border-image-slice: 1;
+  }
+  
+  .form__field:focus ~ .form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #B22222;
+    font-weight: 700;
+  }
+  
+  /* reset input */
+  .form__field:required, .form__field:invalid {
+    box-shadow: none;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .all_input{
     position :relative;
@@ -67,54 +139,20 @@ h1{
     margin-bottom: 150px;
 }
 
-.right{
-    position:relative;
-    left:10%;
-}
-
-.info label {
-    font-size: 100%;
-    position: absolute;
-    left: 0;
-    background-color: transparent;
-    padding: 0.8em;
-    margin-left: 0.5em;
-    pointer-events: none;
-    transition: all 0.3s ease;
-    color: white;
-  }
-
-.info :focus ~label {
-    transform: translateY(-50%) scale(.9);
-    margin: 0em;
-    margin-left: 1.3em;
-    padding: 0.4em;
-    background-color: black;
-  }
-
-
-#grille_info :focus {
-    border-color: rgb(150, 150, 200);
-  }
-
-.link{
-    float:left;
-}
-
-.info {
-    position: relative;
-}
 
 #champTxt {
     position: relative;
     height: 300px;
     width: 100%;
+    font-family: Chivo;
+    font-size: 125%;
+    padding: 15px;
 }
 
 #txt_to_send{
     position: relative;
     height: 350;
-    top: 2em;
+    top: 50px;
 }
 
 

@@ -1,38 +1,26 @@
-import {useState} from "react";
+import {useRef, useState} from "react";
 import ContactStyle from "../../Styles/Contact/ContactStyle";
 import axios from "axios";
 
 
 
 function Contact(){
-    const [message, setMessage] = useState("");
-    const [nom, setNom] = useState("");
-    const [prenom, setPrenom] = useState("");
-    const [mail, setMail] = useState("");
-    const [numero, setNumero] = useState("");
-    const [adresse, setAdresse] = useState("")
-    const [entreprise, setEntreprise] = useState("")
+    const nomRef = useRef<HTMLInputElement>(null)
+    const prenomRef = useRef(null)
+    const mailRef = useRef(null)
+    const numRef = useRef(null)
+    const adresseRef = useRef(null)
+    const entrepriseRef = useRef(null)
+    const messageRef = useRef(null)
+    let allMessage:any
 
     const API_KEY= "17d7fcce8d579965da3a47743b75490f40c33e377379cdad93cdfadb7f547595"
-
-    const handleChange = (event:any) => {
-        setMessage(event.target.value);
-        console.log(message)
-    }
     const sendMail = () => {
-        const allMessage = "Nom: " + nom + ", Prenom:" + prenom + ", Mail: " + mail + ", Numéro: " + numero + ", Message:" + message + ", Adresse: " + adresse + ", Entreprise: " + entreprise;
-        axios({
-            method: "POST",
-            url: `https://api.mailslurp.com/sendEmail?apiKey=${API_KEY}`,
-            data: {
-              senderId: "f832dfb1-99d2-40fe-b41c-f763043afa9e",
-              to: "f832dfb1-99d2-40fe-b41c-f763043afa9e@mailslurp.com",
-              subject: "Hello inbox 2",
-              body: allMessage,
-            },
-          });
-        console.log(allMessage);
-    };
+        if (nomRef.current && nomRef.current.value){
+        allMessage = "ntm: " + nomRef.current.value.length
+        console.log(allMessage)}
+        
+};
 
 
     return (
@@ -59,36 +47,39 @@ function Contact(){
                 <div className="all_input">
                     <div id="grille_info">
                         <div className="info_item">
-                    <span className="info">
-                        <input type="text" autoComplete="off" onChange={e => {setPrenom(e.target.value)}}/>
-                        <label className="lab" htmlFor="prenom">Prenom<span className="red">*</span></label>
-                        </span>
+                            <div className="form__group field">
+                                <input type="input" ref={nomRef} className="form__field" placeholder="Name" />
+                                <label htmlFor="name" className="form__label">Nom<span className="red">*</span></label>
+                            </div>
                         </div><div className="info_item">
-                    <span className="info">
-                        <input type="text" autoComplete="off" onChange={e => {setNom(e.target.value)}}/>
-                        <label className="lab" htmlFor="nom">Nom<span className="red">*</span></label>
-                    </span>
+                        <div className="form__group field">
+                                <input type="input" ref={prenomRef} className="form__field" placeholder="Name" />
+                                <label htmlFor="name" className="form__label">Prenom<span className="red">*</span></label>
+                            </div>
                     </div><div className="info_item">
-                    <span className="info">
-                        <input type="text" autoComplete="off" onChange={e => {setMail(e.target.value)}}/>
-                        <label className="lab" htmlFor="mail">Mail<span className="red">*</span></label></span>
+                    <div className="form__group field">
+                                <input type="input" ref={mailRef} className="form__field" placeholder="Name" />
+                                <label htmlFor="name" className="form__label">Mail<span className="red">*</span></label>
+                            </div>
                         </div><div className="info_item">
-                    <span className="info" >
-                        <input type="text" autoComplete="off" onChange={e => {setNumero(e.target.value)}}/>
-                        <label className="lab" htmlFor="telephone">Téléphone<span className="red">*</span></label>
-                    </span>
+                        <div className="form__group field">
+                                <input type="input" ref={numRef} className="form__field" placeholder="Name" />
+                                <label htmlFor="name" className="form__label">Téléphone<span className="red">*</span></label>
+                            </div>
                     </div><div className="info_item">
-                    <span className="info">
-                        <input type="text" autoComplete="off" onChange={e => {setAdresse(e.target.value)}}/>
-                        <label className="lab" htmlFor="mail">Adresse</label></span>
+                    <div className="form__group field">
+                                <input type="input" ref={nomRef} className="form__field" placeholder="Name" />
+                                <label htmlFor="name" className="form__label">Adresse</label>
+                            </div>
                         </div><div className="info_item">
-                    <span className="info" >
-                        <input type="text" autoComplete="off" onChange={e => {setEntreprise(e.target.value)}}/>
-                        <label className="lab" htmlFor="telephone">Entreprise</label></span>
+                        <div className="form__group field">
+                                <input type="input" ref={entrepriseRef} className="form__field" placeholder="Name" />
+                                <label htmlFor="name" className="form__label">Entreprise</label>
+                            </div>
                         </div>
                 </div>
                 <div id="txt_to_send">
-            <input type="text" id="champTxt" onChange={e => {setMessage(e.target.value)}}/><br /> 
+            <textarea id="champTxt" ref={messageRef}/><br /> 
             <button id="button" onClick={sendMail
             }>Envoyer</button><br/>
             <p className="obli"><span className="red">* champs obligatoire</span></p>
