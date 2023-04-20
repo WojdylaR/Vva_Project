@@ -47,6 +47,7 @@ h1{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 48%));
     grid-gap: 15px;
+    margin-bottom: 50px;
 }
 
 
@@ -122,16 +123,6 @@ h1{
 
 
 
-
-
-
-
-
-
-
-
-
-
 .all_input{
     position :relative;
     width: 80%;
@@ -152,7 +143,7 @@ h1{
 #txt_to_send{
     position: relative;
     height: 350;
-    top: 50px;
+    top: em;
 }
 
 
@@ -267,7 +258,6 @@ animation-duration: 0.75s;
     white-space:nowrap;
     font-size: max(80%, 1.5vw)
 }
-
 `
 
 export default ContactStyle
