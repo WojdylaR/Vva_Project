@@ -25,8 +25,8 @@ const slideInTop = (elem:string, delay:number, duration:number) => {
             delay: delay,
             scrollTrigger:{
                 trigger: elem,
-                start: "top center",
-                end: "bottom center",
+                start: "top",
+                end: "center",
             }
         }
     )
@@ -35,15 +35,7 @@ const slideInTop = (elem:string, delay:number, duration:number) => {
 
 
 function Home(){
-    useEffect(() => {
-        slideInTop(".TextPresentation", 0.25, 1);
-        slideInTop("#nous", 0.25, 1);
-        slideInTop("sous_titre", 0.25, 1);
-        slideInTop(".border", 0.25, 1);
-        slideInTop("sous_titre_txt", 0.25, 1);
-        slideInTop(".equipe", 0, 3);
-        slideInTop("#confiance", 0.25, 1)
-    }, [])
+    
 
     return (
         <HomeStyle>
