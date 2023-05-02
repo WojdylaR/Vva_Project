@@ -279,6 +279,33 @@ button {
 }
 
 
+/******************************* Parlent ***************************/
+
+#parlent{
+    top: 75px;
+    position: relative;
+    left:4%;
+    width: 92%;
+    font-size:115%;
+    margin-bottom: 75px;
+}
+
+#sous_titre_parlent{
+    position: relative;
+    left: 1%;
+    font-size: 185%;
+}
+
+#para_logo{
+    text-align:center;
+    line-height: 10;
+    letter-spacing: 200px;
+}
+
+.logo{
+    width: max(60px, 5vw);
+}
+
 /******************************* Confiance ***************************/
 
 #confiance{
@@ -294,16 +321,6 @@ button {
     position: relative;
     left: 1%;
     font-size: 185%;
-}
-
-#para_logo{
-    text-align:center;
-    line-height: 10;
-    letter-spacing: 200px;
-}
-
-.logo{
-    width: max(60px, 5vw);
 }
 
 `

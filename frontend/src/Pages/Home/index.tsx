@@ -8,6 +8,7 @@ import { ScrollTrigger} from 'gsap/ScrollTrigger'
 import { useEffect} from 'react'
 import Nous from "../../Components/Home/nous";
 import Equipe from "../../Components/Home/Equipe";
+import Parlent from "../../Components/Home/Parlent";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -47,6 +48,8 @@ function Home(){
             <TextPresentation />
             <div className="border" />
             <Equipe />
+            <div className="border"/>
+            <Parlent />
             <div className="border"/>
             <Confiance />
         </div>
