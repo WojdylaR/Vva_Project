@@ -135,7 +135,8 @@ button {
 .txt_logo{
     position: absolute;
     width: 100%;
-    text-align: center;
+    left: 50px;
+    top: -5px;
 }
 
 .txt_logo #logo_video{
