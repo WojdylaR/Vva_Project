@@ -53,16 +53,17 @@ const RealPersostyle = styled.nav`
   margin-bottom: 150px;
 }
 
-.video{
+img{
   width:300px;
   position: relative;
   margin-left: 25px;
 }
 
-.video:hover{
+img:hover{
   cursor: pointer;
   postion: relative;
   z-index: 2;
+  transform: scale(1.1);
 }
 
 .red{
