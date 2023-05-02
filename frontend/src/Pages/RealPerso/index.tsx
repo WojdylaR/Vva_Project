@@ -1,20 +1,6 @@
-import React, { useState } from "react";
 import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
 
 function RealPerso(){
-    let play = 0;
-
-
-
-    const handleOnMouseOut = (e: React.MouseEvent<HTMLVideoElement>) => {
-        e.currentTarget.load();
-
-      };
-
-      const handleOnMouseOver = (e: React.MouseEvent<HTMLVideoElement>) => {
-        e.currentTarget.play();
-      };
-
     return (
         <RealPersostyle>
         <div id="realperso"><h1 className="tittle_contact"><span className="red2">NOS</span> REALISATIONS</h1>
@@ -33,27 +19,27 @@ function RealPerso(){
         <div id="cate">
             <p>
                 <h2 className="titre_cate">Nos dernières réalisations : </h2>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=Bq8t6pl0nCw"><img src={require('../../assets/real_perso/salon_a.jpeg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=nbwPETO47pU"><img src={require('../../assets/real_perso/teaser_sa.jpg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ldtu-tBBwNw"><img  src={require('../../assets/real_perso/galerien.jpg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=xMgrlOwA0II"><img src={require('../../assets/real_perso/tipee.jpg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=Bq8t6pl0nCw"><img alt="minia_video" src={require('../../assets/real_perso/salon_a.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=nbwPETO47pU"><img alt="minia_video" src={require('../../assets/real_perso/teaser_sa.jpg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ldtu-tBBwNw"><img alt="minia_video" src={require('../../assets/real_perso/galerien.jpg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=xMgrlOwA0II"><img alt="minia_video" src={require('../../assets/real_perso/tipee.jpg')} /></a>
             </p>
             <p>
                 <h2 className="titre_cate">Humanitaire : </h2>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=F9v01PQnVdM"><img src={require('../../assets/real_perso/humanitaire/accueil_humanitaire.jpeg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ZGqs8IuTDqo"><img src={require('../../assets/real_perso/humanitaire/alphabetisation.jpeg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=YmEIcYC4bm4"><img src={require('../../assets/real_perso/humanitaire/soin_pt.jpeg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=xivbH531Fjg"><img src={require('../../assets/real_perso/humanitaire/aides_scolaire.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=F9v01PQnVdM"><img alt="minia_video" src={require('../../assets/real_perso/humanitaire/accueil_humanitaire.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ZGqs8IuTDqo"><img alt="minia_video" src={require('../../assets/real_perso/humanitaire/alphabetisation.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=YmEIcYC4bm4"><img alt="minia_video" src={require('../../assets/real_perso/humanitaire/soin_pt.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=xivbH531Fjg"><img alt="minia_video" src={require('../../assets/real_perso/humanitaire/aides_scolaire.jpeg')} /></a>
             </p>
             <p>
                 <h2 className="titre_cate">Évènementiel :</h2>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=Bq8t6pl0nCw"><img src={require('../../assets/real_perso/salon_a.jpeg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=nbwPETO47pU"><img  src={require('../../assets/real_perso/teaser_sa.jpg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=Bq8t6pl0nCw"><img alt="minia_video" src={require('../../assets/real_perso/salon_a.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=nbwPETO47pU"><img alt="minia_video" src={require('../../assets/real_perso/teaser_sa.jpg')} /></a>
             </p>
             <p>
                 <h2 className="titre_cate">Interviews : </h2>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=1SALvg9SDbY"><img src={require('../../assets/real_perso/interview/interview_samuel.jpg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=P3cZJm5k4DI"><img src={require('../../assets/real_perso/interview/interview_anais.jpeg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=1SALvg9SDbY"><img alt="minia_video" src={require('../../assets/real_perso/interview/interview_samuel.jpg')} /></a>
+                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=P3cZJm5k4DI"><img alt="minia_video" src={require('../../assets/real_perso/interview/interview_anais.jpeg')} /></a>
             </p>
         </div>
         </RealPersostyle>

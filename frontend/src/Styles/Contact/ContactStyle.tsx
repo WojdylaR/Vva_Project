@@ -130,6 +130,11 @@ h1{
     margin-bottom: 150px;
 }
 
+.lien_dl{
+    color: white;
+    text-decoration: underline;
+    font-size: 80%;
+}
 
 #champTxt {
     position: relative;
