@@ -49,7 +49,7 @@ const HomeStyle = styled.nav`
     z-index:1;
     width:25%;
     left:37.5%;
-    top: 18vw;
+    top: 14vw;
     word-spacing: 50px;
     line-height: 225px;
     animation-delay: 3s;
@@ -57,6 +57,39 @@ const HomeStyle = styled.nav`
     animation-name: opa_txt;
     opacity: 0;
     animation-fill-mode: forwards;
+}
+
+.fleche{
+    position: absolute;
+    z-index:1;
+    width:7%;
+    
+    top: 35vw;
+    word-spacing: 50px;
+    line-height: 225px;
+    animation-delay: 4s;
+    animation-duration: 1.5s;
+    animation-name: opa_fleche;
+    opacity: 0;
+    animation-iteration-count: 4;
+    animation-fill-mode: none;
+}
+
+#fleche_droite{
+    left:5%;
+}
+
+#fleche_gauche{
+    right: 5%;
+}
+
+@keyframes opa_fleche{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes opa_txt {
@@ -317,7 +350,7 @@ button {
     margin-bottom: 75px;
 }
 
-#sous_titre_confiance{
+#sous_titre_parlent{
     position: relative;
     left: 1%;
     font-size: 185%;
