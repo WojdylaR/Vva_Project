@@ -25,6 +25,46 @@ const DonsSyle = styled.nav`
 }
 
 
+
+.logo_container{
+  position: relative;
+  background: red;
+  margin: auto;
+  width: 70px;
+}
+
+#haut_gauche{
+  position: absolute;
+  width: 60px;
+  left: -175px;
+  top: -30px;
+  transform: rotate(-45deg)
+}
+
+#haut_droite{
+  position: absolute;
+  width: 60px;
+  left: 185px;
+  top: -30px;
+  transform: rotate(45deg)
+}
+
+#bas_droite{
+  position: absolute;
+  width: 60px;
+  left: 185px;
+  top: -120px;
+  transform: rotate(135deg);
+}
+
+#bas_gauche{
+  position: absolute;
+  width: 60px;
+  left: -175px;
+  top: -120px;
+  transform: rotate(225deg);
+}
+
 #photo{
   position: relative;
   width: 60%;

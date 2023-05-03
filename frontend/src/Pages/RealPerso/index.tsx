@@ -1,6 +1,10 @@
+import AllCarousel from "../../Components/RealPerso/Caroussel";
 import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
 
 function RealPerso(){
+    let der_minia = ["france_gronde.jpg","salon_a.jpeg", "teaser_sa.jpg", "galerien.jpg", "tipee.jpg"]
+    let der_yt = ["Rv0xoN4G6dg","Bq8t6pl0nCw", "nbwPETO47pU", "ldtu-tBBwNw", "xMgrlOwA0II"]
+
     return (
         <RealPersostyle>
         <div id="realperso"><h1 className="tittle_contact"><span className="red2">NOS</span> REALISATIONS</h1>
@@ -19,10 +23,7 @@ function RealPerso(){
         <div id="cate">
             <p>
                 <h2 className="titre_cate">Nos dernières réalisations : </h2>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=Bq8t6pl0nCw"><img alt="minia_video" src={require('../../assets/real_perso/salon_a.jpeg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=nbwPETO47pU"><img alt="minia_video" src={require('../../assets/real_perso/teaser_sa.jpg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=ldtu-tBBwNw"><img alt="minia_video" src={require('../../assets/real_perso/galerien.jpg')} /></a>
-                <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=xMgrlOwA0II"><img alt="minia_video" src={require('../../assets/real_perso/tipee.jpg')} /></a>
+                <AllCarousel nbr_vid={5} minia={der_minia} yt={der_yt}/>
             </p>
             <p>
                 <h2 className="titre_cate">Humanitaire : </h2>
@@ -42,6 +43,9 @@ function RealPerso(){
                 <a target="_blank" rel="noreferrer" href="https://www.youtube.com/watch?v=P3cZJm5k4DI"><img alt="minia_video" src={require('../../assets/real_perso/interview/interview_anais.jpeg')} /></a>
             </p>
         </div>
+            <div className="carroussel">
+                
+            </div>
         </RealPersostyle>
     )
 }

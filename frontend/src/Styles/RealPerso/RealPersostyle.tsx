@@ -47,8 +47,7 @@ const RealPersostyle = styled.nav`
 
 #cate{
   position: relative;
-  width: 90%;
-  left: 10%;
+  width: 100%;
   top: 125px;
   margin-bottom: 150px;
 }
@@ -68,6 +67,12 @@ img:hover{
 
 .red{
   font-weight: 700;
+}
+
+h2{
+  position: relative;
+  width: 50%;
+  left: 10%;
 }
 
       `

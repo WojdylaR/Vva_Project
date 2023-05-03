@@ -51,12 +51,10 @@ const Carousel = ({children}:any) => {
 };
 
 const AllCarrousel = (props: any) => {
-  const test = props.picture.pic1
 
   return(
   <div className="allCarroussel">
     <Carousel>
-    {console.log("pic = " + props.picture)}
       {[...new Array(CARDS)].map((_, i) => (
         <Card picture={props.picture[i]}/>
       ))}
