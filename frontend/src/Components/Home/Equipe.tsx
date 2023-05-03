@@ -2,7 +2,7 @@ const Card = (props:any) => (
     <div className="card">
         <img className="photo"  src={require(`../../assets/portraits/${props.img}`)} alt="Felix" />
         <div className="nom">{props.nom}</div>
-        <div className="linkedin"><a href={"https://www.linkedin.com" + props.linkedin}><img className="linkedin_pic"  src={require('../../assets/logo/logo_linkedin.png')} alt="logo_linkedin" /></a></div>
+        <div className="linkedin"><a target="_blank" rel="noreferrer" href={"https://www.linkedin.com" + props.linkedin}><img className="linkedin_pic"  src={require('../../assets/logo/logo_linkedin.png')} alt="logo_linkedin" /></a></div>
         <div className="fonction">{props.fonction}</div>
         
     </div>

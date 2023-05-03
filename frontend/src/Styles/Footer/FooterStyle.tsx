@@ -135,14 +135,15 @@ button {
 .txt_logo{
     position: absolute;
     width: 100%;
-    left: 50px;
+    left: 3%;
     top: -5px;
 }
 
 .txt_logo #logo_video{
     top: 50px;
+    
     position: absolute;
-    right: 70px;
+    right: 3%;
     width: 80px;
 }
 

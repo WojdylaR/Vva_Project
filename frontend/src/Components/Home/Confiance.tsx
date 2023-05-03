@@ -8,7 +8,7 @@ return(
                 <span> </span>
                     <img id="france_bleue" className="logo" alt="logo"  src={require('../../assets/Confiance/fnac.jpg')}/>
                 <span> </span>
-                    <img id="essor" className="logo" alt="logo" src={require('../../assets/Confiance/roanne_bf.png')}/>
+                    <img id="essor" className="logo" alt="logo" src={require('../../assets/Confiance/roanne_bf.jpg')}/>
             </p>
         </div>
     </div>
