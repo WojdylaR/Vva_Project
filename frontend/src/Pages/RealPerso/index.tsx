@@ -1,4 +1,5 @@
 import AllCarousel from "../../Components/RealPerso/Caroussel";
+import useWindowSize from "../../Hook/useScreenSize";
 import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
 
 function RealPerso(){
@@ -25,7 +26,7 @@ function RealPerso(){
     let voy_yt = ["tFv3b4bVYJk","uT-0sZDZrb8"];
     return (
 
-        <RealPersostyle>
+        <RealPersostyle width={useWindowSize().width}>
         <div id="realperso"><h1 className="tittle_contact"><span className="red2">NOS</span> REALISATIONS</h1>
             <p id="txt">
             <span className="trait_horizontal_top" />

@@ -10,9 +10,10 @@ const ServicesStylePage = styled.nav `
 .service_page .grille{
     position: relative;
     width: 99%;
+    left: 0%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(390px, 49%));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 49%));
     justify-content: center;
     grid-gap: 15px;
 }
@@ -20,11 +21,12 @@ const ServicesStylePage = styled.nav `
 .service_page .picture{
     position: relative;
     width: 100%;
+    left: 0%;
 }
 
 .service_page .grid_item{
     width: 100%;
-    min-width: 390px;
+    min-width: 360px;
 }
 
 h1{

@@ -12,7 +12,6 @@ $card-size: 100%;
 .carousel {
   position: relative;
   width: $card-size;
-  perspective: 500px;
   transform-style: preserve-3d;
 }
 
@@ -42,15 +41,15 @@ $card-size: 100%;
   background: unset;
   border: unset;
   
-  &.left {
-    left: max(100px, 15%);
+  &.left2 {
+    left: 80px;
     top: 50%;
     transform: translateX(-100%) translatey(-50%);
   }
   
-  &.right {
+  &.right2 {
     top: 50%;
-    right:  max(100px, 15%);
+    right:  80px;
     transform: translateX(100%) translatey(-50%);
   }
 }

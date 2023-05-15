@@ -1,7 +1,8 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { CSSProperties } from "styled-components"
 import '../../Styles/RealPerso/CarousselStyle.scss'
 import { TiChevronLeftOutline, TiChevronRightOutline } from "react-icons/ti";
+import useWindowSize from "../../Hook/useScreenSize";
 
 interface CustomCSSProperties extends CSSProperties{
     '--active':any;
@@ -14,13 +15,20 @@ const Card = (props:any) => (
 )
 
 const Caroussel = ({children}:any) =>{
+
+    const screenWidth= useWindowSize().width
     const [min, setMin] = useState(0);
-    const [max, setMax] = useState(4);
+    const [max, setMax] = useState(screenWidth && screenWidth > 1700 ? 4 : screenWidth && screenWidth > 1250 ? 3 : screenWidth && screenWidth > 800 ? 2 : 1);
     const count = React.Children.count(children);
+    
+    useEffect(() => {
+        setMax(screenWidth && screenWidth > 1700 ? 4 : screenWidth && screenWidth > 1250 ? 3 : screenWidth && screenWidth > 800 ? 2 : 1)
+        return 
+    }, [screenWidth])
 
     return(
         <div className="carousel">
-           {max > 4 && <button className='nav left' onClick={()  =>{setMin(min - 1); setMax(max - 1)}}>
+           {max > (screenWidth && screenWidth > 1700 ? 4 : screenWidth && screenWidth > 1250 ? 3 : screenWidth && screenWidth > 800 ? 2 : 1) && <button className='nav left' onClick={()  =>{setMin(min - 1); setMax(max - 1)}}>
         <TiChevronLeftOutline/>
         </button>}
             {React.Children.map(children, (child, i) => (
@@ -38,7 +46,7 @@ function AllCarousel(props:any){
     return(
         <div>
             
-            <Caroussel className="test">
+            <Caroussel >
                 {[...new Array(props.nbr_vid)].map((_,i)=>(
                     <Card minia={props.minia[i]} yt={props.yt[i]}/>
                 ))}

@@ -1,8 +1,7 @@
 import React, {useState} from 'react';
 import {TiChevronLeftOutline, TiChevronRightOutline} from 'react-icons/ti';
 import { CSSProperties } from 'react';
-import '../../Styles/Carrousel/CarrouselStyle.scss'
-import interfaceCarrousel from './interfaceCarrousel';
+import '../../Styles/Carrousel/CarrouselStyle2.scss'
 
 interface CustomCSSProperties extends CSSProperties {
   '--offset'?: any;
@@ -15,7 +14,6 @@ interface CustomCSSProperties extends CSSProperties {
 }
 
 const CARDS = 5;
-const MAX_VISIBILITY = 3;
 
 const Card = (props:any) => (
   
@@ -31,7 +29,7 @@ const Carousel = ({children}:any) => {
   
   return (
     <div className='carousel'>
-      {active < count - 1 && <button className='nav left' onClick={() => {setActive(active + 1);}}>
+      {active < count - 1 && <button className='nav left2' onClick={() => {setActive(active + 1);}}>
         <TiChevronLeftOutline/>
         </button>}
       {React.Children.map(children, (child, i) => (
@@ -45,7 +43,7 @@ const Carousel = ({children}:any) => {
           {i === active ? child : ""}
         </div>
       ))}
-      {active > 1 && <button className='nav right' onClick={() => setActive(i => i - 1)}><TiChevronRightOutline/></button>}
+      {active > 1 && <button className='nav right2' onClick={() => setActive(i => i - 1)}><TiChevronRightOutline/></button>}
     </div>
   );
 };

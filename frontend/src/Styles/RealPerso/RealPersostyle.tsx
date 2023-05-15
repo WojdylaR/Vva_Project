@@ -1,6 +1,11 @@
 import styled from "styled-components";
+import useWindowSize from "../../Hook/useScreenSize";
 
-const RealPersostyle = styled.nav`
+interface screenWidth{
+  width: any;
+}
+
+const RealPersostyle = styled.nav<screenWidth>`
     animation-duration: 0.75s;
     animation-name: opa;
     opacity: 0;
@@ -15,6 +20,7 @@ const RealPersostyle = styled.nav`
             opacity: 1;
         }
       }
+
 
 #realperso{
   position: relative;
@@ -43,19 +49,22 @@ const RealPersostyle = styled.nav`
   left: 15%;
   line-height: 1.8;
   font-size: max(115%, 1.30vw);
+ 
 }
 
 #cate{
   position: relative;
-  width: 100%;
+  width: 80%;
+  left: 10%;
   top: 125px;
   margin-bottom: 150px;
+  text-align: ${(props) => props.width > 800 ? "left" : "center"};
 }
 
 img{
   width:300px;
   position: relative;
-  margin-left: 25px;
+  margin-left: ${(props) => props.width > 800 ? "25px" : "0px"};
 }
 
 img:hover{
@@ -72,7 +81,6 @@ img:hover{
 h2{
   position: relative;
   width: 50%;
-  left: 10%;
 }
 
       `

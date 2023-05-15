@@ -2,7 +2,10 @@ import { createGlobalStyle } from 'styled-components'
 
 
 const GlobalStyle = createGlobalStyle`
-
+html,body  
+{  
+overflow-x:hidden;  
+}  
 @font-face {
     font-family: optima;
     src: url('./Montserrat/Montserrat-VariableFont_wght.ttf') format('ttf')

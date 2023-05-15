@@ -4,18 +4,16 @@
 }
 
 
-.carousel {
+#realperso .carousel {
   position: relative;
-  left: 7%;
-  width: 80%;
+  width: 100%;
   transform-style: preserve-3d;
-  
+  left:0px;
+
 }
 
 .card-container {
   position: relative;
-  left: 50px;
-
 }
 
 .nav {
@@ -33,14 +31,15 @@
   border: unset;
   
   &.left {
-    left:5%;
+    left:50px;
     top: 50%;
+    z-index: 3;
     transform: translateX(-100%) translatey(-50%);
   }
   
   &.right {
     top: 50%;
-    right:  5%;
+    right:  50px;
     transform: translateX(100%) translatey(-50%);
   }
 }
