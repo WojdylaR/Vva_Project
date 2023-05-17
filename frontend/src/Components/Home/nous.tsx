@@ -31,12 +31,13 @@ function Nous() {
                 <span className="trait_horizontal_bot"></span>
                 <span className="trait_vertical_bot" />
                 </p>
-                <p className="but">
+                
+            </div>
+            <p className="but">
                 <Link className="link" id="Contact" to="/contact">
                 <button>
                     <b>Rejoignez-nous!</b>
                 </button></Link></p>
-            </div>
         </HomeStyle>
     )
 }

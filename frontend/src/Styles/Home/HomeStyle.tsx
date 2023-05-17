@@ -137,17 +137,19 @@ const HomeStyle = styled.nav`
     font-weight: 700;
 }
 
-#nous .but{
+.but{
     text-align: center;
     position: relative;
     width: 100%;
-    top: 75px;
+    top: 40px;
+    margin-bottom: 50px;
 }
 
 button {
     cursor: pointer;
     position: relative;
-    font-size: 1.5em;
+    width: 300px;
+    font-size: 1.75em;
     padding: 0.7em 1.4em;
     background-color: #BF0426;
     text-decoration: none;
@@ -157,7 +159,7 @@ button {
     box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 0.3);
   }
   
- #nous button::before {
+.but button::before {
     position: absolute;
     content: '';
     height: 0;
@@ -170,12 +172,12 @@ button {
     transition: 0.3s;
   }
   
- #nous button:hover::before {
+ .but button:hover::before {
     width: 1.6em;
     height: 1.6em;
   }
   
- #nous button:active {
+.but button:active {
     box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.3);
     transform: translate(0.1em, 0.1em);
   }
