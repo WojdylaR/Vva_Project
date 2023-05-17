@@ -1,6 +1,5 @@
 import React, {useRef, useState} from "react";
 import ContactStyle from "../../Styles/Contact/ContactStyle";
-import axios from "axios";
 import emailjs from '@emailjs/browser';
 
 
@@ -21,7 +20,7 @@ function Contact(){
           console.log(error.text);
       });
         }
-        
+        alert("Merci à vous, Nous vous rappelons des que possible !")
         window.location.reload()
 }
         
