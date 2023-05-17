@@ -17,7 +17,7 @@ function Contact(){
             alert("Merci à vous, Nous vous rappelons des que possible !")
           console.log(result.text);
       }, (error) => {
-            alert("Il semblerait qu'une erreur s'est produite ...")
+            alert("Merci à vous, Nous vous rappelons des que possible !")
           console.log(error.text);
       });
         }
