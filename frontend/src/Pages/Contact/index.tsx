@@ -13,10 +13,8 @@ function Contact(){
         if (formRef.current){   
          emailjs.sendForm('service_pkovtdj', 'template_jjlafi8', formRef.current , 'PL6AlK1qQm8XUi8Wh')
       .then((result) => {
-            alert("Merci à vous, Nous vous rappelons des que possible !")
           console.log(result.text);
       }, (error) => {
-            alert("Merci à vous, Nous vous rappelons des que possible !")
           console.log(error.text);
       });
         }
