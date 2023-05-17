@@ -1,5 +1,5 @@
 import React from "react"
-import {Navigate, Route, Routes, useLocation} from 'react-router-dom'
+import {Navigate, Route, Router, Routes, useLocation} from 'react-router-dom'
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
 import Mariage from "./Components/Service/Mariage"
@@ -28,7 +28,7 @@ const location = useLocation();
             <GlobalStyle />
             <PageStyle>
             <div id="bordertoppa"></div>
-            <Routes>
+            <Routes >
                 <Route path="/" element={<Home />} />
                 <Route path="/don" element={<Don />} />
                 <Route path="/contact" element={<Contact />} />
@@ -41,7 +41,7 @@ const location = useLocation();
                 <Route path="/service/documentaire" element={<Documentaire />} />
                 <Route path="/service/patrimoine" element={<Patrimoine />} />
 
-                <Route path="*" element={<Navigate to="/" />} />
+                <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
             </PageStyle>
