@@ -92,7 +92,7 @@ function Footer(){
             </div>
             
         </div>
-        <p className="ronan">Va voir ailleurs © 2023 Tous droits réservés | Mentions Légales et politique de confidentialité | Site réalisé par <a className="rw" href="https://www.linkedin.com/in/ronan-wojdyla-07aa3920a/">Ronan Wojdyla</a></p>   
+        <p className="ronan">Va voir ailleurs v1.01 © 2023 Tous droits réservés | Mentions Légales et politique de confidentialité | Site réalisé par <a className="rw" href="https://www.linkedin.com/in/ronan-wojdyla-07aa3920a/">Ronan Wojdyla</a></p>   
         </FooterStyle>
     )
 }}
