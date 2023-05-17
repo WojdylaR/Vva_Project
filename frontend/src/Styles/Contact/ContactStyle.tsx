@@ -20,9 +20,8 @@ left: 0%;
 
 
 .contact .grid_item{
-    width: 49vw;
+    width: 49px;
     min-width: 350px;
-    background: red;
 }
 
 
@@ -46,7 +45,7 @@ h1{
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 49%));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 48%));
     grid-gap: 15px;
     margin-bottom: 50px;
 }
