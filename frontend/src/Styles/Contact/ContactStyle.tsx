@@ -12,7 +12,7 @@ left: 0%;
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 49%));
+    grid-template-columns: repeat(auto-fill, minmax(350px, 49vw));
     justify-content: center;
     grid-gap: 15px;
 }
@@ -20,8 +20,9 @@ left: 0%;
 
 
 .contact .grid_item{
-    width: 49%;
+    width: 49vw;
     min-width: 350px;
+    background: red;
 }
 
 
@@ -45,7 +46,7 @@ h1{
     width: 99%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 48%));
+    grid-template-columns: repeat(auto-fill, minmax(250px, 49%));
     grid-gap: 15px;
     margin-bottom: 50px;
 }

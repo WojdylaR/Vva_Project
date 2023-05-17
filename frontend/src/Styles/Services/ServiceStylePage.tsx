@@ -13,7 +13,7 @@ const ServicesStylePage = styled.nav `
     left: 0%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(360px, 49%));
+    grid-template-columns: repeat(auto-fill, minmax(360px, 49vw));
     justify-content: center;
     grid-gap: 15px;
 }
@@ -25,7 +25,7 @@ const ServicesStylePage = styled.nav `
 }
 
 .service_page .grid_item{
-    width: 100%;
+    width: 49vw;
     min-width: 360px;
 }
 
