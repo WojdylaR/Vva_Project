@@ -317,15 +317,12 @@ button {
 
 .card:hover .linkedin{
     opacity: 1;
-    scale: 1.2;
 }
 .card:hover .nom{
     opacity: 1;
-    scale: 1.2;
 }
 .card:hover .fonction{
     opacity: 1;
-    scale: 1.2;
 }
 
 
