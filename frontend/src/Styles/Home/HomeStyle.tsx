@@ -298,6 +298,18 @@ button {
     opacity: 0;
 }
 
+.card .linkedin{
+    transition:0.3s;
+}
+.card .nom{
+    transition:0.3s;
+}
+.card .photo{
+    transition:0.3s;
+}
+.card .fonction{
+    transition:0.3s;
+}
 
 .card:hover .photo{
     opacity: 0.3;
@@ -305,12 +317,15 @@ button {
 
 .card:hover .linkedin{
     opacity: 1;
+    scale: 1.2;
 }
 .card:hover .nom{
     opacity: 1;
+    scale: 1.2;
 }
 .card:hover .fonction{
     opacity: 1;
+    scale: 1.2;
 }
 
 

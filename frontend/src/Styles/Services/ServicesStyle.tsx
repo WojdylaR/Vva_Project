@@ -44,6 +44,10 @@ animation-duration: 0.75s;
 }
 
 
+.card .video{
+  transition: 0.1s;
+}
+
 .service .grid_item{
   width: 14vw;
   min-width: 170px;
