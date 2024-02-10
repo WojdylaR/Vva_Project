@@ -60,6 +60,11 @@ const HeaderStyle = styled.nav<locat>`
     z-index: 2;
     width: 30px;
     margin-left: 10px;
+    cursor: pointer;
+}
+
+.logo_soc{
+    cursor: pointer;
 }
 
 #big_screen .logo_soc:hover{
@@ -218,7 +223,6 @@ const HeaderStyle = styled.nav<locat>`
     transition-duration: .5s;
     transform: rotate(180deg);
   }
-
 
 
 

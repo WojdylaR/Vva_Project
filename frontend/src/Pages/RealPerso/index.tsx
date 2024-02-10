@@ -1,8 +1,12 @@
+import { useContext } from "react";
 import AllCarousel from "../../Components/RealPerso/Caroussel";
 import useWindowSize from "../../Hook/useScreenSize";
 import RealPersostyle from "../../Styles/RealPerso/RealPersostyle";
+import { LangueContext } from "../../App";
 
 function RealPerso(){
+    const {langue} = useContext(LangueContext)
+
     let der_minia = ["interview/sépare.jpg","politique/manif_rupture.jpg","politique/france_gronde.jpg","mi_tr/salon_a.jpeg", "mi_tr/teaser_sa.jpg", "fiction/galerien.jpg", "interview/tipee.jpg"]
     let der_yt = ["LOOhP0kZG7s","BlPdFNBfrao","Rv0xoN4G6dg","Bq8t6pl0nCw", "nbwPETO47pU", "ldtu-tBBwNw", "xMgrlOwA0II"]
 
@@ -27,7 +31,10 @@ function RealPerso(){
     return (
 
         <RealPersostyle width={useWindowSize().width}>
-        <div id="realperso"><h1 className="tittle_contact"><span className="red2">NOS</span> REALISATIONS</h1>
+            {langue == 'fr' ?
+        <div id="realperso">
+        
+            <h1 className="tittle_contact"><span className="red2">NOS</span> REALISATIONS</h1>
             <p id="txt">
             <span className="trait_horizontal_top" />
             <span className="trait_vertical_top" />
@@ -39,7 +46,19 @@ function RealPerso(){
             <span className="trait_horizontal_bot"   ></span>
             <span className="trait_vertical_bot" />
             </p>            
-        </div>
+        </div> : 
+        <div id="realperso">
+        <h1 className="tittle_contact"><span className="red2">OUR</span> ACHIEVEMENTS</h1>
+        <p id="txt">
+            <span className="trait_horizontal_top" />
+            <span className="trait_vertical_top" />
+            We have built our <span className="red">experience</span> 🎮 through our <span className="red">achievements</span> with the same guiding principle: highlighting <span className="red">philanthropic</span> 🙏 projects, being at the heart of the news 📰, or following <span className="red">extraordinary</span> people while maintaining a touch of <span className="red">non-conformity</span>. <br /> 
+            Passionate about humanity 👨‍👦, ecology 🌳, politics, or societal issues, we want to visually capture what drives us every day. So what are you waiting for to embark on this <span className="red">adventure</span> with us?
+            <span className="trait_horizontal_bot"></span>
+            <span className="trait_vertical_bot" />
+        </p>
+        </div>}
+        {langue == 'fr' ? 
         <div id="cate">
             <p>
                 <h2 className="titre_cate">Nos dernières réalisations : </h2>
@@ -69,7 +88,38 @@ function RealPerso(){
                 <h2 className="titre_cate">Voyage :</h2>
                 <AllCarousel nbr_vid={voy_minia.length} minia={voy_minia} yt={voy_yt}/>
             </p>
-        </div>
+        </div> : 
+        
+        <div id="cate">
+            <p>
+        <h2 className="titre_cate">Our latest achievements: </h2>
+        <AllCarousel nbr_vid={der_minia.length} minia={der_minia} yt={der_yt}/>
+        </p>
+        <p>
+            <h2 className="titre_cate">Humanitarian: </h2>
+            <AllCarousel nbr_vid={huma_minia.length} minia={huma_minia} yt={huma_yt}/>
+        </p>
+        <p>
+            <h2 className="titre_cate">Interviews: </h2>
+            <AllCarousel nbr_vid={int_minia.length} minia={int_minia} yt={int_yt}/>
+        </p>
+        <p>
+            <h2 className="titre_cate">Street Interviews: </h2>
+            <AllCarousel nbr_vid={mi_tr_minia.length} minia={mi_tr_minia} yt={mi_tr_yt}/>
+        </p>
+        <p>
+            <h2 className="titre_cate">Politics: </h2>
+            <AllCarousel nbr_vid={poli_minia.length} minia={poli_minia} yt={poli_yt}/>
+        </p>
+        <p>
+            <h2 className="titre_cate">Fiction: </h2>
+            <AllCarousel nbr_vid={fic_minia.length} minia={fic_minia} yt={fic_yt}/>
+        </p>
+        <p>
+            <h2 className="titre_cate">Travel: </h2>
+            <AllCarousel nbr_vid={voy_minia.length} minia={voy_minia} yt={voy_yt}/>
+        </p>
+        </div>}
         </RealPersostyle>
     )
 }

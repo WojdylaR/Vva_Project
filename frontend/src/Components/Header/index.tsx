@@ -2,13 +2,16 @@ import { Link, useLocation, } from "react-router-dom";
 import HeaderStyle from "../../Styles/Header/HeaderStyle";
 import SocialLogo from "./socialLogo";
 import useWindowSize from "../../Hook/useScreenSize";
-import { useEffect, useRef, useState } from "react";
+import { useContext, useEffect, useRef, useState } from "react";
 import MenuNav from "./MenuNav";
+import { LangueContext } from "../../App";
 
 
 function Header(){
-const location = useLocation();
-const checkboxRef = useRef<HTMLInputElement>(null);
+    const location = useLocation();
+    const checkboxRef = useRef<HTMLInputElement>(null);
+
+    const {langue} = useContext(LangueContext)
 
     const screenWidth = useWindowSize().width;
     const [isOpen, UseIsOpen] = useState(0);
@@ -41,13 +44,23 @@ const checkboxRef = useRef<HTMLInputElement>(null);
         <HeaderStyle loca={location.pathname}>
             <div id="big_screen">
             <Link className="link_logo" id="Home"to="/"><img id="logo" src={require('../../assets/logo/logo_vva_blanc.png')} alt="logo_vva_blanc" /></Link>
+            {langue == 'fr' ?
                 <nav className="links">
-                    <h2><Link className="link" id="Home"to="/">Home</Link><span> </span>
+                    <h2><Link className="link" id="Home"to="/">Accueil</Link><span> </span>
                     <Link className="link" id="Service" to="/service">Services</Link><span> </span>
                     <Link className="link" id="RealPerso" to="/realperso">Real</Link><span> </span>
                     <Link className="link" id="Dons" to="/don">Dons</Link><span> </span>
                     <Link className="link" id="Contact" to="/contact">Contact</Link></h2>
                 </nav>
+                :
+
+                <nav className="links">
+                    <h2><Link className="link" id="Home"to="/">Home</Link><span> </span>
+                    <Link className="link" id="Service" to="/service">Services</Link><span> </span>
+                    <Link className="link" id="RealPerso" to="/realperso">Real</Link><span> </span>
+                    <Link className="link" id="Dons" to="/don">Donation</Link><span> </span>
+                    <Link className="link" id="Contact" to="/contact">Contact</Link></h2>
+                </nav>}
                 <SocialLogo />
                 
                 

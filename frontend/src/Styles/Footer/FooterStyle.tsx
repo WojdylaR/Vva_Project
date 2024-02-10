@@ -51,6 +51,8 @@ button {
     
     text-decoration:none;
     color: white;
+    box-sizing: border-box;
+    padding-right: 50px;
 }
 
 #Contact:hover{

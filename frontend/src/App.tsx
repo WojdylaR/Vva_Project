@@ -1,4 +1,4 @@
-import React from "react"
+import React, { createContext, useContext, useState } from "react"
 import {Navigate, Route, Router, Routes, useLocation} from 'react-router-dom'
 import Footer from "./Components/Footer"
 import Header from "./Components/Header"
@@ -18,11 +18,27 @@ import Patrimoine from "./Components/Service/Patrimoine"
 import Button from "./Components/Button/Button"
 
 
+export const LangueContext = createContext({
+    langue:'fr',
+    toggleLangue: ()=>{}
+})
+
 function App(){
 const location = useLocation();
 
+    const [langue, setLangue] = useState('fr');
+    const toggleLangue = () =>{
+        setLangue(l => l === 'fr' ? 'en' : 'fr') 
+    }
+    
+    const value = {
+        langue,
+        toggleLangue
+    }
+
     return (
         <div>
+            <LangueContext.Provider value={value}>
             <Header />
             {location.pathname === "/contact" ? "" : <Button />}
             <GlobalStyle />
@@ -40,11 +56,11 @@ const location = useLocation();
                 <Route path="/service/fiction" element={<Fiction />} />
                 <Route path="/service/documentaire" element={<Documentaire />} />
                 <Route path="/service/patrimoine" element={<Patrimoine />} />
-
                 <Route path="*" element={<Home />} />
             </Routes>
             <Footer />
             </PageStyle>
+            </LangueContext.Provider>
         </div>
     )
 }
