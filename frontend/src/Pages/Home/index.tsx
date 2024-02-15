@@ -9,6 +9,7 @@ import { useEffect} from 'react'
 import Nous from "../../Components/Home/nous";
 import Equipe from "../../Components/Home/Equipe";
 import Parlent from "../../Components/Home/Parlent";
+import DerniereVideo from "../../Components/Home/DerniereVideo";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
@@ -42,6 +43,8 @@ function Home(){
         <HomeStyle>
         <div id="all">
             <Video />
+            <div className="border" />
+            <DerniereVideo />
             <div className="border" />
             <Nous />
             <div className="border"/>

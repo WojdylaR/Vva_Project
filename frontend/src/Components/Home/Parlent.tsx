@@ -1,7 +1,16 @@
+import { useContext } from "react"
+import { LangueContext } from "../../App"
+
 function Parlent(){
+    const {langue} = useContext(LangueContext)
+
     return (
         <div id="parlent">
-            <h2 id="sous_titre_parlent">Ils parlent de <span className="red">Nous </span>🎙</h2>
+            {langue == 'fr' ?
+                <h2 id="sous_titre_parlent">Ils parlent de <span className="red">Nous </span>🎙</h2>
+            :
+               <h2 id="sous_titre_parlent">They talk about <span className="red">Us </span>🎙</h2>
+    }
             <p id="para_logo">
                 <a href="https://www.leprogres.fr/economie/2021/09/07/va-voir-ailleurs-site-e-commerce-social-et-solidaire-se-lance">
                     <img id="progres" className="logo" alt="logo" src={require('../../assets/parlent/progres.png.webp')}/>
