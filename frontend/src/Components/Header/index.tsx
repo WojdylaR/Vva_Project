@@ -5,23 +5,29 @@ import useWindowSize from "../../Hook/useScreenSize";
 import { useContext, useEffect, useRef, useState } from "react";
 import MenuNav from "./MenuNav";
 import { LangueContext } from "../../App";
+import gsap from "gsap";
 
 
 function Header(){
     const location = useLocation();
     const checkboxRef = useRef<HTMLInputElement>(null);
-
     const {langue} = useContext(LangueContext)
-
     const screenWidth = useWindowSize().width;
     const [isOpen, UseIsOpen] = useState(0);
+
+  useEffect(() => {
+    if (checkboxRef.current && checkboxRef.current.checked === true && isOpen === 0) {
+      checkboxRef.current.checked = false;
+    }
+  }, [isOpen]);
+
 
     useEffect(() => {if (checkboxRef.current && checkboxRef.current.checked === true && isOpen === 0){
         checkboxRef.current.checked = false;
     }}, [isOpen])
 
     if( screenWidth === undefined || screenWidth <= 900){
-        return (
+        return ( 
             <HeaderStyle loca={location.pathname}>
             <div id="little_screen">
                 <div  className="button_menu"><input type="checkbox" ref={checkboxRef} id="checkbox" />
@@ -62,8 +68,6 @@ function Header(){
                     <Link className="link" id="Contact" to="/contact">Contact</Link></h2>
                 </nav>}
                 <SocialLogo />
-                
-                
             </div>
             
         </HeaderStyle>
@@ -71,3 +75,4 @@ function Header(){
 }}
 
 export default Header
+

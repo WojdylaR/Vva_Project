@@ -100,6 +100,22 @@ const HeaderStyle = styled.nav<locat>`
 }
 
 
+.cursor{
+    pointer-events: none;
+    
+    &__ball {
+      position: fixed;
+      top: 0;
+      left: 0;
+      mix-blend-mode: difference;
+      z-index: 1000;
+      
+      circle {
+        fill: #f7f8fa;
+      }}}
+
+
+
 #little_screen{
     text-align: center;
     position:fixed;
