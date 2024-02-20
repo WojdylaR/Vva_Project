@@ -17,6 +17,12 @@ const HeaderStyle = styled.nav<locat>`
     backdrop-filter: blur(5px);
 }
 
+.test{
+    position: fixed;
+    background-color: red;
+    z-index: 3;
+}
+
 #big_screen .link_logo{
     position: relative;
     z-index:3;
@@ -99,8 +105,7 @@ const HeaderStyle = styled.nav<locat>`
 #reseau{
 }
 
-
-.cursor{
+.cursor {
     pointer-events: none;
     
     &__ball {
@@ -109,12 +114,13 @@ const HeaderStyle = styled.nav<locat>`
       left: 0;
       mix-blend-mode: difference;
       z-index: 1000;
+      display: none;
       
       circle {
         fill: #f7f8fa;
-      }}}
-
-
+      }
+    }      
+  } 
 
 #little_screen{
     text-align: center;

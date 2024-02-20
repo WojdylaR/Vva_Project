@@ -18,16 +18,13 @@ export default function DerniereVideo(){
     }
 
     return(
-        <DerniereVideoStyle>
-            <h2>Notre dernière vidéo :</h2>
-            <iframe onLoad={onLoad} ref={refIframe} width="40%" height={height} src="https://www.youtube.com/embed/qChaLL-NhDQ?si=XgDPli4Mb1T-LqSN" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen></iframe>
-        </DerniereVideoStyle>
+        <DerniereVideoStyle></DerniereVideoStyle>
     )
 }
 
 const DerniereVideoStyle = styled.div`
     position: relative;
-    top: 50px;
+    top: 50px;  
     display: flex;
     width: 100vw;
     align-items: center;
