@@ -3,6 +3,11 @@ import styled from "styled-components"
 
 const FooterStyle = styled.nav`
 
+    .nowrap{
+        display: flex;
+        justify-content: center;
+        white-space: nowrap;
+    }
 
 div{
     position: relative;
@@ -62,7 +67,7 @@ button {
 
 .ronan{
     text-decoration: none;
-    color: #DEDEDE  ;
+    color: #DEDEDE ;
 }
 
 .grille{
@@ -71,14 +76,12 @@ button {
     width: 89%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, 350px);
     justify-content: center;
-
-    grid-gap: 70px;
+    grid-template-columns: repeat(auto-fill, minmax(360px,33%));
 }
 
 .grid-item{
-    width: 350px;
+    width: 100%;
     height: 170px;
     justify-self: center;
 }
@@ -94,40 +97,33 @@ button {
 
 .txt_reseau{
     position: relative;
-    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoWrapper{
+    width: 110px;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-around;
 }
 
 .txt_reseau .logo_soc{
     width: 30px;
-    margin-right: 25px;
+
 }
 
 .txt_nav{
-    left: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
     position: absolute;
     line-height: 1.5;
     word-spacing: 10px;
 }
 
-.txt_nav_petit_ecran{
-    word-spacing: 10px;
-    position: absolute;
-    top: 50px;
-    left: 20px;
-}
-
-.link_petit_ecran {
-    text-decoration: none;
-    color: white;
-    font-weight: 600;
-    position: relative;
-    top : -20px;
-}
-
-.txt_nav_petit_ecran .links{
-    position: relative;
-    top 20px;
-}
 
 
 .link:hover{
@@ -153,31 +149,25 @@ button {
     transform: scale(1.2);
 }
 
-.txt_contact .p1{
-    position absolute;
-    text-align: center;
-    width: 100%;
+
+.txt_contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .txt_contact .p2{
-    position: absolute;
-    top: 115px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     font-size: 90%;
-    left: 20px;
 }
 
 .txt_contact .mail_logo{
     position: relative;
     width: 15px;
-    top: 2px;
 }
-
-.txt_contact .mail{
-    width: 100%;
-    text-align: center;
-    position: absolute;
-}
-
 .ronan{
     position: relative;
     width: 100%;
@@ -186,7 +176,7 @@ button {
 
 .rw{
     color: #C1C1C1;
-    decoration-text: none;
+    text-decoration: none;
 }
 `
 

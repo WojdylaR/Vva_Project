@@ -19,15 +19,14 @@ function Header(){
     const bigBallRef = useRef<HTMLDivElement>(null)
 
     const refHeader = useRef<HTMLDivElement>(null)
-    const listLink = document.getElementsByClassName('link')
-
-
-
-    useEffect(() => {
+    const listLink = document.getElementsByClassName('hoverable')
+    
+    
+    useEffect(() => {if (screenWidth && screenWidth >= 1000){
         const handleMouseMove = (e: MouseEvent) => {
             if (refHeader.current && smallBallRef.current && bigBallRef.current) {
-                gsap.to(smallBallRef.current, { x: e.clientX - 5, y: e.clientY - 10, delay: 0 });
-                gsap.to(bigBallRef.current, { x: e.clientX - 15, y: e.clientY - 15, delay: 0.1 });
+                gsap.to(smallBallRef.current, { x: e.clientX - 5, y: e.clientY - 10, duration: 0});
+                gsap.to(bigBallRef.current, { x: e.clientX - 15, y: e.clientY - 15, duration: 0});
                 smallBallRef.current.style.display = 'block';
                 bigBallRef.current.style.display = 'block';
                 refHeader.current.style.cursor = 'none';
@@ -72,11 +71,9 @@ function Header(){
                 element.removeEventListener('mouseenter', handleMouseEnterLink);
                 element.removeEventListener('mouseleave', handleMouseLeaveLink);
             }
-        };
+        };}
     }, [listLink]);
     
-    
-
 
 
   useEffect(() => {
@@ -90,7 +87,7 @@ function Header(){
         checkboxRef.current.checked = false;
     }}, [isOpen])
 
-    if( screenWidth === undefined || screenWidth <= 900){
+    if( screenWidth === undefined || screenWidth <= 1000){
         return ( 
             <HeaderStyle loca={location.pathname}>
             <div id="little_screen">
@@ -125,23 +122,23 @@ function Header(){
             </div>
         </div>
             <div ref={refHeader} id="big_screen">
-            <Link className="link_logo" id="Home"to="/"><img id="logo" src={require('../../assets/logo/logo_vva_blanc.png')} alt="logo_vva_blanc" /></Link>
+            <Link className="link_logo hoverable" id="Home"to="/"><img id="logo" src={require('../../assets/logo/logo_vva_blanc.png')} alt="logo_vva_blanc" /></Link>
             {langue == 'fr' ?
                 <nav className="links">
-                    <h2><Link className="link" id="Home"to="/">Accueil</Link><span> </span>
-                    <Link className="link" id="Service" to="/service">Services</Link><span> </span>
-                    <Link key={2} className="link" id="RealPerso" to="/realperso">Réalisations</Link><span> </span>
-                    <Link key={3} className="link" id="Dons" to="/don">Dons</Link><span> </span>
-                    <Link key={4} className="link" id="Contact" to="/contact">Contact</Link></h2>
+                    <h2><Link className="link hoverable" id="Home"to="/">Accueil</Link><span> </span>
+                    <Link className="link hoverable" id="Service" to="/service">Services</Link><span> </span>
+                    <Link key={2} className="link hoverable" id="RealPerso" to="/realperso">Réalisations</Link><span> </span>
+                    <Link key={3} className="link hoverable" id="Dons" to="/don">Dons</Link><span> </span>
+                    <Link key={4} className="link hoverable" id="Contact" to="/contact">Contact</Link></h2>
                 </nav>
                 :
 
                 <nav className="links">
-                    <h2><Link  className="link" id="Home"to="/">Home</Link><span> </span>
-                    <Link  className="link" id="Service" to="/service">Services</Link><span> </span>
-                    <Link  className="link" id="RealPerso" to="/realperso">Real</Link><span> </span>
-                    <Link  className="link" id="Dons" to="/don">Donation</Link><span> </span>
-                    <Link  className="link" id="Contact" to="/contact">Contact</Link></h2>
+                    <h2><Link  className="link hoverable" id="Home"to="/">Home</Link><span> </span>
+                    <Link  className="link hoverable" id="Service" to="/service">Services</Link><span> </span>
+                    <Link  className="link hoverable" id="RealPerso" to="/realperso">Real</Link><span> </span>
+                    <Link  className="link hoverable" id="Dons" to="/don">Donation</Link><span> </span>
+                    <Link  className="link hoverable" id="Contact" to="/contact">Contact</Link></h2>
                 </nav>}
                 <SocialLogo />
             </div>
